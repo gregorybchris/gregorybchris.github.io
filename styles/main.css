@@ -1,12 +1,157 @@
-html, body {
-    height: 100%;
+/* ~ ~ ~ ~ ~ ~ ~ Fonts ~ ~ ~ ~ ~ ~ ~ */
+
+@font-face {
+    font-family: "Raleway-Thin";
+    src: url("../fonts/raleway/Raleway-Thin.ttf");
 }
 
-#sketch {
-    background: url("../images/me.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/raleway/Raleway-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("../fonts/raleway/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("../fonts/raleway/Raleway-SemiBold.ttf");
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ General ~ ~ ~ ~ ~ ~ ~ */
+
+* {
+    font-family: "Raleway-Medium";
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ Page ~ ~ ~ ~ ~ ~ ~ */
+
+#page {}
+
+#menu {
+    position: fixed;
+    display: inline-block;
+    padding: 50px 35px 0px;
+    width: 200px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+#roles {
+    width: 100%;
+}
+
+.roles-text {
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    display: block;
+    line-height: 15px;
+    text-indent: 2px;
+}
+
+#menu-signature {
+    width: 100%;
+}
+
+#nav {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    display: block;
+    font-size: 14px;
+    transition: color 300ms;
+    padding: 8px;
+    font-family: "Raleway-SemiBold";
+}
+
+.nav-link:active, .nav-link:visited {
+    color: rgb(50, 50, 50);
+}
+
+.nav-link:hover {
+    color: rgb(130, 130, 130);
+}
+
+#social {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-link {
+    text-decoration: none;
+    padding: 0px 1px;
+    display: inline-block;
+}
+
+.social-icon {
+    width: 20px;
+}
+
+.social-icon path {
+    fill: rgb(4, 102, 201);
+}
+
+#content {
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(100% - 200px);
+    padding: 40px 5%;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 200px;
+    min-width: 500px;
+}
+
+#telescope-portrait {
+    width: 85%;
+    text-align: center;
+}
+
+#telescope-image {
+    width: 100%;
+    position: relative;
+}
+
+#dijkstra-quote-wrap {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 14px 20px;
+    position: relative;;
+    margin-top: -55px;
+    width: 90%;
+}
+
+.dijkstra-quote-text {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+#home-bio {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.home-bio-text {
+    line-height: 26px;
+    font-size: 15px;
+    color: rgb(30, 30, 30);
+    display: block;
+    margin-bottom: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* */
