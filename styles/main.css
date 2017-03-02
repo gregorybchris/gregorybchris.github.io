@@ -1,29 +1,19 @@
 /* ~ ~ ~ ~ ~ ~ ~ Fonts ~ ~ ~ ~ ~ ~ ~ */
 
 @font-face {
-    font-family: "Raleway-Thin";
-    src: url("../fonts/raleway/Raleway-Thin.ttf");
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/montserrat/Montserrat-Regular.otf");
 }
 
 @font-face {
-    font-family: "Raleway-Regular";
-    src: url("../fonts/raleway/Raleway-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Raleway-Medium";
-    src: url("../fonts/raleway/Raleway-Medium.ttf");
-}
-
-@font-face {
-    font-family: "Raleway-SemiBold";
-    src: url("../fonts/raleway/Raleway-SemiBold.ttf");
+    font-family: "Montserrat-Light";
+    src: url("../fonts/montserrat/Montserrat-Light.otf");
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ General ~ ~ ~ ~ ~ ~ ~ */
 
 * {
-    font-family: "Raleway-Medium";
+    font-family: "Montserrat-Light";
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ Page ~ ~ ~ ~ ~ ~ ~ */
@@ -67,7 +57,7 @@
     font-size: 14px;
     transition: color 300ms;
     padding: 8px;
-    font-family: "Raleway-SemiBold";
+    font-family: "Montserrat-Regular";
 }
 
 .nav-link:active, .nav-link:visited {
