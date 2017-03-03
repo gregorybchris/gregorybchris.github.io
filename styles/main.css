@@ -1,6 +1,11 @@
 /* ~ ~ ~ ~ ~ ~ ~ Fonts ~ ~ ~ ~ ~ ~ ~ */
 
 @font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/montserrat/Montserrat-Bold.otf");
+}
+
+@font-face {
     font-family: "Montserrat-Regular";
     src: url("../fonts/montserrat/Montserrat-Regular.otf");
 }
@@ -14,11 +19,25 @@
 
 * {
     font-family: "Montserrat-Light";
+    box-sizing: border-box;
 }
 
-/* ~ ~ ~ ~ ~ ~ ~ Page ~ ~ ~ ~ ~ ~ ~ */
+/* ~ ~ ~ ~ ~ ~ ~ Layout ~ ~ ~ ~ ~ ~ ~ */
 
 #page {}
+
+#content {
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(100% - 200px);
+    padding: 40px 5%;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 200px;
+    min-width: 500px;
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ Menu ~ ~ ~ ~ ~ ~ ~ */
 
 #menu {
     position: fixed;
@@ -58,6 +77,7 @@
     transition: color 300ms;
     padding: 8px;
     font-family: "Montserrat-Regular";
+    text-transform: uppercase;
 }
 
 .nav-link:active, .nav-link:visited {
@@ -68,6 +88,10 @@
     color: rgb(130, 130, 130);
 }
 
+.nav-link.selected {
+    color: rgb(150, 150, 150);
+}
+
 #social {
     margin-top: 40px;
     text-align: center;
@@ -75,7 +99,7 @@
 
 .social-link {
     text-decoration: none;
-    padding: 0px 1px;
+    padding: 0px 4px;
     display: inline-block;
 }
 
@@ -87,53 +111,162 @@
     fill: rgb(4, 102, 201);
 }
 
-#content {
-    display: inline-block;
-    box-sizing: border-box;
-    width: calc(100% - 200px);
-    padding: 40px 5%;
-    vertical-align: top;
-    text-align: center;
-    margin-left: 200px;
-    min-width: 500px;
-}
+/* ~ ~ ~ ~ ~ ~ ~ Home ~ ~ ~ ~ ~ ~ ~ */
 
-#telescope-portrait {
+#portrait-wrap {
     width: 85%;
     text-align: center;
 }
 
-#telescope-image {
+#portrait {
     width: 100%;
-    position: relative;
 }
 
-#dijkstra-quote-wrap {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 14px 20px;
-    position: relative;;
-    margin-top: -55px;
-    width: 90%;
+#portrait-text-wrap {
+    background-color: rgb(10, 10, 10);
+    padding: 8px 20px;
+    box-sizing: border-box;
+    margin-top: -2px;
+    width: 100%;
 }
 
-.dijkstra-quote-text {
-    color: rgb(255, 255, 255);
-    font-size: 13px;
+.portrait-text {
+    color: rgb(240, 240, 240);
+    font-size: 11px;
+    font-family: "Montserrat-Regular";
 }
 
-#home-bio {
+#intro {
     margin-top: 40px;
     text-align: left;
 }
 
-.home-bio-text {
+.intro-text {
     line-height: 26px;
     font-size: 15px;
-    color: rgb(30, 30, 30);
+    color: rgb(40, 40, 40);
     display: block;
     margin-bottom: 17px;
 }
 
+.intro-link {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-family: "Montserrat-Regular";
+    transition: color 300ms;
+}
+
+.intro-link:hover {
+    color: rgb(100, 100, 100);
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ Bio ~ ~ ~ ~ ~ ~ ~ */
+
+.bio-section {
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.bio-section-title {
+    font-family: "Montserrat-Regular";
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.bio-section-hr {
+    border: 0px;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 50px 50px;
+}
+
+/* ~ ~ About Me ~ ~ */
+
+.bio-about-text {
+    line-height: 26px;
+    font-size: 15px;
+    color: rgb(40, 40, 40);
+    display: block;
+    margin-bottom: 17px;
+}
+
+/* ~ ~ Work Experience ~ ~ */
+
+.bio-job-wrap {
+    width: 50%;
+    padding: 30px 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bio-job-logo {
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+.bio-job-year {
+    font-family: "Montserrat-Regular";
+    font-size: 17px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 7px 0px;
+    letter-spacing: 2px;
+}
+
+.bio-job-title {
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    margin: 7px 0px;
+    letter-spacing: 2px;
+}
+
+.bio-job-text {
+    font-size: 13px;
+    display: block;
+    text-transform: uppercase;
+    margin: 2px 0px;
+}
+
+/* ~ ~ Course Work ~ ~ */
+
+.classes-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 10px 20px;
+}
+
+.classes-block-title {
+    font-family: "Montserrat-Regular";
+    font-size: 15px;
+    margin: 0px 0px 10px;
+}
+
+.classes-hr {
+    border: 0px;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10px 50px 5px 0px;
+}
+
+.classes-list {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.class-name {
+    margin: 0px 0px 5px;
+    font-size: 12px;
+    list-style-type: square;
+    text-indent: -5px;
+}
 
 
 
