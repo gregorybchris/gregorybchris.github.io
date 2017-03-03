@@ -114,7 +114,7 @@
 /* ~ ~ ~ ~ ~ ~ ~ Home ~ ~ ~ ~ ~ ~ ~ */
 
 #portrait-wrap {
-    width: 85%;
+    width: calc(75% + 50px);
     text-align: center;
 }
 
@@ -267,6 +267,87 @@
     list-style-type: square;
     text-indent: -5px;
 }
+
+/* ~ ~ ~ ~ ~ ~ ~ Projects ~ ~ ~ ~ ~ ~ ~ */
+
+.bio-section {
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.bio-section-title {
+    font-family: "Montserrat-Regular";
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.bio-section-hr {
+    border: 0px;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 50px 50px;
+}
+
+/* ~ ~ About Me ~ ~ */
+
+.projects-section {
+    text-align: left;
+    margin: 10px 0px;
+}
+
+.projects-section-title {
+    font-family: "Montserrat-Regular";
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.projects-section-hr {
+    border: 0px;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 50px 50px;
+}
+
+.projects-about-text {
+    line-height: 26px;
+    font-size: 15px;
+    color: rgb(40, 40, 40);
+    display: block;
+    margin-bottom: 17px;
+}
+
+.project-wrap {
+    margin: 15px 10px 40px;
+}
+
+.project-title {
+    font-size: 18px;
+    display: block;
+    color: rgb(20, 20, 20);
+}
+
+.project-date {
+    display: block;
+    font-size: 13px;
+    color: rgb(140, 140, 140);
+    margin-bottom: 6px;
+}
+
+.project-description {
+    text-indent: 35px;
+    color: rgb(120, 120, 120);
+    display: block;
+    line-height: 15px;
+    font-size: 12px;
+}
+
+
 
 
 
