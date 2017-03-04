@@ -327,7 +327,7 @@
 }
 
 .project-title {
-    font-size: 18px;
+    font-size: 19px;
     display: block;
     color: rgb(20, 20, 20);
 }
@@ -335,16 +335,15 @@
 .project-date {
     display: block;
     font-size: 13px;
-    color: rgb(140, 140, 140);
-    margin-bottom: 6px;
+    color: rgb(180, 180, 180);
+    margin: 3px 0px 10px;
 }
 
 .project-description {
-    text-indent: 35px;
-    color: rgb(120, 120, 120);
+    color: rgb(110, 110, 110);
     display: block;
-    line-height: 15px;
-    font-size: 12px;
+    line-height: 17px;
+    font-size: 13px;
 }
 
 
