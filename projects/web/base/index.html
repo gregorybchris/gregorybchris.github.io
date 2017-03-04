@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Base Converter </title>
+
+		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ubuntu:bold' />
+		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Vollkorn' />
+
+		<meta name="author" content="Chris Gregory">
+		<link href="styles/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="scripts/bignumber.js"></script>
+		<script type="text/javascript" src="scripts/functions.js"> </script>
+	</head>
+
+	<body>
+		<div class="title">
+			<h1> Base Converter </h1>
+		</div>
+
+		<div class="convert">
+			<form name="convertForm" onSubmit="handleChange()">
+				<input autocomplete="off" type="text" id="numL" name="numL" class="inputText" onKeyUp="handleChange(this)"/>
+				<input autocomplete="off" type="button" value="=" class="button"/>
+				<input autocomplete="off" type="text" id="numR" name="numR" class="inputText" onKeyUp="handleChange(this)" readonly/>
+			</form>
+
+			<br />
+
+			<select id="dropdownL" onChange="handleChange(numL)">
+				<option value="2"> 2 (Binary) </option>
+				<option value="10" selected> 10 (Decimal) </option>
+				<option value="16"> 16 (Hexadecimal) </option>
+				<option value="36"> 36 (Hexatridecimal) </option>
+				<option value="" disabled>  </option>
+				<option value="2"> 2 (Binary) </option>
+				<option value="3"> 3 (Ternary) </option>
+				<option value="4"> 4 (Quaternary) </option>
+				<option value="5"> 5 (Quinary) </option>
+				<option value="6"> 6 (Senary) </option>
+				<option value="7"> 7 (Septenary) </option>
+				<option value="8"> 8 (Octal) </option>
+				<option value="9"> 9 (Nonary) </option>
+				<option value="10"> 10 (Decimal) </option>
+				<option value="11"> 11 (Undecinal) </option>
+				<option value="12"> 12 (Duodecimal) </option>
+				<option value="13"> 13 (Tridecimal) </option>
+				<option value="14"> 14 (Tetradecimal) </option>
+				<option value="15"> 15 (Pentadecimal) </option>
+				<option value="16"> 16 (Hexadecimal) </option>
+				<option value="17"> 17 (Base 17) </option>
+				<option value="18"> 18 (Base 18) </option>
+				<option value="19"> 19 (Base 19) </option>
+				<option value="20"> 20 (Vigesimal) </option>
+				<option value="21"> 21 (Base 21) </option>
+				<option value="22"> 22 (Base 22) </option>
+				<option value="23"> 23 (Base 23) </option>
+				<option value="24"> 24 (Quadrivigesimal) </option>
+				<option value="25"> 25 (Base 25) </option>
+				<option value="26"> 26 (Hexavigesimal) </option>
+				<option value="27"> 27 (Septemvigesimal) </option>
+				<option value="28"> 28 (Base 28) </option>
+				<option value="29"> 29 (Base 29) </option>
+				<option value="30"> 30 (Base 30) </option>
+				<option value="31"> 31 (Base 31) </option>
+				<option value="32"> 32 (Duotrigesimal) </option>
+				<option value="33"> 33 (Base 33) </option>
+				<option value="34"> 34 (Base 34) </option>
+				<option value="35"> 35 (Base 35) </option>
+				<option value="36"> 36 (Hexatridecimal) </option>
+			</select>
+
+			<select id="dropdownR" onChange="handleChange(numR)">
+				<option value="2" selected> 2 (Binary) </option>
+				<option value="10"> 10 (Decimal) </option>
+				<option value="16"> 16 (Hexadecimal) </option>
+				<option value="36"> 36 (Hexatridecimal) </option>
+				<option value="" disabled>  </option>
+				<option value="2"> 2 (Binary) </option>
+				<option value="3"> 3 (Ternary) </option>
+				<option value="4"> 4 (Quaternary) </option>
+				<option value="5"> 5 (Quinary) </option>
+				<option value="6"> 6 (Senary) </option>
+				<option value="7"> 7 (Septenary) </option>
+				<option value="8"> 8 (Octal) </option>
+				<option value="9"> 9 (Nonary) </option>
+				<option value="10"> 10 (Decimal) </option>
+				<option value="11"> 11 (Undecinal) </option>
+				<option value="12"> 12 (Duodecimal) </option>
+				<option value="13"> 13 (Tridecimal) </option>
+				<option value="14"> 14 (Tetradecimal) </option>
+				<option value="15"> 15 (Pentadecimal) </option>
+				<option value="16"> 16 (Hexadecimal) </option>
+				<option value="17"> 17 (Base 17) </option>
+				<option value="18"> 18 (Base 18) </option>
+				<option value="19"> 19 (Base 19) </option>
+				<option value="20"> 20 (Vigesimal) </option>
+				<option value="21"> 21 (Base 21) </option>
+				<option value="22"> 22 (Base 22) </option>
+				<option value="23"> 23 (Base 23) </option>
+				<option value="24"> 24 (Quadrivigesimal) </option>
+				<option value="25"> 25 (Base 25) </option>
+				<option value="26"> 26 (Hexavigesimal) </option>
+				<option value="27"> 27 (Septemvigesimal) </option>
+				<option value="28"> 28 (Base 28) </option>
+				<option value="29"> 29 (Base 29) </option>
+				<option value="30"> 30 (Base 30) </option>
+				<option value="31"> 31 (Base 31) </option>
+				<option value="32"> 32 (Duotrigesimal) </option>
+				<option value="33"> 33 (Base 33) </option>
+				<option value="34"> 34 (Base 34) </option>
+				<option value="35"> 35 (Base 35) </option>
+				<option value="36"> 36 (Hexatridecimal) </option>
+			</select>
+		</div>
+
+		<div class="mainInfo">
+			<h2> How do I use the converter? </h2>
+			<p> This is a tool that will convert a number from one computer number system to another. The range is from binary to hexatridecimal (base 36). The most common bases are duplicated at the top for quick access. Type a number into the left of the text boxes and change the two dropdowns to represent the bases you want to convert. The conversion will be shown in the text box to the right. "Error" will be shown if the input is not a valid value for the base in the left dropdown. If you don't know how this works or you want to learn how to do these calculations by hand, I will try to explain it below. </p>
+
+			<br />
+			<h2> What is a base? </h2>
+			<p> First, think about all of the digits we use to count. We use 1, 2, 3, 4, 5, 6, 7, 8, 9, and don't forget 0. Together that's 10 digits. You could say we count in <em>decimal</em>&nbsp or base 10. With only ten digits in our decimal system, after counting ten digits up, we have to add another digit on to the number (going from nine to ten) making a two digit number. Similarly, after counting up nine of those tens and another nine ones, we make a three digit number going to 100. </p>
+			<p> We only have ten digits in the system we use (the Arabic numerals invented around 500 CE) but in the history of numbers, many other systems have been used. Other than a simple tally system, the most simple number system is <em>binary</em>&nbsp (base 2) which is used in all modern computers. Binary uses zeros and ones to represent numbers or other data. You already know what decimal is so you can probably take a guess at what hexadecimal is. <em>Hexadecimal</em>&nbsp is a number system in base 16 and uses the digits of decimal plus the digits from 'a' to 'f' in the standard English alphabet. It is used often in computers to represent memory addresses and colors. The last number system worth discussing is <em>hexatridecimal</em>&nbsp (base 36). It is special because it includes all of the Arabic numerals and the whole English alphabet so whole words can be translated. </p>
+
+			<br />
+			<h2> How do I convert by hand? </h2>
+			<p> I will be focusing on how to convert between decimal and binary, but process is the same for all other bases if not a little more difficult. The base of a number is written as a subscript beside the value so 5<sub>16</sub> means the hexadecimal value written as "5" (this value is not 5<sub>10</sub>). </p>
+
+			<br />
+			<p> *Hint* It helps to know powers of two (2<sup>0</sup>=1, 2<sup>1</sup>=2, 2<sup>2</sup>=4, 2<sup>3</sup>=8, 2<sup>4</sup>=16...) to do the conversion. </p>
+
+			<br />
+			<p> Take the number furthest right and if it is a '1', raise it to the power of 0, the next number over, if it is a '1' raise it to the power of 1. Keep doing this for all digits and add them all up. Leave out all numbers that had zero digits in the binary form. </p>
+
+			<br />
+			<p class="center"> Example: You are given 1101<sub>2</sub> and you have to convert to base 10. </p>
+
+			<br />
+			<p class="center"> (1 * 2<sup>3</sup>) + (1 * 2<sup>2</sup>) + (0 * 2<sup>1</sup>) + (1 * 2<sup>0</sup>) = 13 </p>
+
+			<p class="center"> 8 + 4 + 0 + 1 = 13 </p>
+
+			<br />
+			<p> This yields 13<sub>10</sub> as the value equal to 1101<sub>2</sub>. </p>
+		</div>
+
+		<div class="footer"></div>
+	</body>
+</html>

@@ -24,7 +24,9 @@
 
 /* ~ ~ ~ ~ ~ ~ ~ Layout ~ ~ ~ ~ ~ ~ ~ */
 
-#page {}
+#page {
+    min-width: 700px;
+}
 
 #content {
     display: inline-block;
@@ -34,7 +36,6 @@
     vertical-align: top;
     text-align: center;
     margin-left: 200px;
-    min-width: 500px;
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ Menu ~ ~ ~ ~ ~ ~ ~ */
@@ -71,7 +72,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: rgb(50, 50, 50);
+    color: rgb(130, 130, 130);
     display: block;
     font-size: 14px;
     transition: color 300ms;
@@ -81,15 +82,15 @@
 }
 
 .nav-link:active, .nav-link:visited {
-    color: rgb(50, 50, 50);
-}
-
-.nav-link:hover {
     color: rgb(130, 130, 130);
 }
 
+.nav-link:hover {
+    color: rgb(50, 50, 50);
+}
+
 .nav-link.selected {
-    color: rgb(150, 150, 150);
+    color: rgb(50, 50, 50);
 }
 
 #social {
@@ -323,13 +324,35 @@
 }
 
 .project-wrap {
-    margin: 15px 10px 40px;
+    margin: 15px 10px 45px;
+}
+
+.project-header {
+
 }
 
 .project-title {
     font-size: 19px;
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     color: rgb(20, 20, 20);
+}
+
+.project-go-button {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+    float: right;
+    color: rgb(120, 120, 120);
+    padding: 4px 8px;
+    transition: color 200ms, border 200ms;
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.project-go-button:hover {
+    /*border: 2px solid rgb(90, 90, 90);*/
+    color: rgb(40, 40, 40);
 }
 
 .project-date {

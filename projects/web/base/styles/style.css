@@ -1,0 +1,120 @@
+* {
+	margin: 0px;
+}
+
+h1 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 65px;
+	text-align: center;
+	color: white;
+	border-bottom: 5px solid black;
+	background: #344444;
+}
+
+div.convert {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 540px;
+	border: 5px outset gray;
+	border-radius: 10px;
+	padding: 25px 20px 35px 20px;
+	background: parent;
+}
+
+input.inputText {
+	font-family: Lucida console;
+    font-size: 14px;
+    height: 20px;
+	width: 240px;
+	border: 3px outset #213131;
+	padding: 0px 2px 0px 2px;
+	background: black;
+	color: white;
+}
+
+input.button {
+	height: 34px;
+	width: 30px;
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+	color:white;
+	border: 3px solid transparent;
+	background: transparent;
+}
+
+input:focus, select:focus {
+	outline-color: gray;
+}
+
+#dropdownL, #dropdownR {
+	font-family: 'Vollkorn', Georgia, Times, serif;
+	width: 160px;
+	margin: 0px 25px 0px 25px;
+	border: 3px outset #213131;
+	background: black;
+	color: white;
+}
+
+select option {
+	background: black;
+	color: white;
+}
+
+#dropdownR {
+	float: right;
+}
+
+div.mainInfo {
+	padding: 10px 10px 20px 10px;
+	margin: 20px 60px 40px 60px;
+	border: 5px solid black;
+	border-radius: 10px;
+}
+
+h2 {
+	font-family: 'Vollkorn', Georgia, Times, serif;
+    font-size: 20px;
+	text-indent: 50px;
+}
+
+p {
+    font-family: 'Vollkorn', Georgia, Times, serif;
+    font-size: 15px;
+    line-height: 20px;
+	text-indent: 20px;
+}
+
+p.center {
+	text-align: center;
+}
+
+sup, sub {
+vertical-align: 0;
+	position: relative;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: 0.8ex;
+}
+
+div.footer {
+	height: 40px;
+	border-top: 5px solid black;
+	background: #344444;
+}
+
+div.footer, div.convert, h1 {
+	background: #344444;
+	background-image: -ms-linear-gradient(top left, #425757 0%, #344444 100%);
+	background-image: -moz-linear-gradient(top left, #425757 0%, #344444 100%);
+	background-image: -o-linear-gradient(top left, #425757 0%, #344444 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #425757), color-stop(1, #344444));
+	background-image: -webkit-linear-gradient(top left, #425757 0%, #344444 100%);
+	background-image: linear-gradient(to bottom right, #425757 0%, #344444 100%);
+}
