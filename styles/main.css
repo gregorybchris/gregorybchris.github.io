@@ -380,7 +380,7 @@
     float: right;
     color: rgb(120, 120, 120);
     padding: 4px 8px;
-    transition: color 200ms, border 200ms;
+    transition: color 300ms;
     border: 2px solid rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
