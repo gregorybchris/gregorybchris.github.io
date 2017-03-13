@@ -20,6 +20,11 @@
     src: url("../fonts/montserrat/Montserrat-Light.otf");
 }
 
+/* ~ ~ ~ ~ ~ Colors ~ ~ ~ ~ ~ */
+
+@primary-color: rgb(200, 60, 50);
+
+
 /* ~ ~ ~ ~ ~ ~ ~ General ~ ~ ~ ~ ~ ~ ~ */
 
 * {
@@ -41,11 +46,11 @@
 }
 
 ::-moz-selection {
-    background: rgb(200, 60, 50);
+    background: @primary-color;
     color: rgb(250, 250, 250);
 }
 ::selection {
-	background: rgb(200, 60, 50);
+	background: @primary-color;
     color: rgb(250, 250, 250);
 }
 
@@ -66,7 +71,7 @@ html {
 #content {
     display: inline-block;
     box-sizing: border-box;
-    width: calc(100% - 200px);
+    width: ~"calc(100% - 200px)";
     padding: 40px 5%;
     vertical-align: top;
     text-align: center;
@@ -160,7 +165,7 @@ html {
 /* ~ ~ ~ ~ ~ ~ ~ Home ~ ~ ~ ~ ~ ~ ~ */
 
 #portrait-wrap {
-    width: calc(75% + 50px);
+    width: ~"calc(70% + 50px)";
     text-align: center;
 }
 
@@ -203,7 +208,7 @@ html {
 }
 
 .intro-link:hover {
-    color: rgb(200, 60, 50);
+    color: @primary-color;
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ Bio ~ ~ ~ ~ ~ ~ ~ */
@@ -396,7 +401,7 @@ html {
 }
 
 .project-go-button:hover {
-    color: rgb(200, 60, 50);
+    color: @primary-color;
 }
 
 .project-date {
@@ -425,7 +430,7 @@ html {
 }
 
 .project-text-link:hover {
-    color: rgb(200, 60, 50);
+    color: @primary-color;
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ Contact ~ ~ ~ ~ ~ ~ ~ */
@@ -451,11 +456,9 @@ html {
     margin-bottom: 30px;
 }
 
-/*color: rgb(200, 60, 50);*/
-
 .contact-form-wrap {
 	text-align: center;
-	border: 3px solid rgb(200, 60, 50);
+	border: 3px solid @primary-color;
 	width: 380px;
 	height: 280px;
 	padding-top: 20px;
@@ -466,6 +469,7 @@ html {
     font-family: "Montserrat-Regular";
 	transition: background ease .3s;
 	background: rgb(220, 80, 70);
+    background: brighten(@primary-color, 10%);
 	border: none;
 	padding: 6px 10px;
 	display: block;
@@ -480,7 +484,7 @@ html {
 }
 
 .contact-text-field:focus, .contact-text-area:focus {
-	background: rgb(200, 60, 50);
+	background: @primary-color;
 }
 
 .contact-text-area {
