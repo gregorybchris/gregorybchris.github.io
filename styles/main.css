@@ -55,6 +55,10 @@
 
 /* ~ ~ ~ ~ ~ ~ ~ Layout ~ ~ ~ ~ ~ ~ ~ */
 
+html {
+    overflow-x: hidden;
+}
+
 #page {
     min-width: 700px;
 }
