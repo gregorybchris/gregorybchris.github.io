@@ -3,7 +3,5 @@ $(".songs").each(function() {
 });
 
 $(".chords-section-title").click(function () {
-    var header = $(this);
-    var songs = header.next();
-    songs.slideToggle(400);
+    $(this).next().slideToggle(400);
 });
