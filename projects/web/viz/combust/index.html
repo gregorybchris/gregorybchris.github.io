@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script lang="javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script lang="javascript" src="js/d3.min.js"></script>
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+		var dimension = 500;
+
+		var svg = d3.select('body').append('svg')
+			.attr('width', dimension)
+			.attr('height', dimension)
+			.style('background-color', 'black');
+
+		// YOUR CODE SHOULD START HERE
+		/*
+		 * Name: CHRIS GREGORY
+		 * Word: COMBUST
+		 */
+		// ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+		// ~ ~ ~ COLOR CONSTANTS ~ ~ ~
+		const BACKGROUND_COLOR = { r: 70, g: 70, b: 85 };
+		const TORCH_COLOR = { r: 142, g: 64, b: 20 };
+		const FIRE_COLORS = [
+			{ r: 238, g: 68, b: 34 },
+			{ r: 238, g: 78, b: 34 },
+			{ r: 238, g: 92, b: 34 }
+		];
+		const DARK_FIRE_COLOR = { r: 158, g: 30, b: 24 };
+		const SMOKE_COLORS = [
+			{ r: 130, g: 130, b: 130 },
+			{ r: 110, g: 110, b: 110 },
+			{ r: 80, g: 80, b: 80 },
+			{ r: 70, g: 70, b: 70 }
+		];
+
+		// ~ ~ ~ GEOMETRY CONSTANTS ~ ~ ~
+		const TORCH_TOP = { x: 50, y: 60, r: 5 };
+		const TORCH_BOTTOM = { x: 50, y: 95, r: 2.8 };
+
+		// ~ ~ ~ OTHER CONSTANTS ~ ~ ~
+		const LOOP_DELAY = 50;
+		const FIRE_INTENSITY = 5;
+		const TOGGLE_BACKGROUND = true;
+
+		// ~ ~ ~ COMBUST CODE ~ ~ ~
+
+		var scalV = d3.scaleLinear().domain([0, 100]).range([0, dimension]);
+		var scaleCircle = (c) => ({ x: scalV(c.x), y: scalV(c.y), r: scalV(c.r) });
+		var scalePoint = (p) => ({ x: scalV(p.x), y: scalV(p.y) });
+
+		var colToStr = function(c) {
+			return "rgb(" + c.r + ", " + c.g + ", " + c.b + ")";
+		};
+
+		svg.style("background-color", "transparent");
+
+		var backgroundCircle = svg.append("circle")
+			.style("fill", colToStr(BACKGROUND_COLOR))
+			.attr("r", dimension * 0.4)
+			.attr("cx", dimension * 0.5)
+			.attr("cy", dimension * 0.5);
+
+		if (!TOGGLE_BACKGROUND)
+			backgroundCircle.attr("fill-opacity", 0);
+
+		svg.append("circle")
+			.style("fill", colToStr(TORCH_COLOR))
+			.attr("r", scalV(TORCH_TOP.r))
+			.attr("cx", scalV(TORCH_TOP.x))
+			.attr("cy", scalV(TORCH_TOP.y));
+
+		svg.append("circle")
+			.style("fill", colToStr(TORCH_COLOR))
+			.attr("r", scalV(TORCH_BOTTOM.r))
+			.attr("cx", scalV(TORCH_BOTTOM.x))
+			.attr("cy", scalV(TORCH_BOTTOM.y));
+
+		var torchBodyPoints = [
+			{ x: TORCH_TOP.x + TORCH_TOP.r, y: TORCH_TOP.y },
+			{ x: TORCH_TOP.x - TORCH_TOP.r, y: TORCH_TOP.y },
+			{ x: TORCH_BOTTOM.x - TORCH_BOTTOM.r, y: TORCH_BOTTOM.y },
+			{ x: TORCH_BOTTOM.x + TORCH_BOTTOM.r, y: TORCH_BOTTOM.y }
+		].map(scalePoint);
+
+		svg.selectAll("polygon")
+			.data([torchBodyPoints])
+			.enter().append("polygon")
+			.attr("points", (pts) => pts.map((pt) => pt.x + "," + pt.y).join(" "))
+			.attr("fill", colToStr(TORCH_COLOR));
+
+		var mouseIsDown = false;
+
+		svg.on("mouseup", function(evt) {
+			mouseIsDown = false;
+		});
+
+		svg.on("mousedown", function(evt) {
+			mouseIsDown = true;
+		});
+
+		// https://stackoverflow.com/questions/25582882/javascript-math-random-normal-distribution-gaussian-bell-curve
+		var rand = function(m, s) {
+	    var u = 0, v = 0;
+	    while (u === 0)
+				u = Math.random();
+	    while (v === 0)
+				v = Math.random();
+	    return m + s * Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+		};
+
+		var particles = [];
+		var createNewParticles = function() {
+			if (mouseIsDown) {
+				for (var i = 0; i < FIRE_INTENSITY; i++)
+					createParticle();
+			}
+		};
+
+		var smokeColorStrings = SMOKE_COLORS.map(colToStr);
+		var updateParticles = function() {
+			particles.forEach(function(p, i, arr) {
+				var r = parseFloat(p.attr("r"));
+				var x = parseFloat(p.attr("cx"));
+				var y = parseFloat(p.attr("cy"));
+				var newR, newX, newY;
+				if (smokeColorStrings.includes(p.style("fill"))) {
+					newR = r * 1.2;
+					newX = x + scalV(rand(0, 2.2));
+					newY = y - scalV(4.0);
+				}
+				else {
+					newR = r * 0.8;
+					newX = x;
+					newY = y - scalV(2.3);
+				}
+				p.attr("r", newR)
+					.attr("cx", newX)
+					.attr("cy", newY);
+				if (newY < 0) {
+					arr.splice(i, 1);
+					p.remove();
+				}
+				if (r < scalV(0.5)) {
+					var color = SMOKE_COLORS[Math.floor(Math.random() * SMOKE_COLORS.length)];
+					p.style("fill", colToStr(color));
+				}
+			});
+		};
+
+		var updateBackgroundColor = function() {
+			var rComp = BACKGROUND_COLOR.r + particles.length / 3;
+			if (rComp > 255)
+				rComp = 255;
+			var newBackground = "rgb(" + rComp + ", " +
+				BACKGROUND_COLOR.g + ", " + BACKGROUND_COLOR.b + ")";
+			var backgroundDelay = 200;
+			backgroundCircle.transition()
+				.duration(backgroundDelay)
+				.style("fill", newBackground);
+		};
+
+		var createParticle = function() {
+			var x = rand(TORCH_TOP.x, 3);
+			var y = rand(TORCH_TOP.y, 3);
+			var color = FIRE_COLORS[Math.floor(Math.random() * FIRE_COLORS.length)];
+			var newParticle = svg.append("circle")
+		    .style("fill", colToStr(color))
+		    .attr("r", scalV(Math.abs(rand(6, 1))))
+		    .attr("cx", scalV(x))
+		    .attr("cy", scalV(y));
+
+			newParticle.transition()
+				.delay(100)
+				.duration(400)
+				.style("fill", colToStr(DARK_FIRE_COLOR));
+
+			particles.push(newParticle);
+		};
+
+		// Start the update loop
+		var running = true;
+		var loop = function() {
+			createNewParticles();
+			updateParticles();
+			updateBackgroundColor();
+			updateBackgroundColor();
+			setTimeout(function() {
+				if (running)
+					loop();
+			}, LOOP_DELAY);
+		};
+		loop();
+
+		// Pause with P key
+		document.addEventListener("keypress", (event) => {
+		  var key = event.key;
+			if (key == "p" && running === true)
+				running = false;
+			else {
+				running = true;
+				loop();
+			}
+		});
+
+		// YOUR CODE SHOULD END HERE
+	</script>
+</body>
+</html>
