@@ -1,34 +1,218 @@
-/**
- * Demo Class
- */
-var Demo = function() {
-    var WELCOME_STEP = 0;
-    var CREATION_STEP = 1;
-    var GROUPING_STEP = 2;
-    var GRAHAM_SCAN_STEP = 3;
-    var JARVIS_MARCH_STEP = 4;
-    var COMPLETED_HULL_STEP = 5;
+import { Plane } from "./plane.js";
+import { Cascade } from "./cascade.js";
+import { Config } from "./config.js";
+import { makeConvexLayers } from "./geometry.js";
 
-    var step = WELCOME_STEP;
-    var animating = false;
-    var config;
-    var graphics;
-    init();
+export class Demo {
+    constructor() {
+        this.WELCOME_STEP = 0;
+        this.POPULATE_STEP = 1;
+        this.HULL_STEP = 2;
+        this.LIST_BUILD_STEP = 3;
+        this.QUERY_STEP = 4;
 
-    /**
-     * Acts as a constructor for the Demo class
-     */
-    function init() {
-        graphics = new Graphics("#graphics");
-        resetConfig();
-        setFocus();
-        updateDemoText();
+        this.MIN_POINTS = 10;
+
+        this.config = new Config();
+        this.graphicsContainer = document.getElementById("graphics");
+        this.svg = d3.select(this.graphicsContainer);
+        this.createGraphicsPanels();
+        this.colors = ["#c0392b", "#d95A06", "#f1c40f", "#27ae60", "#1abc9c", "#2980b9", "#8e44ad", "#e84393"];
     }
 
-    /**
-     * Resets the instatance fields to replay the demo
-     */
-    function restartDemo() {
+    createGraphicsPanels() {
+        let [w, h] = this.getGraphicsDimensions();
+        let planeSVG = this.svg.append("svg")
+            .attr("id", "plane")
+            .attr("width", w)
+            .attr("height", h);
+        this.plane = new Plane(planeSVG, this.config);
+        let cascadeSVG = planeSVG.append("svg")
+            .attr("id", "cascade")
+            .attr("width", w)
+            .attr("height", h);
+        this.cascade = new Cascade(cascadeSVG, this.config);
+        this.render();
+        console.log("Demo Config", this.config);
+    }
+
+    run() {
+        this.updateText();
+        this.setFocus();
+    }
+
+    setFocus() {
+        hotkeys("space,r,p", (event, handler) => this.onKeyPress(handler.key));
+        window.addEventListener("resize", this.render.bind(this));
+    }
+
+    getGraphicsDimensions() {
+        let graphicsWidth = this.graphicsContainer.clientWidth;
+        let graphicsHeight = this.graphicsContainer.clientHeight;
+        return [graphicsWidth, graphicsHeight];
+    }
+
+    render() {
+        // console.log("Demo Render");
+        let [width, height] = this.getGraphicsDimensions();
+        let planeSVG = this.plane.getSVG();
+        planeSVG.attr("width", width)
+            .attr("height", height)
+            .style("background-color", "transparent");
+        this.plane.render();
+        this.cascade.render();
+    }
+
+    onKeyPress(key) {
+        if (key == "space")
+            this.nextStep();
+        else if (key == "r")
+            this.restart();
+        else if (key == "p")
+            this.plane.drawRandomPoint();
+    }
+
+    nextStep() {
+        let step = this.config.getStep();
+        let points = this.config.getPoints();
+        if (step == this.POPULATE_STEP && points.length < this.MIN_POINTS) {
+            swal("Wait!", "You must add at least " + this.MIN_POINTS +
+                " points to use this demo.");
+        }
+        else if (step < this.QUERY_STEP) {
+            this.config.setStep(step + 1);
+            step++;
+            this.updateText();
+
+            if (step == this.WELCOME_STEP)
+                this.runWelcomeStep();
+            else if (step == this.POPULATE_STEP)
+                this.runPopulateStep();
+            else if (step == this.HULL_STEP)
+                this.runHullStep();
+            else if (step == this.LIST_BUILD_STEP)
+                this.runListBuildStep();
+            else if (step == this.QUERY_STEP)
+                this.runQueryStep();
+        }
+        else {
+            this.restart();
+        }
+    }
+
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+    // WELCOME_STEP
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+    runWelcomeStep() {}
+
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+    // POPULATE_STEP
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+    runPopulateStep() {
+        console.log("Run Populate Step");
+        this.plane.setEditable(true);
+    }
+
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+    // HULL_STEP
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+    runHullStep() {
+        console.log("Run Hull Step");
+        this.plane.setEditable(false);
+        let points = this.config.getPoints();
+        let convexLayers = makeConvexLayers(points);
+        this.config.setConvexLayers(convexLayers);
+        let edgeLayers = this.convexLayersToEdgeLayers(convexLayers);
+        this.config.setEdgeLayers(edgeLayers);
+        console.log("Edge Layers: ", edgeLayers);
+    }
+
+    convexLayersToEdgeLayers(convexLayers) {
+        //TODO: Handle case with only one point in layer!!!
+        //TODO: Handle case where two lines are added when there are just two points in the innermost convex hull
+        let edgeLayers = [];
+        let strokeWidth = 5;
+        convexLayers.forEach(function(convexLayer, layerNumber) {
+            let color = this.colors[layerNumber % this.colors.length];
+            let edgeLayer = [];
+            for (var i = 0; i < convexLayer.length - 1; i++) {
+                let pt1 = convexLayer[i], pt2 = convexLayer[i + 1];
+                let newEdge = this.createEdge(pt1, pt2, color, strokeWidth);
+                edgeLayer.push(newEdge);
+            }
+            let pt1 = convexLayer[convexLayer.length - 1], pt2 = convexLayer[0];
+            let lastEdge = this.createEdge(pt1, pt2, color, strokeWidth);
+            edgeLayer.push(lastEdge);
+            edgeLayers.push(edgeLayer);
+        }.bind(this));
+        return edgeLayers;
+    }
+
+    createEdge(pt1, pt2, color, strokeWidth) {
+        let getX = pt => parseFloat(pt.attr("cx"));
+        let getY = pt => parseFloat(pt.attr("cy"));
+        let x1 = getX(pt1), x2 = getX(pt2), y1 = getY(pt1), y2 = getY(pt2);
+        let edge = this.plane.drawEdge(x1, y1, x1, y1, color, strokeWidth);
+        let pointSize = parseInt(pt1.attr("r"));
+        let edgeData = { start: pt1, end: pt2, color: color, pointSize: pointSize };
+        edge.datum(edgeData);
+        edge.transition()
+            .duration(1200)
+            .attr("x2", x2)
+            .attr("y2", y2);
+        this.addListenersToEdge(edge);
+        return edge;
+    }
+
+    addListenersToEdge(edge) {
+        edge.on("mouseover", function() {
+            edge.attr("stroke", "#FFF");
+            let edgeData = edge.datum();
+            //TODO: figure out why point radius freaks out when transitioning
+            // one edge then the edge next to it
+
+            // edgeData.start.transition()
+            //     .duration(300)
+            //     .attr("r", Math.round(edgeData.pointSize * 2));
+            // edgeData.end.transition()
+            //     .duration(300)
+            //     .attr("r", Math.round(edgeData.pointSize * 2));
+        });
+        edge.on("mouseout", function() {
+            edge.attr("stroke", edge.attr("default-stroke"));
+            let edgeData = edge.datum();
+            // edgeData.start.transition()
+            //     .duration(300)
+            //     .attr("r", edgeData.pointSize);
+            // edgeData.end.transition()
+            //     .duration(300)
+            //     .attr("r", edgeData.pointSize);
+        });
+    }
+
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+    // LIST_BUILD_STEP
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+    runListBuildStep() {
+        console.log("Run List Build Step");
+
+        this.plane.reduceSize();
+        this.cascade.drawTables();
+    }
+
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+    // QUERY_STEP
+    // ~ ~ ~ ~ ~ ~ ~ ~ ~
+
+    runQueryStep() {
+        console.log("Run Query Step");
+    }
+
+    restart() {
         swal({
                 title: "Really?",
                 text: "This will restart the demo",
@@ -36,527 +220,20 @@ var Demo = function() {
                 confirmButtonText: "Yes, restart",
             },
             function() {
-                graphics.clearAll();
-                resetConfig();
-                $("#graphics").off("click");
-                unbind("p");
-                step = 0;
-                updateDemoText();
-            }
+                this.config.reset();
+                this.svg.selectAll("*").remove();
+                this.createGraphicsPanels();
+                this.updateText();
+                this.render();
+            }.bind(this)
         );
     }
 
-    /**
-     * Sets the initial demo configuration values
-     */
-    function resetConfig() {
-        config = {
-            m: 5,
-            points: [],
-            groups: [],
-            groupHulls: [],
-            groupHullLines: [],
-            superHull: [],
-            superHullLines: [],
-            fullHull: false
-        };
+    updateText() {
+        $(".explanation-section")
+            .fadeOut(100)
+            .promise()
+            .done(() => $(".explanation-section[data-step='" +
+                this.config.getStep() + "']").fadeIn(500));
     }
-
-    /**
-     * Toggles the animating flag to signal whether graphics are animating
-     */
-    function toggleAnimating() {
-        if (animating) {
-            $(".nav-button").removeClass("disabled");
-        }
-        else {
-            $(".nav-button").addClass("disabled");
-        }
-        animating = !animating;
-    }
-
-    /**
-     * Updates the explanation on the screen associated with a step in the demo
-     */
-    function updateDemoText() {
-        $(".explanation-section").fadeOut(100).promise().done(function() {
-            $(".explanation-section[data-step='" + step + "']").fadeIn(500);
-        });
-
-        // $("#explanation-" + step).show();
-        $("#step").html(step);
-    }
-
-    /**
-     * Replays a step in the demo
-     */
-    function replayStep() {
-
-    }
-
-    /**
-     * Moves to the next step in the demo
-     */
-    function nextStep() {
-        function moveOn(stepRunner) {
-            step++;
-            updateDemoText();
-            stepRunner();
-        }
-
-        if (step == WELCOME_STEP)
-            moveOn(runCreationStep);
-        else if (step == CREATION_STEP)
-            // endCreationStep(function() { moveOn(runGroupingStep); });
-            endCreationStep(function() { swal("Unimplemented", "Sorry, not done yet"); });
-        else if (step == GROUPING_STEP)
-            moveOn(runGrahamScanStep);
-        else if (step == GRAHAM_SCAN_STEP)
-            moveOn(runJarvisMarchStep);
-        else if (step == JARVIS_MARCH_STEP)
-            moveOn(runCompletedHullStep);
-        else if (step == COMPLETED_HULL_STEP)
-            restartDemo();
-    }
-
-    /**
-     * Runs the point creation step
-     */
-    function runCreationStep() {
-        function drawRandomPoint() {
-            function crand(min, max, bias, influence) {
-                var rnd = Math.random() * (max - min) + min;
-                var mix = Math.random() * influence;
-                return rnd * (1 - mix) + bias * mix;
-            }
-            var width = graphics.getWidth();
-            var height = graphics.getHeight();
-            var influence = 0.7;
-            var xBias = width / 2, yBias = height / 2;
-            var xMin = width * 0.05, xMax = width - xMin;
-            var yMin = height * 0.05, yMax = height - yMin;
-            var x = crand(xMin, xMax, xBias, influence);
-            var y = crand(yMin, yMax, yBias, influence);
-            return graphics.putPoint(x, y);
-        }
-
-        graphics.setColor("#AAA");
-        graphics.setTransition(250);
-
-        $("#graphics").on("click", function() {
-            var point = graphics.putPoint(event.offsetX, event.offsetY);
-            config.points.push(point);
-        });
-
-        hotkeys("p", function(event, handler) {
-            var point = drawRandomPoint();
-            config.points.push(point);
-        });
-    }
-
-    /**
-     * Runs after the creation step is complete to see if there are enough points
-     */
-    function endCreationStep(success) {
-        if (config.points.length < 10)
-            swal("Wait!", "Please add more points before continuing");
-        else {
-            $("#graphics").off("click");
-            unbind("p");
-            success();
-            console.log(config);
-        }
-    }
-
-    /**
-     * Runs the point grouping step
-     */
-    function runGroupingStep() {
-        var groupColors = ["#1abc9c", "#3498db", "#9b59b6", "#2ecc71",
-                            "#f1c40f", "#e67e22", "#e74c3c",
-                            "#16a085", "#27ae60", "#2980b9", "#8e44ad",
-                            "#f39c12", "#d35400","#c0392b"];
-
-        toggleAnimating();
-        var currentGroup = [];
-        config.points.forEach(function(point) {
-            // Erase old, ungrouped point
-            graphics.setTransition(0);
-            if (currentGroup.length == config.m - 1)
-                graphics.setDelay(40);
-            else
-                graphics.setDelay(0);
-            graphics.erasePoint(point);
-
-            // Get the group color
-            var groupID = config.groups.length;
-            var pointColor = groupColors[groupID % groupColors.length];
-            graphics.setColor(pointColor);
-
-            // Add the new, grouped point
-            graphics.setDelay(0);
-            graphics.setTransition(0);
-            var x = point.getX();
-            var y = point.getY();
-            var coloredPoint = graphics.drawPoint(x, y);
-            currentGroup.push(coloredPoint);
-
-            // Change groups when group is filled
-            if (currentGroup.length == config.m) {
-                config.groups.push(currentGroup);
-                currentGroup = [];
-            }
-        }, currentGroup);
-        if (currentGroup.length != 0)
-            config.groups.push(currentGroup);
-        graphics.whenDone(toggleAnimating);
-    }
-
-    /**
-     * Returns 1 for a left turn, -1 for right, and 0 for straight
-     */
-    function turn(p1, p2, p3) {
-        var x1 = p1.getX(), x2 = p2.getX(), x3 = p3.getX();
-        var y1 = p1.getY(), y2 = p2.getY(), y3 = p3.getY();
-        var v = (x2 - x1) * (y3 - y1) - (x3 - x1) * (y2 - y1);
-        if (v > 0) return 1;
-        else if (v < 0) return -1;
-        else return 0;
-    }
-
-    /**
-     * Returns the square of the distance between two D3 points
-     */
-    function sqDist(p1, p2) {
-        var x1 = p1.getX(), x2 = p2.getX();
-        var y1 = p1.getY(), y2 = p2.getY();
-        return (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
-    }
-
-    /**
-     * Runs the Graham Scan step
-     */
-    function runGrahamScanStep() {
-        toggleAnimating();
-
-        // Make copy groups of points
-        var newGroups = config.groups.map(function(group) {
-            return group.slice();
-        });
-
-        // Run Graham Scan on each group
-        newGroups.forEach(function(group) {
-            if (group.length == 1) {
-                config.groupHulls.push(group);
-                config.groupHullLines.push([]);
-                return;
-            }
-            //Find the point with minimum x value
-            var groupXSorted = group.sort(function(p1, p2) {
-                return p1.getX() > p2.getX() ? 1 : -1;
-            });
-            var minPoint = groupXSorted.shift();
-
-            // Sort all points radially from the minimum x point
-            var groupPolarSorted = groupXSorted.sort(function(p1, p2) {
-                var turnVal = turn(minPoint, p1, p2);
-                if (turnVal == 0)
-                    return sqDist(minPoint, p1) > sqDist(minPoint, p2) ? 1 : -1;
-                else
-                    return turnVal;
-            });
-
-            var groupColor = minPoint.getColor();
-            graphics.setColor(groupColor);
-            graphics.setTransition(30);
-
-            var lineStack = [];
-            var pointStack = [];
-            pointStack.push(minPoint);
-            var firstPolarSorted = groupPolarSorted.shift();
-            pointStack.push(firstPolarSorted);
-            graphics.setDelay(100);
-            graphics.setStroke(3);
-            var firstLine = graphics.drawLineFromPoints(minPoint, firstPolarSorted);
-            lineStack.push(firstLine);
-            groupPolarSorted.push(minPoint);
-            graphics.setDelay(0);
-
-            // Wrap around the group to find the convex hull
-            for (var pointIndex = 0; pointIndex < groupPolarSorted.length; pointIndex++) {
-                var point = groupPolarSorted[pointIndex];
-                // Remove enough points from the hull to maintain convexity
-                var turnVal = 1;
-                while (turnVal > 0 && pointStack.length >= 2) {
-                    var p1 = pointStack[pointStack.length - 2];
-                    var p2 = pointStack[pointStack.length - 1];
-                    turnVal = turn(p1, p2, point);
-                    if (turnVal > 0) {
-                        pointStack.pop();
-                        var oldLine = lineStack.pop();
-                        graphics.eraseLine(oldLine);
-                    }
-                }
-                // Add the line for the current point
-                var lastPoint = pointStack[pointStack.length - 1];
-                var nextLine = graphics.drawLineFromPoints(lastPoint, point);
-                lineStack.push(nextLine);
-                pointStack.push(point);
-            }
-
-            // Add the points (and lines) remaining in the stack to the list of hulls
-            pointStack.pop();
-            config.groupHulls.push(pointStack);
-            config.groupHullLines.push(lineStack);
-        });
-        graphics.whenDone(toggleAnimating);
-    }
-
-    /**
-     * Runs the Jarvis March step
-     */
-    function runJarvisMarchStep() {
-        toggleAnimating();
-        // Make a copy of the group hulls to work with
-        var newHulls = config.groupHulls.map(function(hull) {
-            return hull.slice();
-        });
-
-        graphics.setColor("#FFF");
-        graphics.setStroke(3);
-        graphics.setTransition(30);
-        graphics.setDelay(0);
-
-        // Check to see if there is just 1 hull and no tangents to find
-        if (newHulls.length == 1) {
-            var hull = newHulls[0];
-            for (var hullIndex = 0; hullIndex < hull.length; hullIndex++) {
-                var pointA = hull[hullIndex];
-                var pointB = hull[(hullIndex + 1) % hull.length];
-                var nextLine = graphics.drawLineFromPoints(pointA, pointB);
-                config.superHull.push(pointA);
-                config.superHullLines.push(nextLine);
-            }
-            config.fullHull = true;
-            graphics.whenDone(toggleAnimating);
-            return;
-        }
-
-        // Find the x-minimum point from all hulls and it's hull
-        var leftHullIndex = 0;
-        var leftPointIndex = 0;
-        for (var hullIndex = 0; hullIndex < newHulls.length; hullIndex++) {
-            var hull = newHulls[hullIndex];
-            for (var hullPointIndex = 0; hullPointIndex < hull.length; hullPointIndex++) {
-                var hullPoint = hull[hullPointIndex];
-                var leftHullPoint = newHulls[leftHullIndex][leftPointIndex];
-                if (hullPoint.getX() < leftHullPoint.getX()) {
-                    leftHullIndex = hullIndex;
-                    leftPointIndex = hullPointIndex;
-                }
-            }
-        }
-
-        // Redefine modulus to always return positive
-        function mod(x, y) {
-            return ((x % y) + y) % y;
-        }
-
-        var superHullHullIndices = [];
-        var superHullPointIndices = [];
-        var superHullLines = [];
-        var currentHullIndex = leftHullIndex;
-        var currentPointIndex = leftPointIndex;
-
-        // Perform up to m giftwrapping iterations
-        while (superHullPointIndices.length < config.m && !config.fullHull) {
-            var currentPoint = newHulls[currentHullIndex][currentPointIndex];
-            var nextTangentHullIndex = 0;
-            var nextTangentPointIndex = 0;
-            var nextTangentLine = undefined;
-
-            // Calculate tangents to each of the group hulls that do not contain
-            //  the current point from which we are searching
-            newHulls.forEach(function(hull, hullIndex) {
-                // Skip over current group hull
-                if (hullIndex != currentHullIndex) {
-                    var startIndex = 0;
-                    var endIndex = hull.length;
-                    var tangentPointIndex;
-                    var tangentLine;
-
-                    var turnStartPrev = turn(currentPoint, hull[startIndex], hull[endIndex - 1]);
-                    var turnStartNext = turn(currentPoint, hull[startIndex], hull[mod(1, endIndex)]);
-                    // Binary search on group convex hull for the tangent point
-                    while (startIndex < endIndex) {
-                        tangentPointIndex = Math.floor((startIndex + endIndex) / 2);
-                        var tangentPoint = hull[tangentPointIndex];
-                        var prevPoint = hull[mod(tangentPointIndex - 1, hull.length)];
-                        var nextPoint = hull[mod(tangentPointIndex + 1, hull.length)];
-                        var turnTangent = turn(currentPoint, hull[startIndex], tangentPoint);
-                        var turnPrev = turn(currentPoint, tangentPoint, prevPoint);
-                        var turnNext = turn(currentPoint, tangentPoint, nextPoint);
-
-                        var testLine = graphics.drawLineFromPoints(currentPoint, tangentPoint);
-
-                        // Test three cases of potential tangent line piercing convex hull
-                        if (turnPrev <= 0 && turnNext <= 0) {
-                            tangentLine = testLine;
-                            break;
-                        }
-                        else if ((turnTangent < 0 &&
-                            (turnStartNext > 0 || turnStartPrev == turnStartNext)) ||
-                            (turnTangent > 0 && turnPrev > 0)) {
-                            endIndex = tangentPointIndex;
-                            graphics.eraseLine(testLine);
-                        }
-                        else {
-                            startIndex = tangentPointIndex + 1;
-                            turnStartPrev = -1 * turnNext;
-                            turnStartNext = turn(currentPoint, hull[startIndex], hull[mod(startIndex + 1, hull.length)]);
-                            graphics.eraseLine(testLine);
-                        }
-                    }
-
-                    // Test if the current hull tangent line is the most extreme tangent found
-                    //      for this iteration of gift wrapping
-                    var tangentPoint = hull[tangentPointIndex];
-                    var currentBestTangentPoint = newHulls[nextTangentHullIndex][nextTangentPointIndex];
-                    if (turn(currentPoint, currentBestTangentPoint, tangentPoint) > 0 || nextTangentLine === undefined) {
-                        if (nextTangentLine !== undefined)
-                            graphics.eraseLine(nextTangentLine);
-                        nextTangentHullIndex = hullIndex;
-                        nextTangentPointIndex = tangentPointIndex;
-                        nextTangentLine = tangentLine;
-                    }
-                    else
-                        graphics.eraseLine(tangentLine);
-                }
-            });
-
-            // Test if the extreme tangent found is less extreme than the next
-            //      point on the current group's convex hull
-            var currentBestTangentPoint = newHulls[nextTangentHullIndex][nextTangentPointIndex];
-            var currentHull = newHulls[currentHullIndex];
-            var nextPointIndex = (currentPointIndex + 1) % currentHull.length;
-            var currentHullNextPoint = currentHull[nextPointIndex];
-            if (turn(currentPoint, currentBestTangentPoint, currentHullNextPoint) > 0) {
-                graphics.eraseLine(nextTangentLine);
-                nextTangentLine = graphics.drawLineFromPoints(currentPoint, currentHullNextPoint);
-                nextTangentHullIndex = currentHullIndex;
-                nextTangentPointIndex = nextPointIndex;
-            }
-
-            // Check if we completed the hull early (only has 3 or 4 points)
-            if (superHullHullIndices[0] == nextTangentHullIndex &&
-                    superHullPointIndices[0] == nextTangentPointIndex) {
-                config.fullHull = true;
-            }
-
-            // Save off current results for the overall convex hull
-            superHullHullIndices.push(nextTangentHullIndex);
-            superHullPointIndices.push(nextTangentPointIndex);
-            superHullLines.push(nextTangentLine);
-            config.superHull.push(newHulls[nextTangentHullIndex][nextTangentPointIndex]);
-            config.superHullLines.push(nextTangentLine);
-            currentHullIndex = nextTangentHullIndex;
-            currentPointIndex = nextTangentPointIndex;
-        }
-
-        graphics.whenDone(toggleAnimating);
-    }
-
-    /**
-     * Runs the step that completes the convex hull with Jarvis March
-     */
-    function runCompletedHullStep() {
-        toggleAnimating();
-
-        for (var t = 2; t >= 0; t++) {
-            graphics.whenDone(function() {
-                config.m = Math.pow(2, Math.pow(2, t));
-                console.log("Iteration: ", "t=" + t + ", m=" + config.m);
-
-                graphics.clearAllQueued();
-                graphics.whenDone(function() {
-                    config.groups = [];
-                    config.groupHulls = [];
-                    config.groupHullLines = [];
-                    config.superHull = [];
-                    config.superHullLines = [];
-                });
-
-                // Add new gray points to the screen
-                var newPoints = [];
-                config.points.forEach(function(point) {
-                    var x = point.getX(), y = point.getY();
-                    var newPoint = graphics.drawPoint(x, y);
-                    newPoints.push(newPoint);
-                });
-                config.points = newPoints;
-
-                runGroupingStep();
-                runGrahamScanStep();
-                runJarvisMarchStep();
-            });
-
-            if (config.fullHull)
-                break;
-        }
-        //
-        // config.groupHullLines.forEach(function(groupHull) {
-        //     groupHull.forEach(function(line) {
-        //         graphics.setTransition(50);
-        //         graphics.eraseLine(line);
-        //     });
-        // });
-        //
-        // config.points.forEach(function(point) {
-        //     var x = point.getX(), y = point.getY();
-        //     graphics.setColor("#AAA");
-        //     graphics.setTransition(0);
-        //     var newPoint = graphics.drawPoint(x, y);
-        // });
-
-        graphics.whenDone(toggleAnimating);
-    }
-
-    /**
-     * Adds key and mouse listeners to the screen
-     */
-    function setFocus() {
-        hotkeys("space,r", function(event, handler) { onKeyPress(handler.key); });
-        $("#restart-button").on("click", function() { onButtonPress("restart"); });
-        $("#replay-button").on("click", function() { onButtonPress("replay"); });
-        $("#next-button").on("click", function() { onButtonPress("next"); });
-    }
-
-    /**
-     * Handles key press events
-     */
-    function onKeyPress(key) {
-        if (!animating) {
-            if (key == "space")
-                nextStep();
-            else if (key == "r")
-                restartDemo();
-        }
-    }
-
-    /**
-     * Handles button press events
-     */
-    function onButtonPress(button) {
-        if (!animating) {
-            if (button == "restart")
-                restartDemo();
-            else if (button == "replay")
-                replayStep();
-            else if (button == "next")
-                nextStep();
-        }
-    }
-};
-
-// Creates a new demo and runs it
-var demo = new Demo();
+}
