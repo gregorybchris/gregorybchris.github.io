@@ -21,7 +21,7 @@ export class Cascade {
         let edgeLayers = this.config.getEdgeLayers();
 
         let [width, height] = this.getDimensions();
-        width = width / 2;
+        // width = width / 2;
         height = height / 2;
         let margin = { horiz: width * 0.1, vert: height * 0.2 };
         let maxLayerSize = Math.max(...(edgeLayers.map(a => a.length)));
@@ -30,15 +30,17 @@ export class Cascade {
         let bandwidth = Math.min(xBandwidth, yBandwidth);
         let boxPadding = 2;
 
-        let cascadeListsSVG = this.svg.append("g").attr("id", "cascadeLists");
+        d3.select("#cascade-lists").remove();
+        let cascadeListsSVG = this.svg.append("g").attr("id", "cascade-lists");
         let boxes = cascadeListsSVG.selectAll("g")
             .data(edgeLayers)
             .enter()
-            .append("g").attr("class", "cascadeList")
+            .append("g").attr("class", "cascade-list")
             .selectAll("g")
             .data(d => d)
             .enter()
-            .append("g").attr("class", "cascadeBox")
+            .append("g").attr("class", "cascade-box")
+            // Note: D3 v3 is required here. D3 v4 will not set the j variable in this scope
             .attr("transform", function(d, i, j) {
                 let xTrans = margin.horiz + i * bandwidth + boxPadding;
                 let yTrans = margin.vert + j * bandwidth + boxPadding;
@@ -51,32 +53,39 @@ export class Cascade {
             .duration(1500)
             .style("opacity", 1);
 
-        let boxBackgrounds = boxes.append("rect").attr("class", "cascadeBoxBackground")
+        let boxBackgrounds = boxes.append("rect").attr("class", "cascade-box-background")
             .attr("x", boxPadding)
             .attr("y", boxPadding)
-            .attr("fill", "#5e5e68")
+            .attr("fill", "#424249")
             .attr("rx", 3)
             .attr("ry", 3)
-            .style("fill-opacity", 0.4)
             .attr("width", bandwidth - boxPadding * 2)
             .attr("height", bandwidth - boxPadding * 2)
 
         let getX = pt => parseFloat(pt.attr("cx"));
         let getY = pt => parseFloat(pt.attr("cy"));
         let boxIndicators = boxes.append("line")
-            .each(function(d) {
-                let stroke = d.attr("default-stroke");
+            .each(function(line) {
+                let stroke = line.attr("default-stroke");
                 let c = bandwidth / 2;
                 let r = c * 0.6;
-                let pointData = d.datum();
+                let pointData = line.datum();
                 let pt1 = pointData.start, pt2 = pointData.end;
                 let x1 = getX(pt1), x2 = getX(pt2), y1 = getY(pt1), y2 = getY(pt2);
-                //TODO: Be more careful calculating slope! It could be undefined :(
-                let m = (y2 - y1) / (x2 - x1);
-                let lx1 = c - r / Math.sqrt(1 + m * m), ly1 = c - r * m / Math.sqrt(1 + m * m);
-                let lx2 = c + r / Math.sqrt(1 + m * m), ly2 = c + r * m / Math.sqrt(1 + m * m);
+
+                let lx1, ly1, lx2, ly2;
+                if (x1 == x2) {
+                    lx1 = c, ly1 = c - r;
+                    lx2 = c, ly2 = c + r;
+                }
+                else {
+                    let m = (y2 - y1) / (x2 - x1);
+                    lx1 = c - r / Math.sqrt(1 + m * m), ly1 = c - r * m / Math.sqrt(1 + m * m);
+                    lx2 = c + r / Math.sqrt(1 + m * m), ly2 = c + r * m / Math.sqrt(1 + m * m);
+                }
+
                 d3.select(this).attr({
-                    class: "cascadeBoxIndicator",
+                    class: "cascade-box-indicator",
                     stroke: stroke,
                     "stroke-width": 3,
                     x1: lx1,
@@ -87,26 +96,65 @@ export class Cascade {
                 });
             });
 
+        let toggleLightEdge = this.toggleLightEdge;
+        let toggleLightEdgeBackgrounds = this.toggleLightEdgeBackgrounds;
         boxes.each(function(edge) {
             let box = d3.select(this);
-            let background = box.select(".cascadeBoxBackground");
             let edgeData = edge.datum();
+            edgeData.boxes.push(box);
             box.on("mouseover", function() {
-                background.attr("fill", "#9797a8");
-                edge.attr("stroke", "#FFF");
+                toggleLightEdge(edge, true);
+                toggleLightEdgeBackgrounds(edge, true);
             });
             box.on("mouseout", function() {
-                background.attr("fill", "#5e5e68");
-                edge.attr("stroke", edgeData.color);
+                toggleLightEdge(edge, false);
+                toggleLightEdgeBackgrounds(edge, false);
             });
-        })
+            edge.on("mouseover", function() {
+                toggleLightEdge(edge, true);
+                toggleLightEdgeBackgrounds(edge, true);
+            });
+            edge.on("mouseout", function() {
+                toggleLightEdge(edge, false);
+                toggleLightEdgeBackgrounds(edge, false);
+            });
+        });
+    }
+
+    toggleLightEdge(edge, lit) {
+        let edgeData = edge.datum();
+        let color, endPointOpacity;
+        if (lit) {
+            color = "#AAA";
+            endPointOpacity = 0.5;
+        }
+        else {
+            color = edgeData.color;
+            endPointOpacity = 0;
+        }
+        edge.attr("stroke", color);
+        [edgeData.start, edgeData.end].forEach(function(endPoint) {
+            endPoint.transition().duration(0)
+                .attr("stroke-opacity", endPointOpacity);
+        });
+    }
+
+    toggleLightEdgeBackgrounds(edge, lit) {
+        let edgeData = edge.datum();
+        let color;
+        if (lit) {
+            color = "#5e5e68";
+        }
+        else {
+            color = "#424249";
+        }
+        edgeData.boxes.forEach(function(edgeBox) {
+            edgeBox.select(".cascade-box-background")
+                .attr("fill", color);
+        });
     }
 
     getSVG() {
         return this.svg;
-    }
-
-    render() {
-        // console.log("Cascade render", this.svg);
     }
 }

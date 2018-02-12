@@ -5,12 +5,16 @@ export class Plane {
         this.addMouseListener();
         this.POINTS_CAP = 25;
         this.editable = false;
+        this.queryable = false;
         this.createGraphicsLevels();
     }
 
     createGraphicsLevels() {
         let [w, h] = this.getDimensions();
+        this.queryHalfPlane = this.svg.append("rect")
+            .attr("id", "query-half-plane")
         this.levelsSVG = this.svg.append("g")
+            .attr("id", "levels")
         let edgeLevel = this.levelsSVG.append("g")
             .attr("id", "edges")
             .attr("width", w)
@@ -25,7 +29,7 @@ export class Plane {
     reduceSize() {
         this.levelsSVG.transition()
             .duration(2000)
-            .attr("transform", "translate(200, 320) scale(0.5)");
+            .attr("transform", "translate(200, 320) scale(0.6)");
     }
 
     setEditable(editable) {
@@ -41,23 +45,94 @@ export class Plane {
         this.levels.edges.selectAll("line").remove();
     }
 
-    render() {
-        // console.log("Plane render", this.svg);
-        // console.log("Plane config", this.config);
-    }
-
     addMouseListener() {
         let _this = this;
         this.svg.on("mousedown", function() {
             let [x, y] = d3.mouse(this);
-			_this.drawPoint(x, y);
+            if (_this.editable)
+                _this.drawPoint(x, y);
+            if (_this.queryable)
+                _this.handleQueryEvent("down", [x, y]);
 		});
+        this.svg.on("mouseup", function() {
+            let [x, y] = d3.mouse(this);
+            if (_this.queryable)
+                _this.handleQueryEvent("up", [x, y]);
+        });
+        this.svg.on("mousemove", function() {
+            let [x, y] = d3.mouse(this);
+            if (_this.queryable)
+                _this.handleQueryEvent("move", [x, y]);
+        });
     }
 
     getDimensions() {
         let width = parseFloat(this.svg.attr("width"))
         let height = parseFloat(this.svg.attr("height"))
         return [width, height];
+    }
+
+    handleQueryEvent(action, loc) {
+        let [x, y] = loc;
+        let qs = this.queryState;
+
+        if (action == "down") {
+            qs.mouseDown = true;
+            qs.start = loc;
+            this.queryHalfPlane.transition()
+                .duration(400)
+                .style("fill-opacity", 0);
+            this.svg.append("line")
+                .attr("id", "query-line")
+                .attr("stroke", "#FFF")
+                .attr("stroke-width", 2)
+                .attr("x1", x)
+                .attr("y1", y)
+                .attr("x2", x)
+                .attr("y2", y)
+        }
+        else if (action == "up") {
+            qs.mouseDown = false;
+            let [startX, startY] = qs.start;
+            let angle = Math.atan2(startY - y, x - startX);
+            let r = 200;
+            console.log(angle);
+            this.svg.selectAll("#query-line").remove();
+            this.queryHalfPlane.attr("fill", "#46464b")
+                .attr("x", startX - r)
+                .attr("y", startY - r)
+                .attr("width", r * 2)
+                .attr("height", r * 2)
+                .attr("transform", "rotate(" + this.toDegrees(angle) + "," + x + "," + y + ")")
+                .style("fill-opacity", 0)
+                .transition()
+                .duration(400)
+                .style("fill-opacity", 0.4);
+            this.query(startX, startY, x, y);
+        }
+        else if (action == "move") {
+            if (qs.mouseDown) {
+                d3.select("#query-line")
+                    .attr("x2", x)
+                    .attr("y2", y)
+            }
+        }
+    }
+
+    toDegrees(rads) {
+        return rads / Math.PI * 180;
+    }
+
+    query(x1, y1, x2, y2) {
+        console.log("Query: ", "(" + x1 + ", " + y1 + ") -> (" + x2 + ", " + y2 + ")");
+    }
+
+    allowQueries() {
+        this.queryable = true;
+        this.queryState = {
+            mouseDown: false,
+            start: [0, 0]
+        };
     }
 
     drawPoint(x, y) {
@@ -70,6 +145,9 @@ export class Plane {
                     .attr("cy", y)
                     .attr("r", 0)
                     .attr("name", points.length)
+                    .attr("stroke", "#AAA")
+                    .attr("stroke-width", "8")
+                    .attr("stroke-opacity", "0")
                     .style("fill", "#D5D5D5");
                 points.push(newPoint);
                 newPoint.transition()
@@ -82,7 +160,7 @@ export class Plane {
             }
         }
         else {
-            console.log("Plane editable is " + this.editable);
+            // console.log("Plane editable is " + this.editable);
         }
     }
 
