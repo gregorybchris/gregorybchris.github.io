@@ -93,17 +93,20 @@ export class Plane {
         }
         else if (action == "up") {
             qs.mouseDown = false;
-            let [startX, startY] = qs.start;
-            let angle = Math.atan2(startY - y, x - startX);
-            let r = 200;
-            console.log(angle);
             this.svg.selectAll("#query-line").remove();
+            let [startX, startY] = qs.start;
+            let [endX, endY] = loc;
+            let angleRad = Math.atan2(endY - startY, endX - startX);
+            let angleDeg = this.toDegrees(angleRad);
+            let r = 1000;
+            console.log("Angle of Query (Rad)", angleRad);
+            console.log("Angle of Query (Deg)", angleDeg);
             this.queryHalfPlane.attr("fill", "#46464b")
                 .attr("x", startX - r)
-                .attr("y", startY - r)
+                .attr("y", startY)
                 .attr("width", r * 2)
                 .attr("height", r * 2)
-                .attr("transform", "rotate(" + this.toDegrees(angle) + "," + x + "," + y + ")")
+                .attr("transform", "rotate(" + angleDeg + "," + startX + "," + startY + ")")
                 .style("fill-opacity", 0)
                 .transition()
                 .duration(400)
