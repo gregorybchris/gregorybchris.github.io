@@ -9,6 +9,9 @@ new Vue({
     methods: {
         loadPosts: async function() {
             return fetch(POSTS_FILE).then(response => response.json())
+        },
+        onClickTag: function(tag) {
+            this.filterText = tag
         }
     },
     created: async function() {

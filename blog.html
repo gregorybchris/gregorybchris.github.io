@@ -11,11 +11,17 @@
 
         <div id="blog-app">
             <div class="blog-posts-filter-wrap">
-                <input class="blog-posts-filter-input" v-model="filterText" placeholder="Filter by tag">
+                <input class="blog-posts-filter-input"
+                       placeholder="Filter posts"
+                       v-model="filterText">
             </div>
             
             <div class="blog-posts-wrap">
-                <post v-for="post in posts" v-bind:filter-text="filterText" v-bind:post-content="post" v-bind:key="post.link"></post>
+                <post v-for="post in posts"
+                      v-bind:filter-text="filterText"
+                      v-bind:post-content="post"
+                      v-bind:key="post.link"
+                      v-on:tag-clicked="onClickTag"></post>
             </div>
         </div>
     </body>

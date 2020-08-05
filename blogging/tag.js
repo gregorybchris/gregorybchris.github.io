@@ -3,7 +3,7 @@ Vue.component('tag', {
         tag: String
     },
     template: `
-        <div class="blog-post-tag">
+        <div class="blog-post-tag" v-on:click="$emit('tag-clicked', '#' + tag)">
             #{{ tag }}
         </div>
     `

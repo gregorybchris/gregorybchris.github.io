@@ -20,12 +20,21 @@ Vue.component('post', {
             return null
         },
         enabled: function() {
-            if (this.filterText.length == 0)
+            const filterText = this.filterText
+
+            if (filterText.length == 0)
                 return true
 
-            for (const tag of this.postContent.tags)
-                if (tag.includes(this.filterText))
+            if (this.postContent.title.toLowerCase().includes(filterText))
+                return true
+
+            for (const tag of this.postContent.tags) {
+                if (filterText.startsWith('#') && filterText.substring(1) == tag)
                     return true
+
+                if (tag.includes(filterText))
+                    return true
+            }
             return false
         },
         formattedDate: function() {
@@ -34,6 +43,12 @@ Vue.component('post', {
             const month = date.getMonth() + 1
             const day = date.getDate()
             return `${month}-${day}-${year}`
+        }
+    },
+    methods: {
+        onClickTag: function(tag) {
+            console.log("Clicked tag", tag)
+            this.$emit("tag-clicked", tag)
         }
     },
     template: `
@@ -50,7 +65,7 @@ Vue.component('post', {
             </div>
 
             <div class="blog-post-tags-wrap">
-                <tag v-for="tag in postContent.tags" v-bind:tag="tag"></post>
+                <tag v-for="tag in postContent.tags" v-on:tag-clicked="onClickTag" v-bind:tag="tag"></post>
             </div>
         </div>
     `
