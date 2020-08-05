@@ -27,6 +27,13 @@ Vue.component('post', {
                 if (tag.includes(this.filterText))
                     return true
             return false
+        },
+        formattedDate: function() {
+            let date = new Date(this.postContent.date)
+            const year = date.getFullYear()
+            const month = date.getMonth() + 1
+            const day = date.getDate()
+            return `${month}-${day}-${year}`
         }
     },
     template: `
@@ -35,6 +42,7 @@ Vue.component('post', {
                 <span class="blog-post-title">
                     <a class="blog-post-link" v-bind:href="postContent.link" target="_blank">{{ postContent.title }}</a>
                 </span>
+                <span class="blog-post-date">{{ formattedDate }}</span>
             </div>
 
             <div class="blog-post-thumbnail-wrap">
@@ -44,10 +52,6 @@ Vue.component('post', {
             <div class="blog-post-tags-wrap">
                 <tag v-for="tag in postContent.tags" v-bind:tag="tag"></post>
             </div>
-
-            <!-- Date: {{ postContent.date }} -->
         </div>
     `
 })
-
-{/* <img src="{{ this.thumbnailUrl }}" alt="Link thumbnail unavailable"> */}

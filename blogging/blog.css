@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: "montserrat-regular";
+	src: url("Montserrat/Montserrat-Regular.otf");
+}
+
+@font-face {
 	font-family: "montserrat-bold";
 	src: url("Montserrat/Montserrat-Bold.otf");
 }
@@ -32,6 +37,10 @@
     font-family: montserrat-bold;
 }
 
+.blog-posts-filter-input:focus {
+    background-color: rgb(240, 240, 240);
+}
+
 .blog-post {
     box-sizing: border-box;
     /* background-color: rgb(240, 240, 240); */
@@ -46,17 +55,27 @@
 }
 
 .blog-post-title {
+    display: inline-block;
     font-family: montserrat-bold;
     font-size: 23px;
+    margin-right: 10px;
 }
 
 .blog-post-link {
     text-decoration: none;
     color: rgb(50, 50, 50);
+    transition: 0.2s; 
 }
 
 .blog-post-link:hover {
-    color: rgb(80, 80, 80);
+    color: rgb(100, 100, 100);
+}
+
+.blog-post-date {
+    display: inline-block;
+    font-size: 23px;
+    font-family: montserrat-regular;
+    color: rgb(200, 200, 200);
 }
 
 .blog-post-tags-wrap {
