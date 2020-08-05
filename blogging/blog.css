@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "montserrat-light";
-	src: url("../fonts/Montserrat/Montserrat-Light.otf");
+	src: url("Montserrat/Montserrat-Light.otf");
 }
 
 @font-face {
 	font-family: "montserrat-bold";
-	src: url("../fonts/Montserrat/Montserrat-Bold.otf");
+	src: url("Montserrat/Montserrat-Bold.otf");
 }
 
 .blog-title-wrap {
