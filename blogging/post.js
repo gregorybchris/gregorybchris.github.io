@@ -21,14 +21,18 @@ Vue.component('post', {
         },
         enabled: function() {
             const filterText = this.filterText
+            const postContent = this.postContent
+
+            if (postContent.deleted)
+                return false
 
             if (filterText.length == 0)
                 return true
 
-            if (this.postContent.title.toLowerCase().includes(filterText))
+            if (postContent.title.toLowerCase().includes(filterText))
                 return true
 
-            for (const tag of this.postContent.tags) {
+            for (const tag of postContent.tags) {
                 if (filterText.startsWith('#') && filterText.substring(1) == tag)
                     return true
 

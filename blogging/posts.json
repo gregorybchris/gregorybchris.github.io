@@ -11,7 +11,8 @@
             "innovation",
             "progress",
             "internet"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Dave Harris - Black Boyfriend",
@@ -23,7 +24,8 @@
             "slam",
             "poetry",
             "harris"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Our Greatest Delusion",
@@ -39,7 +41,8 @@
             "nihilism",
             "rocks",
             "life"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Searle, Subjectivity, and Objectivity",
@@ -55,7 +58,8 @@
             "mind",
             "brain",
             "neuroscience"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "My Interview With The Stoics",
@@ -70,7 +74,8 @@
             "death",
             "epicurus",
             "epictetus"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Science of Six Degrees of Separation",
@@ -85,7 +90,8 @@
             "erdos",
             "veritasium",
             "barabasi"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Hugh Herr - New Bionics (TED)",
@@ -100,7 +106,8 @@
             "robotics",
             "engineering",
             "inspirational"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "What is the Heisenberg Uncertainty Principle? - Chad Orzel",
@@ -115,7 +122,8 @@
             "physics",
             "learn",
             "knowledge"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Joshua Foer - Feats of Memory (TED)",
@@ -131,7 +139,8 @@
             "palace",
             "learning",
             "attention"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Kathryn Schulz - On Being Wrong (TED)",
@@ -149,7 +158,8 @@
             "mystery",
             "wonder",
             "growth"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Smarter Every Day - Persistence of Vision",
@@ -168,7 +178,8 @@
             "illusion",
             "perception",
             "lights"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Alex Gendler - Prisoner Hat Riddle (TED Ed)",
@@ -183,7 +194,8 @@
             "problem",
             "aliens",
             "logic"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Devaluation of Music",
@@ -199,7 +211,8 @@
             "industry",
             "songs",
             "composition"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Skewes' Massive Number - Numberphile",
@@ -216,7 +229,8 @@
             "grime",
             "grahams",
             "expectation"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "What If Bears Killed One In Five People?",
@@ -230,7 +244,8 @@
             "itsonus",
             "oneinfive",
             "rape"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Deep Neural Networks Explained",
@@ -244,7 +259,8 @@
             "networks",
             "natandlo",
             "google"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "How Special Relativity Makes Magnets Work",
@@ -261,7 +277,8 @@
             "fields",
             "electricity",
             "science"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "New Zealand Win Men's Double Sculls Final A - London 2012 Olympics",
@@ -277,7 +294,8 @@
             "final",
             "london",
             "2012"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Searle, Subjectivity, and Objectivity",
@@ -293,7 +311,8 @@
             "philosophy",
             "mind",
             "blue"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Koko the Gorilla's Message for World Leaders",
@@ -307,7 +326,8 @@
             "warming",
             "biodiversity",
             "preservation"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "DeepMind Masters Go",
@@ -324,7 +344,8 @@
             "deep",
             "artificial",
             "intelligence"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Science of Sync",
@@ -342,7 +363,8 @@
             "ted",
             "steven",
             "strogatz"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "What Discrimination Looks Like In America",
@@ -357,7 +379,8 @@
             "systemic",
             "racism",
             "blacklivesmatter"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Wonderful and Terrifying Implications of Computers that can Learn",
@@ -375,7 +398,8 @@
             "ai",
             "prediction",
             "machine"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Harnessing the Bioelectric Potential of Cells for Regeneration",
@@ -394,7 +418,8 @@
             "systems",
             "science",
             "research"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "America's Gun Problem",
@@ -411,7 +436,8 @@
             "firearms",
             "guns",
             "shootings"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Ten Ways to Have a Better Conversation",
@@ -428,7 +454,8 @@
             "headlee",
             "interview",
             "social"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "A Visual Introduction to Machine Learning",
@@ -446,7 +473,8 @@
             "tree",
             "home",
             "statistics"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Daniel Dennett Explains Consciousness and Free Will",
@@ -463,7 +491,8 @@
             "psychology",
             "neuroscience",
             "intelligence"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Stanford Sexual Assault Victim's Letter",
@@ -478,7 +507,8 @@
             "sexual",
             "assault",
             "alcohol"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Is Most Published Research Wrong?",
@@ -495,7 +525,8 @@
             "p-hacking",
             "science",
             "bias"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "How Brain Science Changes Computing",
@@ -508,7 +539,8 @@
             "brain",
             "ted",
             "neuro"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Sam Harris Roasts Trump",
@@ -525,7 +557,8 @@
             "clinton",
             "foreign",
             "policy"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Sam Harris - The AI Alignment Problem (TED Ed)",
@@ -541,7 +574,8 @@
             "neuroscience",
             "philosophy",
             "robots"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Do Cause and Effect Exist?",
@@ -557,7 +591,8 @@
             "time",
             "record",
             "prediction"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Waking Up #56 - Abusing Dolores (Paul Bloom)",
@@ -573,7 +608,8 @@
             "reason",
             "ai",
             "ethics"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "Weird Surface Tension - Sixty Symbols",
@@ -589,7 +625,8 @@
             "emergent",
             "properties",
             "science"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Simple Solution to Traffic",
@@ -603,7 +640,8 @@
             "traffic",
             "cgp grey",
             "emergence"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Yaron Brook - Equal is Unfair",
@@ -619,7 +657,8 @@
             "equal",
             "unfair",
             "liberalism"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Jazz Reharmonization",
@@ -631,7 +670,8 @@
             "reharmonization",
             "pop",
             "theory"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Waking Up #66 - Living with Robots (Kate Darling)",
@@ -649,7 +689,8 @@
             "intelligence",
             "uncanny",
             "valley"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "Numberphile - Benford's Law",
@@ -665,7 +706,8 @@
             "probability",
             "statistics",
             "distributions"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "An Impossible Bet",
@@ -682,7 +724,8 @@
             "probability",
             "expected",
             "value"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Waking Up #71 - What is Technology Doing to Us? (Tristan Harris)",
@@ -702,7 +745,8 @@
             "race",
             "facebook",
             "youtube"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "Sam Harris - How Do We Cope With Death?",
@@ -717,7 +761,8 @@
             "harris",
             "atheism",
             "consciousness"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "Dabiq 15 Issue",
@@ -729,7 +774,8 @@
             "jihadism",
             "why we hate you",
             "isis"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Pi hiding in prime regularities",
@@ -743,7 +789,8 @@
             "complex",
             "numbers",
             "riemann zeta function"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Waking Up With Sam Harris #79 -The Road to Tyranny (with Timothy Snyder)",
@@ -758,7 +805,8 @@
             "timothy snyder",
             "sam harris",
             "waking up"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "Simpson's Paradox",
@@ -771,7 +819,8 @@
             "statistics",
             "correlation",
             "simpson's"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Waking Up with Sam Harris #113 \u2014 Consciousness and the Self (with Anil K. Seth)",
@@ -788,7 +837,8 @@
             "psychology",
             "philosophy",
             "perception"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Waking Up with Sam Harris #116 - AI: Racing Toward the Brink (with Eliezer Yudkowsky)",
@@ -800,7 +850,8 @@
             "sam harris",
             "alignment",
             "eliezer yudkowsky"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "The hard problem of consciousness is a distraction from the real one \u2013 Anil K Seth | Aeon Essays",
@@ -812,7 +863,8 @@
             "self",
             "neuroscience",
             "prediction"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "VRV - Watch Paradigms: How We Know What We Know: E1 - The Science of Seeing",
@@ -825,7 +877,8 @@
             "derek muller",
             "plato",
             "philosophy"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Your brain does not process information and it is not a computer \u2013 Robert Epstein | Aeon Essays",
@@ -840,7 +893,8 @@
             "predictive processing",
             "science",
             "philosophy"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs",
@@ -854,7 +908,8 @@
             "philosophy",
             "psychedelics",
             "entropy"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Daniel Dennett - Information & Artificial Intelligence",
@@ -870,7 +925,8 @@
             "shannon",
             "deep learning",
             "machine learning"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Personal Responsibility Vortex: Bret Weinstein at TEDxTheEvergreenStateCollege",
@@ -887,7 +943,8 @@
             "evolution",
             "finance",
             "markers"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Beyond the Higgs: What's Next for the LHC? - with Harry Cliff",
@@ -902,7 +959,8 @@
             "science",
             "lepton",
             "universality"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "How a handful of tech companies control billions of minds every day | Tristan Harris",
@@ -916,7 +974,8 @@
             "internet",
             "wellbeing",
             "design"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "How Elite Financial Networks Rule the World",
@@ -930,7 +989,8 @@
             "politics",
             "hubs",
             "elite"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "GALLON SMASHING PRANK",
@@ -942,7 +1002,8 @@
             "prank",
             "grocery",
             "milk"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Bret Weinstein- BLM is Black Supremacy",
@@ -957,7 +1018,8 @@
             "politics",
             "mccarthyism",
             "moral panic"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "The Master and His Emissary: Conversation with Dr. Iain McGilchrist",
@@ -972,7 +1034,8 @@
             "purpose",
             "orienting",
             "philosophy"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Genuine Conversation and the Intellectual Dark Web, Jordan Greenhall",
@@ -985,7 +1048,8 @@
             "psychology",
             "collaboration",
             "jordan greenhall"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "FTP062: Jordan Greenhall - Pt 1: Deep Code: Learning How To Learn",
@@ -1000,7 +1064,8 @@
             "learning",
             "ai",
             "deep code"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Non-Invasive Brain Surgery",
@@ -1014,7 +1079,8 @@
             "neuroscience",
             "hippocampus",
             "blood brain barrier"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Maybe Not - Rich Hickey",
@@ -1029,7 +1095,8 @@
             "clojure",
             "haskell",
             "optional"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Oz Talk: Jordan Peterson\u2019s Rules to Live By",
@@ -1044,7 +1111,8 @@
             "religion",
             "morality",
             "politics"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "46: Daniel Schmachtenberger - Winning Humanity's Existential Game",
@@ -1059,7 +1127,8 @@
             "game",
             "theory",
             "love"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Sir Roger Scruton/Dr. Jordan B. Peterson: Apprehending the Transcendent",
@@ -1074,7 +1143,8 @@
             "tragedy",
             "transcendence",
             "religion"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Geometry of Particle Physics: Garrett Lisi at TEDxMaui 2013",
@@ -1087,7 +1157,8 @@
             "nature",
             "science",
             "geometry"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Future of War, and How It Affects YOU (Torpedo/Missiles vs Ship) - Smarter Every Day 211",
@@ -1101,7 +1172,8 @@
             "cyber",
             "russia",
             "division"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Making Sense with Sam Harris #145 - The Information War (with Ren\u00e9e DiResta)",
@@ -1115,7 +1187,8 @@
             "trolling",
             "memes",
             "division"
-        ]
+        ],
+        "deleted": true
     },
     {
         "title": "The Physics and Philosophy of Time - with Carlo Rovelli",
@@ -1130,7 +1203,8 @@
             "entropy",
             "gravity",
             "science"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "MIT AI: Revolutionary Ideas in Science, Math, and Society (Eric Weinstein)",
@@ -1148,7 +1222,8 @@
             "warfare",
             "conspiracy",
             "evolution"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Manipulating the YouTube Algorithm - (Part 1/3) Smarter Every Day 213",
@@ -1163,7 +1238,8 @@
             "Renee DiResta",
             "twitter",
             "social media"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "All about automated machine learning with Dr. Nicolo Fusi - Microsoft Research",
@@ -1179,7 +1255,8 @@
             "statistics",
             "crispr",
             "artificial intelligence"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Competition is for Losers with Peter Thiel (How to Start a Startup 2014: 5)",
@@ -1195,7 +1272,8 @@
             "economics",
             "google",
             "tech"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Ian Goodfellow: Generative Adversarial Networks (GANs) | MIT Artificial Intelligence (AI) Podcast",
@@ -1209,7 +1287,8 @@
             "machine learning",
             "innovation",
             "artificial intelligence"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Center For Humane Technology - Tristan Harris Presentation",
@@ -1224,7 +1303,8 @@
             "incentives",
             "socioergonomics",
             "attention economy"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "My Video Went Viral. Here's Why",
@@ -1240,7 +1320,8 @@
             "internet",
             "videos",
             "content"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Get a Spine! - This American Life",
@@ -1255,7 +1336,8 @@
             "apologies",
             "animals",
             "vertebrates"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Joe Rogan Experience #1320 - Eric Weinstein",
@@ -1268,7 +1350,8 @@
             "portal",
             "source code",
             "intelligence"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Machine Learning: Living in the Age of AI | A WIRED Film",
@@ -1282,7 +1365,8 @@
             "self driving",
             "big data",
             "medicine"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Is Technology Killing Capitalism?",
@@ -1296,7 +1380,8 @@
             "markets",
             "innovation",
             "eric weinstein"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Yann LeCun - Graph Embedding, Content Understanding, and Self-Supervised Learning",
@@ -1310,7 +1395,8 @@
             "vector",
             "representation",
             "yann lecun"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Vitalik Buterin on \"The Portal\", Ep. #012 - The Ethereal Prince and His Virtual Machine",
@@ -1323,7 +1409,8 @@
             "crypto",
             "economics",
             "technology"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Regression to the Mean",
@@ -1338,7 +1425,8 @@
             "reasoning",
             "logic",
             "gamblers falacy"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "AI Can Now Self-Reproduce\u2014Should Humans Be Worried? | Eric Weinstein",
@@ -1352,7 +1440,8 @@
             "outtelligence",
             "computers",
             "evolution"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "How do you explain consciousness? | David Chalmers",
@@ -1366,7 +1455,8 @@
             "psychology",
             "neuroscience",
             "physics"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Quantum Quantum - Paul Collider Season 1 Episode 1",
@@ -1379,7 +1469,8 @@
             "quantum",
             "paul collider",
             "future"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "How China Tracks Everyone | VICE on HBO",
@@ -1394,7 +1485,8 @@
             "facial recognition",
             "regulation",
             "law"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Karl Popper on Science & Absolute Truth (1974)",
@@ -1408,7 +1500,8 @@
             "theories",
             "falsifiability",
             "epistemology"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "This equation will change how you see the world",
@@ -1423,7 +1516,8 @@
             "differential equations",
             "complexity",
             "mandelbrot"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Every Melody Has Been Copyrighted (and they're all on this hard drive)",
@@ -1437,7 +1531,8 @@
             "melody",
             "law",
             "legal"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Simulating an Epidemic",
@@ -1449,7 +1544,8 @@
             "covid19",
             "pandemic",
             "sir model"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "The Portal Ep. #019 - The Prediction and the DISC",
@@ -1461,7 +1557,8 @@
             "genetics",
             "eric weinstein",
             "bret weinstein"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Half the Universe was Missing",
@@ -1475,7 +1572,8 @@
             "whim",
             "astronomy",
             "stars"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Deep Code Bits: UBI and Collective Intelligence",
@@ -1490,7 +1588,8 @@
             "intelligence",
             "signal",
             "capitalism"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Making Sense #207 - Can We Pull Back From The Brink?",
@@ -1503,7 +1602,8 @@
             "police violence",
             "america",
             "cops"
-        ]
+        ],
+        "deleted": false
     },
     {
         "title": "Making Sense #205 - The Failure of Meritocracy (with Daniel Markovits)",
@@ -1516,6 +1616,7 @@
             "education",
             "rich",
             "meritocracy"
-        ]
+        ],
+        "deleted": false
     }
 ]

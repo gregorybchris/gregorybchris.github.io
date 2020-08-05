@@ -68,7 +68,7 @@
 }
 
 .blog-post-link:hover {
-    color: rgb(100, 100, 100);
+    color: rgb(120, 120, 120);
 }
 
 .blog-post-date {
@@ -90,10 +90,12 @@
     border-radius: 5px;
     font-family: montserrat-light;
     font-size: 14px;
+    transition: .2s;
 }
 
 .blog-post-tag:hover {
     cursor: pointer;
+    background-color: rgb(180, 180, 210);
 }
 
 .thumbnail-wrap {
