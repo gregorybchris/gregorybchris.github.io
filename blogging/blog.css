@@ -1,0 +1,83 @@
+@font-face {
+	font-family: "montserrat-light";
+	src: url("../fonts/Montserrat/Montserrat-Light.otf");
+}
+
+@font-face {
+	font-family: "montserrat-bold";
+	src: url("../fonts/Montserrat/Montserrat-Bold.otf");
+}
+
+.blog-title-wrap {
+    margin: 30px 30px 20px;
+}
+
+.blog-title {
+    font-family: montserrat-bold;
+    font-size: 30px;
+}
+
+.blog-posts-filter-wrap {
+    margin: 10px 30px 20px;
+}
+
+.blog-posts-filter-input {
+    border: 3px solid rgb(200, 200, 200);
+    width: 300px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 4px;
+    font-family: montserrat-bold;
+}
+
+.blog-post {
+    box-sizing: border-box;
+    /* background-color: rgb(240, 240, 240); */
+    border: 4px solid rgb(230, 230, 230);
+    border-radius: 6px;
+    padding: 20px 20px;
+    margin: 0px 100px 20px 100px;
+}
+
+.blog-post-title-wrap {
+    margin: 0px 0px 4px;
+}
+
+.blog-post-title {
+    font-family: montserrat-bold;
+    font-size: 23px;
+}
+
+.blog-post-link {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+.blog-post-link:hover {
+    color: rgb(80, 80, 80);
+}
+
+.blog-post-tags-wrap {
+    margin: 3px 0px 8px;
+}
+
+.blog-post-tag {
+    display: inline-block;
+    padding: 5px 13px 8px;
+    background-color: rgb(200, 200, 230);
+    margin: 2px 3px;
+    border-radius: 5px;
+    font-family: montserrat-light;
+    font-size: 14px;
+}
+
+.thumbnail-wrap {
+    margin: 10px 10px 0px;
+}
+
+.blog-post-thumbnail {
+    border-radius: 4px;
+    width: 250px;
+}

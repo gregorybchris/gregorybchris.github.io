@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./blogging/vue.min.js"></script>
+        <link rel="stylesheet" href="./blogging/blog.css">
+    </head>
+    <body>
+        <div class="blog-title-wrap">
+            <span class="blog-title">Personal Link Blog</span>
+        </div>
+
+        <div id="blog-app">
+            <div class="blog-posts-filter-wrap">
+                <input class="blog-posts-filter-input" v-model="filterText" placeholder="Filter by tag">
+            </div>
+            
+            <div class="blog-posts-wrap">
+                <post v-for="post in posts" v-bind:filter-text="filterText" v-bind:post-content="post" v-bind:key="post.link"></post>
+            </div>
+        </div>
+    </body>
+
+    <script src="./blogging/app.js"></script>
+    <script src="./blogging/post.js"></script>
+    <script src="./blogging/tag.js"></script>
+</html>
