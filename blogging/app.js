@@ -15,6 +15,9 @@ new Vue({
         },
         clearFilter: function() {
             this.filterText = ""
+        },
+        scrollToTop: function() {
+            window.scrollTo(0, 0)
         }
     },
     created: async function() {

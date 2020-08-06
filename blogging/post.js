@@ -30,6 +30,9 @@ Vue.component('post', {
             if (postContent.title.toLowerCase().includes(filterText.toLowerCase()))
                 return true
 
+            if (postContent.series && postContent.series.toLowerCase().includes(filterText.toLowerCase()))
+                return true
+
             for (const tag of postContent.tags) {
                 if (filterText.startsWith('#') && filterText.substring(1) == tag)
                     return true
@@ -50,7 +53,7 @@ Vue.component('post', {
     methods: {
         onClickTag: function(tag) {
             this.$emit("tag-clicked", tag)
-        }
+        },
     },
     template: `
         <div class="blog-post" v-if="enabled">
@@ -58,6 +61,7 @@ Vue.component('post', {
                 <span class="blog-post-title">
                     <a class="blog-post-link" v-bind:href="postContent.link">{{ postContent.title }}</a>
                 </span>
+                <span class="blog-post-series">{{ postContent.series }}</span>
                 <span class="blog-post-date">{{ formattedDate }}</span>
             </div>
 
