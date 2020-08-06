@@ -13,7 +13,11 @@
             <div class="blog-posts-filter-wrap">
                 <input class="blog-posts-filter-input"
                        placeholder="Filter posts"
-                       v-model="filterText">
+                       v-model="filterText"><div
+                       class="blog-posts-filter-clear-button"
+                       v-on:click="clearFilter">
+                       Clear
+                </div>
             </div>
             
             <div class="blog-posts-wrap">

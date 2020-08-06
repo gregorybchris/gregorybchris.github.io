@@ -5,8 +5,6 @@ Vue.component('post', {
     },
     computed: {
         thumbnailSrc: function() {
-            if (!this.postContent.link)
-                console.log("FAILED", this.postContent)
             const link = this.postContent.link
             const youtubePrefix = 'https://www.youtube.com/watch'
             if (link.includes(youtubePrefix)) {
@@ -29,7 +27,7 @@ Vue.component('post', {
             if (filterText.length == 0)
                 return true
 
-            if (postContent.title.toLowerCase().includes(filterText))
+            if (postContent.title.toLowerCase().includes(filterText.toLowerCase()))
                 return true
 
             for (const tag of postContent.tags) {
@@ -51,7 +49,6 @@ Vue.component('post', {
     },
     methods: {
         onClickTag: function(tag) {
-            console.log("Clicked tag", tag)
             this.$emit("tag-clicked", tag)
         }
     },
@@ -59,13 +56,15 @@ Vue.component('post', {
         <div class="blog-post" v-if="enabled">
             <div class="blog-post-title-wrap">
                 <span class="blog-post-title">
-                    <a class="blog-post-link" v-bind:href="postContent.link" target="_blank">{{ postContent.title }}</a>
+                    <a class="blog-post-link" v-bind:href="postContent.link">{{ postContent.title }}</a>
                 </span>
                 <span class="blog-post-date">{{ formattedDate }}</span>
             </div>
 
             <div class="blog-post-thumbnail-wrap">
-                <img class="blog-post-thumbnail" v-bind:src="thumbnailSrc">
+                <a class="blog-post-link" v-bind:href="postContent.link">
+                    <img class="blog-post-thumbnail" v-bind:src="thumbnailSrc">
+                </a>
             </div>
 
             <div class="blog-post-tags-wrap">

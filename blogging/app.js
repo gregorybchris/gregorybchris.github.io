@@ -12,6 +12,9 @@ new Vue({
         },
         onClickTag: function(tag) {
             this.filterText = tag
+        },
+        clearFilter: function() {
+            this.filterText = ""
         }
     },
     created: async function() {

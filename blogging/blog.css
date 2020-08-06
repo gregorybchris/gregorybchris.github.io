@@ -33,12 +33,37 @@
     box-sizing: border-box;
     transition: 0.5s;
     outline: none;
-    border-radius: 4px;
+    border-radius: 4px 0px 0px 4px;
     font-family: montserrat-bold;
+    display: inline-block;
+    vertical-align: top;
+    border-right: none;
+    font-size: 14px;
 }
 
 .blog-posts-filter-input:focus {
     background-color: rgb(240, 240, 240);
+}
+
+.blog-posts-filter-clear-button {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: montserrat-bold;
+    padding: 6px 10px;
+    background-color: rgb(200, 200, 200);
+    display: inline-block;
+    border: 3px solid rgb(200, 200, 200);
+    border-radius: 0px 4px 4px 0px;
+    vertical-align: top;
+    border-left: none;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+.blog-posts-filter-clear-button:hover {
+    background-color: rgb(170, 170, 170);
+    border-color: rgb(185, 185, 185);
+    cursor: pointer;
 }
 
 .blog-post {
