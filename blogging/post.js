@@ -43,11 +43,14 @@ Vue.component('post', {
             return false
         },
         formattedDate: function() {
-            let date = new Date(this.postContent.date)
-            const year = date.getFullYear()
-            const month = date.getMonth() + 1
-            const day = date.getDate()
-            return `${month}-${day}-${year}`
+            const date = new Date(this.postContent.date)
+            const yearNumber = date.getFullYear()
+            const monthNumber = date.getMonth() + 1
+            const dayNumber = date.getDate()
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+            const monthName = monthNames[monthNumber - 1]
+            return `${monthName}. ${dayNumber}, ${yearNumber}`
         }
     },
     methods: {
