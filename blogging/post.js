@@ -72,7 +72,7 @@ Vue.component('post', {
                 <span class="blog-post-date">{{ formattedDate }}</span>
             </div>
 
-            <div class="blog-post-thumbnail-wrap">
+            <div class="blog-post-thumbnail-wrap" v-if="thumbnailSrc !== null">
                 <a class="blog-post-link" v-bind:href="postContent.link">
                     <img class="blog-post-thumbnail" v-bind:src="thumbnailSrc">
                 </a>
