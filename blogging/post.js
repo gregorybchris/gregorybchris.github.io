@@ -58,10 +58,14 @@ Vue.component('post', {
     template: `
         <div class="blog-post" v-if="enabled">
             <div class="blog-post-title-wrap">
-                <span class="blog-post-title">
-                    <a class="blog-post-link" v-bind:href="postContent.link">{{ postContent.title }}</a>
-                </span>
-                <span class="blog-post-series">{{ postContent.series }}</span>
+                <div class="blog-post-heading">
+                    <a class="blog-post-link" v-bind:href="postContent.link">
+                        <span class="blog-post-speaker" v-if="postContent.speaker !== null">{{ postContent.speaker }}:</span>
+                        <span class="blog-post-title">{{ postContent.title }}</span>
+                    </a>
+                </div>
+                <span class="blog-post-series" v-if="postContent.series !== null">{{ postContent.series }}</span>
+                <span class="blog-post-episode-number" v-if="postContent.episode_number !== null">(#{{ postContent.episode_number }})</span>
                 <span class="blog-post-date">{{ formattedDate }}</span>
             </div>
 

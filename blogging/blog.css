@@ -77,13 +77,6 @@
     margin: 0px 0px 4px;
 }
 
-.blog-post-title {
-    display: block;
-    font-family: montserrat-bold;
-    font-size: 23px;
-    margin-right: 10px;
-}
-
 .blog-post-link {
     text-decoration: none;
     color: rgb(50, 50, 50);
@@ -94,8 +87,27 @@
     color: rgb(120, 120, 120);
 }
 
+.blog-post-title {
+    display: inline-block;
+    font-family: montserrat-bold;
+    font-size: 23px;
+}
+
+.blog-post-speaker {
+    display: inline-block;
+    font-family: montserrat-bold;
+    font-size: 23px;
+}
+
 .blog-post-series {
-    display: block;
+    display: inline-block;
+    font-size: 18px;
+    font-family: montserrat-regular;
+    color: rgb(150, 150, 150);
+}
+
+.blog-post-episode-number {
+    display: inline-block;
     font-size: 18px;
     font-family: montserrat-regular;
     color: rgb(150, 150, 150);

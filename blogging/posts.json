@@ -1,7 +1,10 @@
 [
     {
         "title": "Web Design: The First 100 Years",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-07-24 02:10:00",
         "link": "http://idlewords.com/talks/web_design_first_100_years.htm",
         "tags": [
@@ -16,8 +19,11 @@
         "deleted": false
     },
     {
-        "title": "Dave Harris: Black Boyfriend",
+        "title": "Black Boyfriend",
+        "content_type": "video",
         "series": null,
+        "speaker": "Dave Harris",
+        "episode_number": null,
         "date": "2015-08-07 04:46:01",
         "link": "https://www.youtube.com/watch?v=eucT-E1vkms",
         "tags": [
@@ -31,7 +37,10 @@
     },
     {
         "title": "Our Greatest Delusion",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-08-19 04:04:54",
         "link": "https://www.youtube.com/watch?v=EKR-HydGohQ",
         "tags": [
@@ -49,7 +58,10 @@
     },
     {
         "title": "Searle, Subjectivity, and Objectivity",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-08-20 23:35:18",
         "link": "http://maverickphilosopher.typepad.com/maverick_philosopher/2011/12/searle-subjectivity-and-objectivity.html",
         "tags": [
@@ -67,7 +79,10 @@
     },
     {
         "title": "My Interview With The Stoics",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-08-26 00:42:05",
         "link": "http://kevinjbrowne.weebly.com/my-interview-with-the-stoics.html",
         "tags": [
@@ -84,7 +99,10 @@
     },
     {
         "title": "The Science of Six Degrees of Separation",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-08-26 05:51:40",
         "link": "https://www.youtube.com/watch?v=TcxZSmzPw8k",
         "tags": [
@@ -100,8 +118,11 @@
         "deleted": false
     },
     {
-        "title": "Hugh Herr: New Bionics",
+        "title": "New Bionics",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Hugh Herr",
+        "episode_number": null,
         "date": "2015-08-30 05:30:12",
         "link": "https://www.youtube.com/watch?v=CDsNZJTWw0w",
         "tags": [
@@ -117,8 +138,11 @@
         "deleted": false
     },
     {
-        "title": "Chad Orzel: The Heisenberg Uncertainty Principle",
+        "title": "The Heisenberg Uncertainty Principle",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Chad Orzel",
+        "episode_number": null,
         "date": "2015-09-06 19:30:36",
         "link": "https://www.youtube.com/watch?v=TQKELOE9eY4",
         "tags": [
@@ -134,8 +158,11 @@
         "deleted": false
     },
     {
-        "title": "Joshua Foer: Feats of Memory",
+        "title": "Feats of Memory",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Joshua Foer",
+        "episode_number": null,
         "date": "2015-09-14 21:34:48",
         "link": "https://www.youtube.com/watch?v=U6PoUg7jXsA",
         "tags": [
@@ -152,8 +179,11 @@
         "deleted": false
     },
     {
-        "title": "Kathryn Schulz: On Being Wrong",
+        "title": "On Being Wrong",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Kathryn Schulz",
+        "episode_number": null,
         "date": "2015-09-22 00:35:11",
         "link": "https://www.youtube.com/watch?v=QleRgTBMX88",
         "tags": [
@@ -173,7 +203,10 @@
     },
     {
         "title": "Persistence of Vision",
+        "content_type": "video",
         "series": "Smarter Every Day",
+        "speaker": null,
+        "episode_number": 142,
         "date": "2015-10-02 20:06:23",
         "link": "https://www.youtube.com/watch?v=_FlV6pgwlrk",
         "tags": [
@@ -193,8 +226,11 @@
         "deleted": false
     },
     {
-        "title": "Alex Gendler: Prisoner Hat Riddle",
+        "title": "Prisoner Hat Riddle",
+        "content_type": "video",
         "series": "TED Ed",
+        "speaker": "Alex Gendler",
+        "episode_number": null,
         "date": "2015-10-10 02:00:03",
         "link": "https://www.youtube.com/watch?v=N5vJSNXPEwA",
         "tags": [
@@ -211,7 +247,10 @@
     },
     {
         "title": "Devaluation of Music",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-10-15 20:04:56",
         "link": "https://medium.com/cuepoint/the-devaluation-of-music-it-s-worse-than-you-think-f4cf5f26a888",
         "tags": [
@@ -229,7 +268,10 @@
     },
     {
         "title": "Skewes' Massive Number",
+        "content_type": "video",
         "series": "Numberphile",
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-10-29 17:57:11",
         "link": "https://www.youtube.com/watch?v=Lihh_lMmcDw",
         "tags": [
@@ -248,7 +290,10 @@
     },
     {
         "title": "What If Bears Killed One In Five People?",
+        "content_type": "video",
         "series": "CollegeHumor",
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-11-11 00:05:08",
         "link": "https://www.youtube.com/watch?time_continue=145&v=LNVFPkmZTQ4",
         "tags": [
@@ -264,7 +309,10 @@
     },
     {
         "title": "Deep Neural Networks Explained",
+        "content_type": "video",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-11-26 03:26:43",
         "link": "https://www.youtube.com/watch?v=bHvf7Tagt18",
         "tags": [
@@ -280,7 +328,10 @@
     },
     {
         "title": "How Special Relativity Makes Magnets Work",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-12-29 17:56:17",
         "link": "https://www.youtube.com/watch?v=1TKSfAkWWN0",
         "tags": [
@@ -298,8 +349,11 @@
         "deleted": false
     },
     {
-        "title": "New Zealand Win Men's Double Sculls Final A - London 2012 Olympics",
+        "title": "London 2012 Men's Double Sculls Final",
+        "content_type": "video",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-12-29 17:59:47",
         "link": "https://www.youtube.com/watch?v=KC_OcudRnKc&index=16&list=WL",
         "tags": [
@@ -316,8 +370,11 @@
         "deleted": false
     },
     {
-        "title": "Trying to simulate the human brain is a waste of energy",
+        "title": "Simulating the Human Brain is a Waste of Energy",
+        "content_type": "article",
         "series": "Aeon Essays",
+        "speaker": null,
+        "episode_number": null,
         "date": "2015-12-31 03:04:27",
         "link": "https://aeon.co/opinions/why-trying-to-simulate-the-human-brain-is-a-waste-of-energy",
         "tags": [
@@ -335,7 +392,10 @@
     },
     {
         "title": "Koko the Gorilla's Message for World Leaders",
+        "content_type": "video",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-01-05 04:10:31",
         "link": "http://creativity-online.com/work/noe-ong-koko-the-gorilla-is-the-voice-of-nature-at-cop21/44566",
         "tags": [
@@ -351,9 +411,12 @@
     },
     {
         "title": "DeepMind Masters Go",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-01-28 05:24:47",
-        "link": "http://www.technologyreview.com/news/546066/googles-ai-masters-the-game-of-go-a-decade-earlier-than-expected/",
+        "link": "https://www.technologyreview.com/2016/01/27/109178/googles-ai-masters-the-game-of-go-a-decade-earlier-than-expected/",
         "tags": [
             "google",
             "ai",
@@ -369,8 +432,11 @@
         "deleted": false
     },
     {
-        "title": "Steven Strogatz: The Science of Sync",
+        "title": "The Science of Sync",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Steven Strogatz",
+        "episode_number": null,
         "date": "2016-02-10 03:51:46",
         "link": "https://www.ted.com/talks/steven_strogatz_on_sync?language=en",
         "tags": [
@@ -390,7 +456,10 @@
     },
     {
         "title": "What Discrimination Looks Like In America",
+        "content_type": "video",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-02-11 05:21:49",
         "link": "https://www.youtube.com/watch?v=qwIjKuitlu8",
         "tags": [
@@ -406,8 +475,11 @@
         "deleted": false
     },
     {
-        "title": "Jeremy Howard: Computers that Can Learn",
+        "title": "Computers that Can Learn",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Jeremy Howard",
+        "episode_number": null,
         "date": "2016-02-18 03:14:41",
         "link": "https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn",
         "tags": [
@@ -426,8 +498,11 @@
         "deleted": false
     },
     {
-        "title": "Harnessing the Bioelectric Potential of Cells for Regeneration",
+        "title": "Bioelectric Cell for Regeneration",
+        "content_type": "video",
         "series": null,
+        "speaker": "Michael Levin",
+        "episode_number": null,
         "date": "2016-02-21 21:32:02",
         "link": "https://www.youtube.com/watch?v=YVY1kNAAqsE",
         "tags": [
@@ -448,7 +523,10 @@
     },
     {
         "title": "America's Gun Problem",
+        "content_type": "video",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-02-28 22:13:04",
         "link": "http://www.vox.com/2015/10/3/9444417/gun-violence-united-states-america",
         "tags": [
@@ -466,8 +544,11 @@
         "deleted": false
     },
     {
-        "title": "Celeste Headlee: Ten Ways to Have a Better Conversation",
+        "title": "Ten Ways to Have a Better Conversation",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Celeste Headlee",
+        "episode_number": null,
         "date": "2016-03-28 22:12:17",
         "link": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation?language=en&utm_source=tedcomshare&utm_medium=email&utm_campaign=tedspread#t-206963",
         "tags": [
@@ -486,7 +567,10 @@
     },
     {
         "title": "A Visual Introduction to Machine Learning",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-03-30 06:18:30",
         "link": "http://www.r2d3.us/visual-intro-to-machine-learning-part-1/",
         "tags": [
@@ -505,8 +589,11 @@
         "deleted": false
     },
     {
-        "title": "Daniel Dennett Explains Consciousness and Free Will",
-        "series": null,
+        "title": "Consciousness and Free Will",
+        "content_type": "video",
+        "series": "Big Think",
+        "speaker": "Daniel Dennett",
+        "episode_number": null,
         "date": "2016-04-14 23:10:16",
         "link": "https://www.youtube.com/watch?v=R-Nj_rEqkyQ",
         "tags": [
@@ -525,7 +612,10 @@
     },
     {
         "title": "Stanford Sexual Assault Victim's Letter",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-06-12 22:08:48",
         "link": "https://www.buzzfeed.com/katiejmbaker/heres-the-powerful-letter-the-stanford-victim-read-to-her-ra?utm_term=.xmEGaO37D#.jaL1VzwvR",
         "tags": [
@@ -542,12 +632,15 @@
     },
     {
         "title": "Is Most Published Research Wrong?",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-09-25 23:40:11",
         "link": "https://www.youtube.com/watch?v=42QuXLucH3Q",
         "tags": [
-            "Derek",
-            "Muller",
+            "derek",
+            "muller",
             "veritasium",
             "false",
             "positive",
@@ -560,8 +653,11 @@
         "deleted": false
     },
     {
-        "title": "Jeff Hawkins: How Brain Science Changes Computing",
+        "title": "How Brain Science Changes Computing",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Jeff Hawkins",
+        "episode_number": null,
         "date": "2016-09-25 23:42:35",
         "link": "http://www.ted.com/talks/jeff_hawkins_on_how_brain_science_will_change_computing?language=en",
         "tags": [
@@ -576,7 +672,10 @@
     },
     {
         "title": "Sam Harris Roasts Trump",
+        "content_type": "video",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-10-06 15:21:29",
         "link": "https://www.youtube.com/watch?v=3yBGE80covk",
         "tags": [
@@ -594,8 +693,11 @@
         "deleted": false
     },
     {
-        "title": "Sam Harris: The AI Alignment Problem",
+        "title": "The AI Alignment Problem",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Sam Harris",
+        "episode_number": null,
         "date": "2016-10-24 03:00:42",
         "link": "https://www.youtube.com/watch?v=8nt3edWLgIg",
         "tags": [
@@ -613,7 +715,10 @@
     },
     {
         "title": "Do Cause and Effect Exist?",
+        "content_type": "video",
         "series": "minutephysics",
+        "speaker": null,
+        "episode_number": null,
         "date": "2016-10-24 03:09:21",
         "link": "https://www.youtube.com/watch?v=3AMCcYnAsdQ",
         "tags": [
@@ -630,8 +735,11 @@
         "deleted": false
     },
     {
-        "title": "Paul Bloom: Abusing Dolores (#56)",
+        "title": "Abusing Dolores",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Paul Bloom",
+        "episode_number": 56,
         "date": "2016-12-17 20:34:54",
         "link": "https://samharris.org/subscriber-extras/abusing-dolores/",
         "tags": [
@@ -649,7 +757,10 @@
     },
     {
         "title": "Weird Surface Tension",
+        "content_type": "video",
         "series": "Sixty Symbols",
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-01-05 21:01:21",
         "link": "https://www.youtube.com/watch?v=2uWps9LczH8",
         "tags": [
@@ -667,7 +778,10 @@
     },
     {
         "title": "The Simple Solution to Traffic",
+        "content_type": "video",
         "series": "CGP Grey",
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-01-23 04:46:54",
         "link": "https://www.youtube.com/watch?v=iHzzSao6ypE",
         "tags": [
@@ -682,8 +796,11 @@
         "deleted": false
     },
     {
-        "title": "Yaron Brook: Equal is Unfair",
+        "title": "Equal is Unfair",
+        "content_type": "video",
         "series": null,
+        "speaker": "Yaron Brook",
+        "episode_number": null,
         "date": "2017-02-14 06:49:36",
         "link": "https://www.youtube.com/watch?v=HtJwAYJ9B08",
         "tags": [
@@ -701,7 +818,10 @@
     },
     {
         "title": "Jazz Reharmonization",
+        "content_type": "video",
         "series": "Adam Neely",
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-02-15 18:48:35",
         "link": "https://www.youtube.com/watch?v=JXfQsHT5c30",
         "tags": [
@@ -715,8 +835,11 @@
         "deleted": false
     },
     {
-        "title": "Kate Darling: Living with Robots (#66)",
+        "title": "Living with Robots",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Kate Darling",
+        "episode_number": 66,
         "date": "2017-03-29 03:55:28",
         "link": "https://samharris.org/subscriber-extras/living-with-robots/",
         "tags": [
@@ -736,7 +859,10 @@
     },
     {
         "title": "Benford's Law",
+        "content_type": "video",
         "series": "Numberphile",
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-03-31 06:33:58",
         "link": "https://www.youtube.com/watch?v=XXjlR2OK1kM",
         "tags": [
@@ -754,7 +880,10 @@
     },
     {
         "title": "An Impossible Bet",
+        "content_type": "video",
         "series": "minutephysics",
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-03-31 06:40:56",
         "link": "https://www.youtube.com/watch?v=eivGlBKlK6M",
         "tags": [
@@ -772,8 +901,11 @@
         "deleted": false
     },
     {
-        "title": "Tristan Harris: What is Technology Doing to Us? (#71)",
+        "title": "What is Technology Doing to Us?",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Tristan Harris",
+        "episode_number": 71,
         "date": "2017-04-26 00:22:12",
         "link": "https://samharris.org/subscriber-extras/71-technology-us/",
         "tags": [
@@ -795,7 +927,10 @@
     },
     {
         "title": "Dabiq 15 Issue",
+        "content_type": "article",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-05-15 20:47:40",
         "link": "http://clarionproject.org/factsheets-files/islamic-state-magazine-dabiq-fifteen-breaking-the-cross.pdf",
         "tags": [
@@ -809,7 +944,10 @@
     },
     {
         "title": "Pi Hiding in Prime Regularities",
+        "content_type": "video",
         "series": "3Blue1Brown",
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-05-21 07:18:40",
         "link": "https://www.youtube.com/watch?v=NaL_Cb42WyY",
         "tags": [
@@ -825,8 +963,11 @@
         "deleted": false
     },
     {
-        "title": "Timothy Snyder: The Road to Tyranny (#79)",
+        "title": "The Road to Tyranny",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Timothy Snyder",
+        "episode_number": 79,
         "date": "2017-06-12 06:57:42",
         "link": "https://samharris.org/subscriber-extras/79-road-tyranny/",
         "tags": [
@@ -843,7 +984,10 @@
     },
     {
         "title": "Simpson's Paradox",
+        "content_type": "video",
         "series": "minutephysics",
+        "speaker": null,
+        "episode_number": null,
         "date": "2017-10-24 18:37:04",
         "link": "https://www.youtube.com/watch?v=ebEkn-BiW5k",
         "tags": [
@@ -857,8 +1001,11 @@
         "deleted": false
     },
     {
-        "title": "Anil K. Seth: Consciousness and the Self (#113)",
+        "title": "Consciousness and the Self",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Anil K. Seth",
+        "episode_number": 113,
         "date": "2018-01-30 16:49:01",
         "link": "https://samharris.org/podcasts/113-consciousness-and-the-self/",
         "tags": [
@@ -876,8 +1023,11 @@
         "deleted": false
     },
     {
-        "title": "Eliezer Yudkowsky: Racing Toward the Brink (#116)",
+        "title": "Racing Toward the Brink",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Eliezer Yudkowsky",
+        "episode_number": 116,
         "date": "2018-02-17 23:29:29",
         "link": "https://samharris.org/subscriber-extras/116-ai-racing-toward-brink/",
         "tags": [
@@ -890,8 +1040,11 @@
         "deleted": false
     },
     {
-        "title": "Anil K Seth: The Real Problem of Consciousness",
+        "title": "The Real Problem of Consciousness",
+        "content_type": "article",
         "series": "Aeon Essays",
+        "speaker": "Anil K. Seth",
+        "episode_number": null,
         "date": "2018-02-22 18:57:16",
         "link": "https://aeon.co/essays/the-hard-problem-of-consciousness-is-a-distraction-from-the-real-one",
         "tags": [
@@ -905,9 +1058,12 @@
     },
     {
         "title": "The Science of Seeing",
-        "series": null,
+        "content_type": "video",
+        "series": "Paradigms",
+        "speaker": null,
+        "episode_number": 1,
         "date": "2018-03-28 05:38:01",
-        "link": "https://vrv.co/watch/G6QWGX3P6/Paradigms-How-We-Know-What-We-Know:The-Science-of-Seeing",
+        "link": "https://www.dailymotion.com/video/x6h9pjl",
         "tags": [
             "paradigms",
             "science",
@@ -919,15 +1075,18 @@
         "deleted": false
     },
     {
-        "title": "Robert Epstein: Your Brain is not a Computer",
+        "title": "Your Brain is not a Computer",
+        "content_type": "article",
         "series": "Aeon Essays",
+        "speaker": "Robert Epstein",
+        "episode_number": null,
         "date": "2018-04-09 02:42:25",
         "link": "https://aeon.co/essays/your-brain-does-not-process-information-and-it-is-not-a-computer",
         "tags": [
             "brain",
             "computer",
             "psychology",
-            "Neuroscience",
+            "neuroscience",
             "robert epstein",
             "predictive processing",
             "science",
@@ -937,7 +1096,10 @@
     },
     {
         "title": "The Entropic Brain",
+        "content_type": "paper",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2018-04-09 03:28:24",
         "link": "https://www.frontiersin.org/articles/10.3389/fnhum.2014.00020/full",
         "tags": [
@@ -952,8 +1114,11 @@
         "deleted": false
     },
     {
-        "title": "Daniel Dennett: Information & Artificial Intelligence",
+        "title": "Information & Artificial Intelligence",
+        "content_type": "video",
         "series": null,
+        "speaker": "Daniel Dennett",
+        "episode_number": null,
         "date": "2018-04-09 17:47:42",
         "link": "https://www.youtube.com/watch?v=arEvPIhOLyQ&index=9&list=PL0KIGdjEQDyFRrCkn69vJi7N8EHRxLnsu&t=0s",
         "tags": [
@@ -970,8 +1135,11 @@
         "deleted": false
     },
     {
-        "title": "Bret Weinstein: The Personal Responsibility Vortex",
+        "title": "The Personal Responsibility Vortex",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Bret Weinstein",
+        "episode_number": null,
         "date": "2018-06-11 03:57:55",
         "link": "https://www.youtube.com/watch?v=SjNRtrZjkfE",
         "tags": [
@@ -989,8 +1157,11 @@
         "deleted": false
     },
     {
-        "title": "Harry Cliff: Beyond the Higgs",
+        "title": "Beyond the Higgs",
+        "content_type": "video",
         "series": "The Royal Institution",
+        "speaker": "Harry Cliff",
+        "episode_number": null,
         "date": "2018-06-26 07:25:32",
         "link": "https://www.youtube.com/watch?v=edvdzh9Pggg",
         "tags": [
@@ -1006,8 +1177,11 @@
         "deleted": false
     },
     {
-        "title": "Tristan Harris: Tech Companies Control Billions of Minds",
+        "title": "Tech Companies Control Billions of Minds",
+        "content_type": "video",
         "series": null,
+        "speaker": "Tristan Harris",
+        "episode_number": null,
         "date": "2018-07-03 07:10:26",
         "link": "https://www.youtube.com/watch?v=C74amJRp730",
         "tags": [
@@ -1022,8 +1196,11 @@
         "deleted": false
     },
     {
-        "title": "Sandra Navidi: How Elite Financial Networks Rule the World",
-        "series": null,
+        "title": "How Elite Financial Networks Rule the World",
+        "content_type": "video",
+        "series": "New Economic Thinking",
+        "speaker": "Sandra Navidi",
+        "episode_number": null,
         "date": "2018-08-09 07:42:05",
         "link": "https://www.youtube.com/watch?v=HNklBtyUZwo",
         "tags": [
@@ -1039,7 +1216,10 @@
     },
     {
         "title": "Gallon Smashing Prank",
+        "content_type": "video",
         "series": null,
+        "speaker": null,
+        "episode_number": null,
         "date": "2018-10-01 06:55:24",
         "link": "https://www.youtube.com/watch?v=glgblV7Un_g",
         "tags": [
@@ -1052,8 +1232,11 @@
         "deleted": false
     },
     {
-        "title": "Iain McGilchrist: The Master and His Emissary",
+        "title": "The Master and His Emissary",
+        "content_type": "video",
         "series": null,
+        "speaker": "Iain McGilchrist and Jordan Peterson",
+        "episode_number": null,
         "date": "2018-11-10 08:56:14",
         "link": "https://www.youtube.com/watch?v=xtf4FDlpPZ8",
         "tags": [
@@ -1069,8 +1252,11 @@
         "deleted": false
     },
     {
-        "title": "Jordan Greenhall: Genuine Conversation",
+        "title": "Genuine Conversation",
+        "content_type": "video",
         "series": "Jordan Greenhall",
+        "speaker": null,
+        "episode_number": null,
         "date": "2018-12-02 09:37:12",
         "link": "https://www.youtube.com/watch?v=tQGksc1I7rA",
         "tags": [
@@ -1085,7 +1271,10 @@
     },
     {
         "title": "Learning How To Learn",
+        "content_type": "video",
         "series": "Jordan Greenhall",
+        "speaker": null,
+        "episode_number": null,
         "date": "2018-12-08 07:56:49",
         "link": "https://www.youtube.com/watch?v=64HGcESw5-8",
         "tags": [
@@ -1102,7 +1291,10 @@
     },
     {
         "title": "Non-Invasive Brain Surgery",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2018-12-11 06:53:50",
         "link": "https://www.youtube.com/watch?v=qQhUxd82Rr0&t=329s",
         "tags": [
@@ -1117,8 +1309,11 @@
         "deleted": false
     },
     {
-        "title": "Rich Hickey: Maybe Not",
+        "title": "Maybe Not",
+        "content_type": "video",
         "series": null,
+        "speaker": "Rich Hickey",
+        "episode_number": null,
         "date": "2018-12-11 06:55:57",
         "link": "https://www.youtube.com/watch?v=YR5WdGrpoug",
         "tags": [
@@ -1134,8 +1329,11 @@
         "deleted": false
     },
     {
-        "title": "Jordan Peterson on Doctor Oz",
-        "series": null,
+        "title": "Rules to Live By",
+        "content_type": "video",
+        "series": "Oz Talk",
+        "speaker": "Jordan Peterson",
+        "episode_number": null,
         "date": "2018-12-14 09:21:40",
         "link": "https://www.youtube.com/watch?v=AscPHmLWo-M&t=2870s",
         "tags": [
@@ -1151,8 +1349,11 @@
         "deleted": false
     },
     {
-        "title": "Daniel Schmachtenberger: Existential Threat (#46)",
+        "title": "Existential Threat",
+        "content_type": "video",
         "series": "Future Thinkers",
+        "speaker": "Daniel Schmachtenberger",
+        "episode_number": 46,
         "date": "2018-12-24 06:49:45",
         "link": "https://www.youtube.com/watch?v=IfoPitvLY7c&t=980s",
         "tags": [
@@ -1168,8 +1369,11 @@
         "deleted": false
     },
     {
-        "title": "Sir Roger Scruton and Jordan Peterson",
+        "title": "Apprehending the Transcendent",
+        "content_type": "video",
         "series": null,
+        "speaker": "Sir Roger Scruton and Jordan Peterson",
+        "episode_number": null,
         "date": "2018-12-30 05:28:56",
         "link": "https://www.youtube.com/watch?v=XvbtKAYdcZY",
         "tags": [
@@ -1185,13 +1389,16 @@
         "deleted": false
     },
     {
-        "title": "Garrett Lisi: The Geometry of Particle Physics",
+        "title": "The Geometry of Particle Physics",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "Garrett Lisi",
+        "episode_number": null,
         "date": "2019-01-03 08:30:27",
         "link": "https://www.youtube.com/watch?v=wfALJzn1hE8",
         "tags": [
             "physics",
-            "Garrett Lisi",
+            "garrett lisi",
             "math",
             "nature",
             "science",
@@ -1200,8 +1407,11 @@
         "deleted": false
     },
     {
-        "title": "The Future of War (#211)",
+        "title": "The Future of War",
+        "content_type": "video",
         "series": "Smarter Every Day",
+        "speaker": null,
+        "episode_number": 211,
         "date": "2019-03-05 08:14:52",
         "link": "https://www.youtube.com/watch?v=qOTYgcdNrXE",
         "tags": [
@@ -1216,8 +1426,11 @@
         "deleted": false
     },
     {
-        "title": "Ren\u00e9e DiResta: The Information War (#145)",
+        "title": "The Information War",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Ren\u00e9e DiResta",
+        "episode_number": 145,
         "date": "2019-03-05 08:18:05",
         "link": "https://samharris.org/subscriber-extras/145-information-war/",
         "tags": [
@@ -1232,8 +1445,11 @@
         "deleted": false
     },
     {
-        "title": "Carlo Rovelli: The Physics and Philosophy of Time",
+        "title": "The Physics and Philosophy of Time",
+        "content_type": "video",
         "series": "The Royal Institution",
+        "speaker": "Carlo Rovelli",
+        "episode_number": null,
         "date": "2019-03-23 05:50:17",
         "link": "https://www.youtube.com/watch?v=-6rWqJhDv7M&list=WL&index=5&t=1s",
         "tags": [
@@ -1249,8 +1465,11 @@
         "deleted": false
     },
     {
-        "title": "Eric Weinstein: Revolutionary Ideas",
+        "title": "Revolutionary Ideas in Science, Math, and Society",
+        "content_type": "video",
         "series": "Artificial Intelligence Podcast",
+        "speaker": "Eric Weinstein",
+        "episode_number": 16,
         "date": "2019-03-26 06:39:38",
         "link": "https://www.youtube.com/watch?v=2wq9x2QcZN0",
         "tags": [
@@ -1269,8 +1488,11 @@
         "deleted": false
     },
     {
-        "title": "Manipulating the YouTube Algorithm (#213)",
+        "title": "Manipulating the YouTube Algorithm",
+        "content_type": "video",
         "series": "Smarter Every Day",
+        "speaker": null,
+        "episode_number": 213,
         "date": "2019-04-01 08:47:18",
         "link": "https://www.youtube.com/watch?v=1PGm8LslEb4&t=0s",
         "tags": [
@@ -1278,16 +1500,19 @@
             "youtube",
             "algorithm",
             "smarter every day",
-            "Internet Research Agency",
-            "Renee DiResta",
+            "internet research agency",
+            "renee diresta",
             "twitter",
             "social media"
         ],
         "deleted": false
     },
     {
-        "title": "Nicolo Fusi: Automated Machine Learning",
+        "title": "Automated Machine Learning",
+        "content_type": "audio",
         "series": null,
+        "speaker": "Nicolo Fusi",
+        "episode_number": null,
         "date": "2019-04-01 09:46:21",
         "link": "https://www.microsoft.com/en-us/research/blog/all-about-automated-machine-learning-with-dr-nicolo-fusi",
         "tags": [
@@ -1304,8 +1529,11 @@
         "deleted": false
     },
     {
-        "title": "Peter Thiel: Competition is for Losers",
+        "title": "Competition is for Losers",
+        "content_type": "video",
         "series": null,
+        "speaker": "Peter Thiel",
+        "episode_number": null,
         "date": "2019-04-21 02:54:10",
         "link": "https://www.youtube.com/watch?v=3Fx5Q8xGU8k",
         "tags": [
@@ -1322,8 +1550,11 @@
         "deleted": false
     },
     {
-        "title": "Ian Goodfellow: Generative Adversarial Networks",
+        "title": "Generative Adversarial Networks",
+        "content_type": "video",
         "series": "Artificial Intelligence Podcast",
+        "speaker": "Ian Goodfellow",
+        "episode_number": 19,
         "date": "2019-04-21 02:57:06",
         "link": "https://www.youtube.com/watch?v=Z6rxFNMGdn0",
         "tags": [
@@ -1338,8 +1569,11 @@
         "deleted": false
     },
     {
-        "title": "Tristan Harris: Center For Humane Technology",
+        "title": "Center For Humane Technology",
+        "content_type": "video",
         "series": null,
+        "speaker": "Tristan Harris",
+        "episode_number": null,
         "date": "2019-05-18 08:42:17",
         "link": "https://vimeo.com/332340920",
         "tags": [
@@ -1356,7 +1590,10 @@
     },
     {
         "title": "My Video Went Viral",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2019-05-19 23:08:38",
         "link": "https://www.youtube.com/watch?v=fHsa9DqmId8",
         "tags": [
@@ -1374,7 +1611,10 @@
     },
     {
         "title": "Get a Spine!",
+        "content_type": "video",
         "series": "This American Life",
+        "speaker": null,
+        "episode_number": 674,
         "date": "2019-05-25 06:25:59",
         "link": "https://www.thisamericanlife.org/674/get-a-spine",
         "tags": [
@@ -1390,8 +1630,11 @@
         "deleted": false
     },
     {
-        "title": "Eric Weinstein on Joe Rogan (#1320)",
+        "title": "Eric Weinstein on Joe Rogan",
+        "content_type": "video",
         "series": "Joe Rogan Experience",
+        "speaker": "Eric Weinstein",
+        "episode_number": 1320,
         "date": "2019-07-14 08:32:28",
         "link": "https://www.youtube.com/watch?v=_EWCN3CPhTI",
         "tags": [
@@ -1405,8 +1648,11 @@
         "deleted": false
     },
     {
-        "title": "Living in the Age of AI - WIRED",
-        "series": null,
+        "title": "Living in the Age of AI",
+        "content_type": "video",
+        "series": "WIRED",
+        "speaker": null,
+        "episode_number": null,
         "date": "2019-07-14 23:27:04",
         "link": "https://www.youtube.com/watch?v=ZJixNvx9BAc",
         "tags": [
@@ -1421,8 +1667,11 @@
         "deleted": false
     },
     {
-        "title": "Eric Weinstein: Is Technology Killing Capitalism?",
-        "series": null,
+        "title": "Is Technology Killing Capitalism?",
+        "content_type": "video",
+        "series": "New Economic Thinking",
+        "speaker": "Eric Weinstein",
+        "episode_number": null,
         "date": "2019-12-02 05:48:43",
         "link": "https://www.youtube.com/watch?v=SYsy6qbKp3Y",
         "tags": [
@@ -1437,8 +1686,11 @@
         "deleted": false
     },
     {
-        "title": "Yann LeCun: Graph Embeddings and Self-Supervised Learning",
+        "title": "Graph Embeddings and Self-Supervised Learning",
+        "content_type": "video",
         "series": null,
+        "speaker": "Yann LeCun",
+        "episode_number": null,
         "date": "2019-12-02 06:11:50",
         "link": "https://www.youtube.com/watch?v=UGPT64wo7lU&t=2917s",
         "tags": [
@@ -1453,8 +1705,11 @@
         "deleted": false
     },
     {
-        "title": "Vitalik Buterin: The Ethereal Prince and His Virtual Machine (#12)",
+        "title": "The Ethereal Prince and His Virtual Machine",
+        "content_type": "video",
         "series": "The Portal",
+        "speaker": "Vitalik Buterin",
+        "episode_number": 12,
         "date": "2019-12-13 04:08:23",
         "link": "https://www.youtube.com/watch?v=8TwNNgiNZ7Y",
         "tags": [
@@ -1469,7 +1724,10 @@
     },
     {
         "title": "Regression to the Mean",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2019-12-26 11:24:39",
         "link": "https://www.youtube.com/watch?v=1tSqSMOyNFE",
         "tags": [
@@ -1485,8 +1743,11 @@
         "deleted": false
     },
     {
-        "title": "Eric Weinstein: AI Can Now Self-Reproduce",
-        "series": null,
+        "title": "AI Can Now Self-Reproduce",
+        "content_type": "video",
+        "series": "Big Think",
+        "speaker": "Eric Weinstein",
+        "episode_number": null,
         "date": "2019-12-26 11:47:12",
         "link": "https://www.youtube.com/watch?v=Wu8s0tp9yzY&list=WL&index=23&t=0s",
         "tags": [
@@ -1501,8 +1762,11 @@
         "deleted": false
     },
     {
-        "title": "David Chalmers: How do you explain consciousness?",
+        "title": "How do you explain consciousness?",
+        "content_type": "video",
         "series": "TED",
+        "speaker": "David Chalmers",
+        "episode_number": null,
         "date": "2020-01-09 05:17:12",
         "link": "https://www.youtube.com/watch?v=uhRhtFFhNzQ&list=WL&index=37&t=0s",
         "tags": [
@@ -1518,8 +1782,11 @@
         "deleted": false
     },
     {
-        "title": "Quantum Quantum (S1 E1)",
+        "title": "Quantum Quantum",
+        "content_type": "video",
         "series": "Paul Collider",
+        "speaker": null,
+        "episode_number": 1,
         "date": "2020-01-09 06:21:50",
         "link": "https://www.youtube.com/watch?v=odLukIWWLfQ&list=WL&index=29&t=54s",
         "tags": [
@@ -1533,8 +1800,11 @@
         "deleted": false
     },
     {
-        "title": "How China Tracks Everyone - VICE",
-        "series": null,
+        "title": "How China Tracks Everyone",
+        "content_type": "video",
+        "series": "VICE",
+        "speaker": null,
+        "episode_number": null,
         "date": "2020-01-09 06:34:26",
         "link": "https://www.youtube.com/watch?v=CLo3e1Pak-Y&list=WL&index=32&t=3s",
         "tags": [
@@ -1550,8 +1820,11 @@
         "deleted": false
     },
     {
-        "title": "Karl Popper: Science & Absolute Truth",
+        "title": "Science & Absolute Truth",
+        "content_type": "video",
         "series": null,
+        "speaker": "Karl Popper",
+        "episode_number": null,
         "date": "2020-01-22 05:50:19",
         "link": "https://www.youtube.com/watch?v=u0LIZV5H8bs&list=PL0KIGdjEQDyH7hTDD4Tzd76zLMIC3tilZ&index=13&t=10s",
         "tags": [
@@ -1566,8 +1839,11 @@
         "deleted": false
     },
     {
-        "title": "This equation will change how you see the world",
+        "title": "This Equation Will Change How You See the World",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2020-01-30 04:22:53",
         "link": "https://www.youtube.com/watch?v=ovJcsL7vyrk&t=0s",
         "tags": [
@@ -1584,7 +1860,10 @@
     },
     {
         "title": "Every Melody Has Been Copyrighted",
+        "content_type": "video",
         "series": "Adam Neely",
+        "speaker": null,
+        "episode_number": null,
         "date": "2020-02-14 09:22:15",
         "link": "https://www.youtube.com/watch?v=sfXn_ecH5Rw",
         "tags": [
@@ -1600,7 +1879,10 @@
     },
     {
         "title": "Simulating an Epidemic",
+        "content_type": "video",
         "series": "3Blue1Brown",
+        "speaker": null,
+        "episode_number": null,
         "date": "2020-03-28 00:19:27",
         "link": "https://www.youtube.com/watch?v=gxAaO2rsdIs",
         "tags": [
@@ -1613,8 +1895,11 @@
         "deleted": false
     },
     {
-        "title": "The Prediction and the DISC (#19)",
+        "title": "The Prediction and the DISC",
+        "content_type": "video",
         "series": "The Portal",
+        "speaker": "Bret Weinstein",
+        "episode_number": 19,
         "date": "2020-03-28 01:06:11",
         "link": "https://www.youtube.com/watch?v=JLb5hZLw44s",
         "tags": [
@@ -1628,7 +1913,10 @@
     },
     {
         "title": "Half the Universe was Missing",
+        "content_type": "video",
         "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
         "date": "2020-08-03 07:24:17",
         "link": "https://www.youtube.com/watch?v=Kp_kqamkYpw",
         "tags": [
@@ -1644,7 +1932,10 @@
     },
     {
         "title": "UBI and Collective Intelligence",
+        "content_type": "video",
         "series": "Jordan Greenhall",
+        "speaker": null,
+        "episode_number": null,
         "date": "2020-08-05 06:10:23",
         "link": "https://www.youtube.com/watch?v=x4l0W5RUhMI",
         "tags": [
@@ -1660,8 +1951,11 @@
         "deleted": false
     },
     {
-        "title": "Can We Pull Back From The Brink? (#207)",
+        "title": "Can We Pull Back From The Brink?",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": null,
+        "episode_number": 207,
         "date": "2020-08-05 07:10:23",
         "link": "https://www.youtube.com/watch?v=vmgxtcbc4iU&t=1s",
         "tags": [
@@ -1675,8 +1969,11 @@
         "deleted": false
     },
     {
-        "title": "Daniel Markovits: The Failure of Meritocracy (#205)",
+        "title": "The Failure of Meritocracy",
+        "content_type": "audio",
         "series": "Making Sense",
+        "speaker": "Daniel Markovits",
+        "episode_number": 205,
         "date": "2020-08-05 09:10:23",
         "link": "https://www.youtube.com/watch?v=UOuRYsAP5Lo",
         "tags": [
@@ -1691,7 +1988,10 @@
     },
     {
         "title": "How to Increase Productivity",
+        "content_type": "video",
         "series": "Jack Conte",
+        "speaker": null,
+        "episode_number": null,
         "date": "2020-08-11 19:28:43",
         "link": "https://www.youtube.com/watch?v=5EuWCFCgy58&t=328s",
         "tags": [
