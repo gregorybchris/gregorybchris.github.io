@@ -460,7 +460,7 @@
         "speaker": "Steven Strogatz",
         "episode_number": null,
         "date": "2016-02-10 03:51:46",
-        "link": "https://www.ted.com/talks/steven_strogatz_on_sync?language=en",
+        "link": "https://www.ted.com/talks/steven_strogatz_on_sync",
         "tags": [
             "sync",
             "synchrony",
@@ -577,7 +577,7 @@
         "speaker": "Celeste Headlee",
         "episode_number": null,
         "date": "2016-03-28 22:12:17",
-        "link": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation?language=en&utm_source=tedcomshare&utm_medium=email&utm_campaign=tedspread#t-206963",
+        "link": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation",
         "tags": [
             "conversation",
             "ted",
@@ -642,12 +642,12 @@
     {
         "title": "Stanford Sexual Assault Victim's Letter",
         "content_type": "article",
-        "source": "Buzzfeed",
+        "source": "BuzzFeed News",
         "series": null,
         "speaker": null,
         "episode_number": null,
         "date": "2016-06-12 22:08:48",
-        "link": "https://www.buzzfeed.com/katiejmbaker/heres-the-powerful-letter-the-stanford-victim-read-to-her-ra?utm_term=.xmEGaO37D#.jaL1VzwvR",
+        "link": "https://www.buzzfeednews.com/article/katiejmbaker/heres-the-powerful-letter-the-stanford-victim-read-to-her-ra",
         "tags": [
             "stanford",
             "brock",
@@ -691,7 +691,7 @@
         "speaker": "Jeff Hawkins",
         "episode_number": null,
         "date": "2016-09-25 23:42:35",
-        "link": "http://www.ted.com/talks/jeff_hawkins_on_how_brain_science_will_change_computing?language=en",
+        "link": "http://www.ted.com/talks/jeff_hawkins_on_how_brain_science_will_change_computing",
         "tags": [
             "jeff",
             "hawkins",
@@ -2101,6 +2101,27 @@
             "practice",
             "success",
             "productivity"
+        ],
+        "deleted": false
+    },
+    {
+        "title": "Squares and Tilings",
+        "content_type": "video",
+        "source": "YouTube",
+        "series": "Numberphile",
+        "speaker": null,
+        "episode_number": null,
+        "date": "2020-08-12 8:56:12",
+        "link": "https://www.youtube.com/watch?v=Rpjab--XQ0U",
+        "tags": [
+            "discrete",
+            "function",
+            "harmonic",
+            "tiling",
+            "graph",
+            "geometry",
+            "dual",
+            "math"
         ],
         "deleted": false
     }
