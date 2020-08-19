@@ -2124,5 +2124,68 @@
             "math"
         ],
         "deleted": false
+    },
+    {
+        "title": "What Makes People Engage With Math",
+        "content_type": "video",
+        "source": "YouTube",
+        "series": "TED",
+        "speaker": null,
+        "episode_number": null,
+        "date": "2020-08-19 4:04:12",
+        "link": "https://www.youtube.com/watch?v=s_L-fp8gDzY",
+        "tags": [
+            "math",
+            "excitement",
+            "fourier",
+            "grant sanderson",
+            "3blue1brown",
+            "geometry",
+            "pi",
+            "education"
+        ],
+        "deleted": false
+    },
+    {
+        "title": "Information, Evolution, and Intelligent Design",
+        "content_type": "video",
+        "source": "YouTube",
+        "series": "The Royal Institution",
+        "speaker": "Daniel Dennett",
+        "episode_number": null,
+        "date": "2020-08-19 4:07:12",
+        "link": "https://www.youtube.com/watch?v=AZX6awZq5Z0",
+        "tags": [
+            "intelligence",
+            "philosophy",
+            "biology",
+            "information",
+            "design",
+            "complexity",
+            "purpose",
+            "evolution"
+        ],
+        "deleted": false
+    },
+    {
+        "title": "Group Theory and the Monster Group",
+        "content_type": "video",
+        "source": "YouTube",
+        "series": "3Blue1Brown",
+        "speaker": null,
+        "episode_number": null,
+        "date": "2020-08-19 4:10:35",
+        "link": "https://www.youtube.com/watch?v=mH0oCDa74tE",
+        "tags": [
+            "group",
+            "theory",
+            "math",
+            "symmetry",
+            "permutation",
+            "physics",
+            "rotation",
+            "monster"
+        ],
+        "deleted": false
     }
 ]
