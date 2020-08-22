@@ -1,0 +1,82 @@
+class PostProperties:
+    AREAS = {
+        'complexity',
+        'computers',
+        'engineering',
+        'justice',
+        'medicine',
+        'natural science',
+        'neuroscience',
+        'philosophy',
+        'physics',
+        'psychology',
+        'technology',
+    }
+
+    CONTENT_TYPES = {
+        'article',
+        'audio',
+        'paper',
+        'video',
+    }
+
+    FIELDS = {
+        'title',
+        'content_type',
+        'source',
+        'areas',
+        'series',
+        'speaker',
+        'episode_number',
+        'date',
+        'link',
+        'tags',
+        'summary',
+        'deleted',
+    }
+
+    SERIES = {
+        '3Blue1Brown',
+        'Adam Neely',
+        'Aeon Essays',
+        'Artificial Intelligence Podcast',
+        'Big Think',
+        'CGP Grey',
+        'CollegeHumor',
+        'Future Thinkers',
+        'Jack Conte',
+        'Joe Rogan Experience',
+        'Jordan Greenhall',
+        'Making Sense',
+        'minutephysics',
+        'New Economic Thinking',
+        'Numberphile',
+        'Oz Talk',
+        'Paradigms',
+        'Paul Collider',
+        'Sixty Symbols',
+        'Smarter Every Day',
+        'TED',
+        'TED Ed',
+        'The Portal',
+        'The Royal Institution',
+        'This American Life',
+        'WIRED',
+        'Veritasium',
+        'VICE',
+    }
+    
+    SOURCES = {
+        'Aeon',
+        'BuzzFeed News',
+        'Daily Motion',
+        'Frontiers in Human Neuroscience',
+        'Microsoft',
+        'Sam Harris',
+        'Technology Review',
+        'TED',
+        'This American Life',
+        'Vimeo',
+        'Vox',
+        'YouTube',
+    }
