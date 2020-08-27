@@ -1,5 +1,6 @@
 class PostProperties:
     AREAS = {
+        'biology',
         'complexity',
         'computers',
         'engineering',

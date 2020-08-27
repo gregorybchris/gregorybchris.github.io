@@ -43,7 +43,7 @@
             "poetry",
             "harris"
         ],
-        "summary": null,
+        "summary": "Poem about the racism experienced by a young black man when he meets the father of his white girlfriend.",
         "deleted": false
     },
     {
@@ -207,7 +207,10 @@
         "title": "Feats of Memory",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "psychology",
+            "neuroscience"
+        ],
         "series": "TED",
         "speaker": "Joshua Foer",
         "episode_number": null,
@@ -215,8 +218,6 @@
         "link": "https://www.youtube.com/watch?v=U6PoUg7jXsA",
         "tags": [
             "memory",
-            "joshua",
-            "foer",
             "ted",
             "brain",
             "mind",
@@ -224,60 +225,57 @@
             "learning",
             "attention"
         ],
-        "summary": null,
+        "summary": "All memory techniques come down to \"elaborative encoding\". The Baker/baker paradox is where people will remember the profession baker far more easily than the name Baker because the name Baker doesn't really mean anything. The \"method of loci\" also known as the memory palace was popularized by the story of the ancient Greek poet Simonides remembering the guests in a collapsed banquet hall. Great memories are not innate gifts. We are the sum of our memories and to live the life worth living you have to be the kind of person who remembers to remember.",
         "deleted": false
     },
     {
         "title": "On Being Wrong",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "philosophy",
+            "psychology"
+        ],
         "series": "TED",
         "speaker": "Kathryn Schulz",
         "episode_number": null,
         "date": "2015-09-22 00:35:11",
         "link": "https://www.youtube.com/watch?v=QleRgTBMX88",
         "tags": [
-            "kathryn schulz",
-            "being",
-            "wrong",
             "ted",
+            "wrong",
             "pride",
             "humility",
             "mistakes",
             "learning",
-            "mystery",
-            "wonder",
             "growth"
         ],
-        "summary": null,
+        "summary": "What do we do when we misunderstand the signs around us? What do we do when we're wrong? We live in the present moment and in the present moment we're never wrong. It doesn't feel bad to be wrong. It feels bad to realize you're wrong. Being wrong feels like being right - \"error blindness\". School teaches us that the way to be successful is to never make any mistakes, instilling perfectionism. Trusting too much that we're on the right side of anything can be dangerous. The miracle of the human mind is not that we can see the world as it is, but as it isn't. And if we want to rediscover wonder we need to look out at the vastly complex universe and say \"I don't know\" ",
         "deleted": false
     },
     {
         "title": "Persistence of Vision",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "physics",
+            "biology"
+        ],
         "series": "Smarter Every Day",
         "speaker": null,
         "episode_number": 142,
         "date": "2015-10-02 20:06:23",
         "link": "https://www.youtube.com/watch?v=_FlV6pgwlrk",
         "tags": [
-            "believe",
+            "belief",
             "eyes",
-            "smarter",
-            "every",
-            "day",
-            "destin",
-            "sandlin",
             "persistence",
             "vision",
             "illusion",
             "perception",
             "lights"
         ],
-        "summary": null,
+        "summary": "Persistence of vision - the eye averages what it sees over short periods of time. If you have a flashing light that's slower than 25 flashes per second, you can perceieve the flashes. Otherwise, the neural activation activation associated with one flash will not fully die down before the onset of the next flash.",
         "deleted": false
     },
     {
@@ -2406,8 +2404,8 @@
         "date": "2020-08-19 4:10:35",
         "link": "https://www.youtube.com/watch?v=mH0oCDa74tE",
         "tags": [
-            "group",
-            "theory",
+            "group theory",
+            "isomorphism",
             "math",
             "symmetry",
             "permutation",
@@ -2415,7 +2413,7 @@
             "rotation",
             "monster"
         ],
-        "summary": null,
+        "summary": "Group theory is inextricably linked to symmetry and in turn to fundamental physics through universal laws of conservation. It lets us abstract the idea of symmetry actions away from the symmetry of any one object - groups : symmetry actions :: numbers : counts. Two groups can be considered the same if there is an isomorphism between them. Finite groups can be thought of as falling roughly in simple groups and combinations of simple groups. Simple groups have been categorized into 18 infinite group families (16 Lie groups) and 26 sporadic groups. One of these sporadic groups is called the Monster group and it acts on very high dimensional elements. Fundamental objects are not necessarily simple.",
         "deleted": false
     },
     {
@@ -2439,6 +2437,30 @@
             "design"
         ],
         "summary": null,
+        "deleted": false
+    },
+    {
+        "title": "Free Will Revisited",
+        "content_type": "audio",
+        "source": "Sam Harris",
+        "areas": [],
+        "series": "Making Sense",
+        "speaker": null,
+        "episode_number": 39,
+        "date": "2020-08-26 16:16:52",
+        "link": "https://samharris.org/subscriber-extras/free-will-revisited/",
+        "tags": [
+            "philosophy",
+            "free will",
+            "agency",
+            "golf",
+            "tiger woods",
+            "morality",
+            "freedom",
+            "control",
+            "luck"
+        ],
+        "summary": "Is there a strong case for compatibilism? Sam Harris confronts Daniel Dennett on his view of free will, accusing him of redefining the term. Dennett responds that he chooses to focus on the part of free will that is scientifically and morally useful rather than the part that people might really care about. The two go back and forth on the case of Tiger Woods, where he is the most responsible person in the world for missing an easy putt (given how much control he has) and yet his missing a putt actually says the least about him. Dennett argues that free will is the extent of an agent's control over its surroundings - degrees of freedom. What does it mean that someone \"could have done otherwise\" and is it a useful or deceptive thinking tool?",
         "deleted": false
     }
 ]
