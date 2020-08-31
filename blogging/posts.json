@@ -305,7 +305,9 @@
         "title": "Devaluation of Music",
         "content_type": "article",
         "source": null,
-        "areas": [],
+        "areas": [
+            "music"
+        ],
         "series": null,
         "speaker": null,
         "episode_number": null,
@@ -322,7 +324,7 @@
             "songs",
             "composition"
         ],
-        "summary": null,
+        "summary": "The devaluation of music over time has come from more than just streaming services and piracy. Arguably musical culture has become shallower in many dimensions. The streaming-induced shift from physical albums to individual digital tracks has removed the context and history people once consumed from album covers. News has focused on musical celebrity rather than music itself. Radio culture has replaced musical diversity and discovery with common-denominator industrial scale hits. Dwindling music education has left Americans without an appreciation for the depth of composing and playing music.",
         "deleted": false
     },
     {
@@ -2461,6 +2463,81 @@
             "luck"
         ],
         "summary": "Is there a strong case for compatibilism? Sam Harris confronts Daniel Dennett on his view of free will, accusing him of redefining the term. Dennett responds that he chooses to focus on the part of free will that is scientifically and morally useful rather than the part that people might really care about. The two go back and forth on the case of Tiger Woods, where he is the most responsible person in the world for missing an easy putt (given how much control he has) and yet his missing a putt actually says the least about him. Dennett argues that free will is the extent of an agent's control over its surroundings - degrees of freedom. What does it mean that someone \"could have done otherwise\" and is it a useful or deceptive thinking tool?",
+        "deleted": false
+    },
+    {
+        "title": "Is Success Luck or Hard Work?",
+        "content_type": "video",
+        "source": "YouTube",
+        "areas": [
+            "philosophy",
+            "psychology"
+        ],
+        "series": "Veritasium",
+        "speaker": null,
+        "episode_number": null,
+        "date": "2020-08-31 14:56:11",
+        "link": "https://www.youtube.com/watch?v=3LopI4YeC4I",
+        "tags": [
+            "philosophy",
+            "bias",
+            "luck",
+            "skill",
+            "success",
+            "altruism",
+            "competition"
+        ],
+        "summary": "You need both skill and luck to succeed. The importance of luck increases as the number of competing individuals increases. People tend to credit their own success to hard work rather than luck, therefore feeling like they need to give back less. First, in order to succeed, you have to believe you are in control of your destiny. But second, you need to know that luck actually plays a significant role and you should do your best to increase the luck of others.",
+        "deleted": false
+    },
+    {
+        "title": "TREE vs Graham's Number",
+        "content_type": "video",
+        "source": "YouTube",
+        "areas": [
+            "math"
+        ],
+        "series": "Numberphile",
+        "speaker": null,
+        "episode_number": null,
+        "date": "2020-08-31 15:01:25",
+        "link": "https://www.youtube.com/watch?v=0X9DYRLmTNY",
+        "tags": [
+            "ordinals",
+            "fast growing hierarchy",
+            "sequences",
+            "omega",
+            "recursion",
+            "exponentiation",
+            "computability",
+            "diagonalization",
+            "proofs"
+        ],
+        "summary": "The fast growing hierarchy lets us reason about extraordinarily large numbers and functions that grow extremely quickly. By using the tools of recursion and diagonalization we can extend the sequence of binary operations: succession, addition, multiplication, exponentiation, tetration, etc. These are important concepts in computability theory and proof theory.",
+        "deleted": false
+    },
+    {
+        "title": "Inside Mark Zuckerberg's Lost Notebook",
+        "content_type": "article",
+        "source": "WIRED",
+        "areas": [
+            "business",
+            "technology"
+        ],
+        "series": null,
+        "speaker": "Steven Levy",
+        "episode_number": null,
+        "date": "2020-08-31 15:09:35",
+        "link": "https://www.wired.com/story/facebook-mark-zuckerberg-lost-notebook/",
+        "tags": [
+            "facebook",
+            "mark zuckerberg",
+            "notebook",
+            "privacy",
+            "technology",
+            "business"
+        ],
+        "summary": null,
         "deleted": false
     }
 ]

@@ -1,11 +1,14 @@
 class PostProperties:
     AREAS = {
         'biology',
+        'business',
         'complexity',
         'computers',
         'engineering',
         'justice',
+        'math',
         'medicine',
+        'music',
         'natural science',
         'neuroscience',
         'philosophy',
@@ -77,6 +80,7 @@ class PostProperties:
         'Technology Review',
         'TED',
         'This American Life',
+        'WIRED',
         'Vimeo',
         'Vox',
         'YouTube',
