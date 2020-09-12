@@ -1,28 +1,5 @@
 class PostProperties:
-    AREAS = {
-        'biology',
-        'business',
-        'complexity',
-        'computers',
-        'engineering',
-        'justice',
-        'math',
-        'medicine',
-        'music',
-        'natural science',
-        'neuroscience',
-        'philosophy',
-        'physics',
-        'psychology',
-        'technology',
-    }
-
-    CONTENT_TYPES = {
-        'article',
-        'audio',
-        'paper',
-        'video',
-    }
+    # Field Names
 
     FIELDS = {
         'title',
@@ -39,6 +16,34 @@ class PostProperties:
         'deleted',
     }
 
+    # Field values
+
+    AREAS = {
+        'biology',
+        'business',
+        'comedy',
+        'complexity',
+        'computers',
+        'engineering',
+        'justice',
+        'logic',
+        'mathematics',
+        'medicine',
+        'music',
+        'neuroscience',
+        'philosophy',
+        'physics',
+        'psychology',
+        'technology',
+    }
+
+    CONTENT_TYPES = {
+        'article',
+        'audio',
+        'paper',
+        'video',
+    }
+
     SERIES = {
         '3Blue1Brown',
         'Adam Neely',
@@ -46,6 +51,7 @@ class PostProperties:
         'Artificial Intelligence Podcast',
         'Big Think',
         'CGP Grey',
+        'Charles Cornell',
         'CollegeHumor',
         'Future Thinkers',
         'Jack Conte',
@@ -69,7 +75,7 @@ class PostProperties:
         'Veritasium',
         'VICE',
     }
-    
+
     SOURCES = {
         'Aeon',
         'BuzzFeed News',

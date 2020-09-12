@@ -52,7 +52,7 @@
         "source": "YouTube",
         "areas": [
             "philosophy",
-            "natural science"
+            "biology"
         ],
         "series": "Veritasium",
         "speaker": null,
@@ -282,14 +282,16 @@
         "title": "Prisoner Hat Riddle",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "logic"
+        ],
         "series": "TED Ed",
         "speaker": "Alex Gendler",
         "episode_number": null,
         "date": "2015-10-10 02:00:03",
         "link": "https://www.youtube.com/watch?v=N5vJSNXPEwA",
         "tags": [
-            "teded",
+            "strategy",
             "prisoner",
             "hat",
             "riddle",
@@ -298,7 +300,7 @@
             "aliens",
             "logic"
         ],
-        "summary": null,
+        "summary": "Ten people in a line, all facing forward, wearing black and white hats have to try to guess the color of their hats. They succeed if at least nine of them guess correctly. They are allowed to stratgize before beginning. The solution is that the person in the back of the line guesses black or white depending on the parity of the number of black and white hats in front. This gives enough information for the rest of the nine people to guess correctly",
         "deleted": false
     },
     {
@@ -331,7 +333,9 @@
         "title": "Skewes' Massive Number",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "mathematics"
+        ],
         "series": "Numberphile",
         "speaker": null,
         "episode_number": null,
@@ -349,14 +353,17 @@
             "grahams",
             "expectation"
         ],
-        "summary": null,
+        "summary": "The Dirichlet method gives an estimate of the number of primes below a certain number. The method appears to be an upper bound with the estimate always overshooting the actual number of primes. However, Stanley Skewes showed that at some point the signed difference between actual and estimated number of primes flips and that number is greater than 10^10^10^34 - Skewes' number. The moral of the story is that just because some rule holds for a long time doesn't mean it will be true forever.",
         "deleted": false
     },
     {
         "title": "What If Bears Killed One In Five People?",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "comedy",
+            "justice"
+        ],
         "series": "CollegeHumor",
         "speaker": null,
         "episode_number": null,
@@ -371,14 +378,16 @@
             "oneinfive",
             "rape"
         ],
-        "summary": null,
+        "summary": "One in five women will be sexually assaulted by the time they finish college. Satire about the frequency of sexual assault and they ways in which sexual assault is rationalized.",
         "deleted": false
     },
     {
         "title": "Deep Neural Networks Explained",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "computers"
+        ],
         "series": null,
         "speaker": null,
         "episode_number": null,
@@ -393,14 +402,16 @@
             "natandlo",
             "google"
         ],
-        "summary": null,
+        "summary": "Visual recognition that is so intuitive for humans is pretty hard for computers. Even with many examples it can take computers a long time to learn concepts that are simple to humans. Deep neural networks are composed of artificial neurons that are roughly based on human brain biology.",
         "deleted": false
     },
     {
         "title": "How Special Relativity Makes Magnets Work",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "physics"
+        ],
         "series": "Veritasium",
         "speaker": null,
         "episode_number": null,
@@ -418,31 +429,7 @@
             "electricity",
             "science"
         ],
-        "summary": null,
-        "deleted": false
-    },
-    {
-        "title": "London 2012 Men's Double Sculls Final",
-        "content_type": "video",
-        "source": "YouTube",
-        "areas": [],
-        "series": null,
-        "speaker": null,
-        "episode_number": null,
-        "date": "2015-12-29 17:59:47",
-        "link": "https://www.youtube.com/watch?v=KC_OcudRnKc",
-        "tags": [
-            "rowing",
-            "crew",
-            "new",
-            "zealand",
-            "sculls",
-            "olympic",
-            "final",
-            "london",
-            "2012"
-        ],
-        "summary": null,
+        "summary": "Special relativity asserts that time passes slower for observers moving relatively faster - time dilation. On the other side of the coin, objects are contracted in their direction of motion - length contraction. The effects of special relativiy show up when a positively charged ion is repelled from a wire with flowing current. Your frame of reference determines whether you interpret a field as electric or magnetic. If the cation moves along with the electrons flowing in the wire length contraction will have the wire's electrons spread out and protons bunch together. To the cation this is electric repulsion. To the observer stationary relative to the wire this is interpreted as the magnetic force.",
         "deleted": false
     },
     {
@@ -2399,7 +2386,9 @@
         "title": "Group Theory and the Monster Group",
         "content_type": "video",
         "source": "YouTube",
-        "areas": [],
+        "areas": [
+            "mathematics"
+        ],
         "series": "3Blue1Brown",
         "speaker": null,
         "episode_number": null,
@@ -2445,7 +2434,9 @@
         "title": "Free Will Revisited",
         "content_type": "audio",
         "source": "Sam Harris",
-        "areas": [],
+        "areas": [
+            "philosophy"
+        ],
         "series": "Making Sense",
         "speaker": null,
         "episode_number": 39,
@@ -2495,7 +2486,7 @@
         "content_type": "video",
         "source": "YouTube",
         "areas": [
-            "math"
+            "mathematics"
         ],
         "series": "Numberphile",
         "speaker": null,
@@ -2538,6 +2529,30 @@
             "business"
         ],
         "summary": null,
+        "deleted": false
+    },
+    {
+        "title": "Mr. Rogers' Music Was Way More Intricate Than You Remember",
+        "content_type": "video",
+        "source": "YouTube",
+        "areas": [
+            "music"
+        ],
+        "series": "Charles Cornell",
+        "speaker": null,
+        "episode_number": null,
+        "date": "2020-09-12 10:37:10",
+        "link": "https://www.youtube.com/watch?v=Z40SZ77CHK0",
+        "tags": [
+            "jazz",
+            "music",
+            "fred rogers",
+            "johnny costa",
+            "facebook",
+            "facebook",
+            "facebook"
+        ],
+        "summary": "When Fred Rogers was starting his show the music budget was very small. He hired Johnny Costa for just $5000. Costa needed the money for his daughter's college education, but he considered himself a serious jazz musician and did not intend to change his style for kids. Mister Rogers' Neighborhood didn't try to dumb down music for kids. Even during the middle of episodes, the show used complex jazz music to express emotional moments. Rogers and Costa believed that even if kids might not like every bit of what they hear, at least they will be exposed to real music.",
         "deleted": false
     }
 ]
