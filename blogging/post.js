@@ -62,7 +62,7 @@ Vue.component('post', {
         <div class="blog-post" v-if="enabled">
             <div class="blog-post-title-wrap">
                 <div class="blog-post-heading">
-                    <a class="blog-post-link" v-bind:href="postContent.link">
+                    <a class="blog-post-link" v-bind:href="postContent.link" v-bind:title="postContent.summary">
                         <span class="blog-post-speaker" v-if="postContent.speaker !== null">{{ postContent.speaker }}:</span>
                         <span class="blog-post-title">{{ postContent.title }}</span>
                     </a>

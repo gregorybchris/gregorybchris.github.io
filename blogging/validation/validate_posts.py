@@ -56,6 +56,9 @@ def validate(posts):
     seen_sources = set()
     seen_titles = set()
     for post in posts:
+        if not re.fullmatch(r'[a-z0-9-]{36}', post.post_id):
+            results.add(f"Invalid post_id format \"{post.post_id}\"")
+
         if post.title in seen_titles:
             results.add(f"Duplicate title \"{post.title}\"")
         seen_titles.add(post.title)
