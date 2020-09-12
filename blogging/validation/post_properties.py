@@ -2,6 +2,7 @@ class PostProperties:
     # Field Names
 
     FIELDS = {
+        'post_id',
         'title',
         'content_type',
         'source',
