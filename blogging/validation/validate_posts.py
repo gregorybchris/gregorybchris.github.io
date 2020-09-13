@@ -10,7 +10,7 @@ POSTS_FILEPATH = '../posts.json'
 
 MIN_POST_TAGS = 5
 MIN_SUMMARY_LENGTH = 100
-MAX_SUMMARY_LENGTH = 1000
+MAX_SUMMARY_LENGTH = 1200
 
 
 class ValidationResults:
@@ -22,7 +22,7 @@ class ValidationResults:
     def add(self, message):
         self._errors.append(message)
 
-    def add_completed(self, field, count):
+    def add_completed(self, field, count=1):
         if field not in self._completed:
             self._completed[field] = 0
         self._completed[field] += count
@@ -72,7 +72,7 @@ def validate(posts):
                 if area not in PostProperties.AREAS:
                     results.add(f"Unknown area \"{area}\" for \"{post.title}\"")
                 seen_areas.add(area)
-            results.add_completed('areas', 1)
+            results.add_completed('areas')
 
         if post.content_type is not None:
             if post.content_type not in PostProperties.CONTENT_TYPES:
@@ -81,6 +81,9 @@ def validate(posts):
 
         if post.date is None:
             results.add(f"Post \"{post.title}\" is missing the required 'date' field")
+
+        if post.length is not None:
+            results.add_completed('lengths')
 
         for field in PostProperties.FIELDS:
             if not hasattr(post, field):
@@ -100,13 +103,13 @@ def validate(posts):
             summary_length = len(post.summary)
             if summary_length < MIN_SUMMARY_LENGTH:
                 results.add(f"Summary length ({summary_length}) for \"{post.title}\" "
-                            "is less than {MIN_SUMMARY_LENGTH}")
+                            f"is less than {MIN_SUMMARY_LENGTH}")
 
             if summary_length > MAX_SUMMARY_LENGTH:
                 results.add(f"Summary length ({summary_length}) for \"{post.title}\" "
-                            "is more than {MAX_SUMMARY_LENGTH}")
+                            f"is more than {MAX_SUMMARY_LENGTH}")
 
-            results.add_completed('summaries', 1)
+            results.add_completed('summaries')
 
         n_tags = len(post.tags)
         if n_tags < MIN_POST_TAGS:

@@ -5,6 +5,7 @@ class PostProperties:
         'post_id',
         'title',
         'content_type',
+        'length',
         'source',
         'areas',
         'series',
@@ -20,6 +21,7 @@ class PostProperties:
     # Field values
 
     AREAS = {
+        'art',
         'biology',
         'business',
         'comedy',
@@ -27,6 +29,7 @@ class PostProperties:
         'computers',
         'engineering',
         'justice',
+        'law',
         'logic',
         'mathematics',
         'medicine',
@@ -34,6 +37,7 @@ class PostProperties:
         'neuroscience',
         'philosophy',
         'physics',
+        'politics',
         'psychology',
         'technology',
     }
