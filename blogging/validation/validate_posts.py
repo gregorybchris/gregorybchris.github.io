@@ -104,13 +104,22 @@ def validate(posts):
             seen_content_type.add(post.content_type)
 
         if post.date_created is not None:
+            if not re.fullmatch(r'[0-9]{4}-[0-9]{2}-[0-9]{2}', post.date_created):
+                results.add(f"Invalid date_created format \"{post.date_created}\"")
             results.add_completed('date_created')
 
         if post.date_posted is None:
             results.add(f"Post \"{post.title}\" is missing the required 'date_posted' field")
+        else:
+            if not re.fullmatch(r'[0-9]{4}-[0-9]{2}-[0-9]{2}', post.date_posted):
+                results.add(f"Invalid date_posted format \"{post.date_posted}\"")
 
-        if post.length is not None:
-            results.add_completed('length')
+        if post.length is None:
+            if post.content_type == 'video':
+                results.add(f"Post \"{post.title}\" is missing the required \"length\" field for videos")
+        else:
+            if not re.fullmatch(r'[0-9]{2}:[0-5][0-9]:[0-5][0-9]', post.length):
+                results.add(f"Invalid video length format \"{post.length}\"")
 
         if post.series is not None:
             if post.series not in PostProperties.SERIES:
@@ -165,7 +174,7 @@ def validate(posts):
             if value not in seen_set:
                 results.add(f"Unused {field} \"{value}\"")
 
-    # Validate formatting
+    # Validate constants
 
     for area in PostProperties.AREAS:
         if not re.fullmatch(r'[a-z]+', area):
@@ -174,8 +183,6 @@ def validate(posts):
     for content_type in PostProperties.CONTENT_TYPES:
         if not re.fullmatch(r'[a-z]+', content_type):
             results.add(f"Invalid content type format \"{content_type}\"")
-
-    # Validate constants
 
     for field, _, known_set in seen_known_map:
         last_value = None
