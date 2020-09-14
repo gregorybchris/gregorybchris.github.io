@@ -12,7 +12,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2015-07-24 02:10:00",
+        "date_created": null,
+        "date_posted": "2015-07-24 02:10:00",
         "link": "http://idlewords.com/talks/web_design_first_100_years.htm",
         "tags": [
             "web",
@@ -38,7 +39,8 @@
         "speaker": "Dave Harris",
         "episode_number": null,
         "length": "00:03:12",
-        "date": "2015-08-07 04:46:01",
+        "date_created": null,
+        "date_posted": "2015-08-07 04:46:01",
         "link": "https://www.youtube.com/watch?v=eucT-E1vkms",
         "tags": [
             "black",
@@ -63,7 +65,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:07:38",
-        "date": "2015-08-19 04:04:54",
+        "date_created": null,
+        "date_posted": "2015-08-19 04:04:54",
         "link": "https://www.youtube.com/watch?v=EKR-HydGohQ",
         "tags": [
             "our",
@@ -93,7 +96,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2015-08-20 23:35:18",
+        "date_created": null,
+        "date_posted": "2015-08-20 23:35:18",
         "link": "http://maverickphilosopher.typepad.com/maverick_philosopher/2011/12/searle-subjectivity-and-objectivity.html",
         "tags": [
             "searle",
@@ -121,7 +125,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2015-08-26 00:42:05",
+        "date_created": null,
+        "date_posted": "2015-08-26 00:42:05",
         "link": "http://kevinjbrowne.weebly.com/my-interview-with-the-stoics.html",
         "tags": [
             "interview",
@@ -148,7 +153,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:09:22",
-        "date": "2015-08-26 05:51:40",
+        "date_created": null,
+        "date_posted": "2015-08-26 05:51:40",
         "link": "https://www.youtube.com/watch?v=TcxZSmzPw8k",
         "tags": [
             "six",
@@ -176,7 +182,8 @@
         "speaker": "Hugh Herr",
         "episode_number": null,
         "length": "00:19:00",
-        "date": "2015-08-30 05:30:12",
+        "date_created": null,
+        "date_posted": "2015-08-30 05:30:12",
         "link": "https://www.youtube.com/watch?v=CDsNZJTWw0w",
         "tags": [
             "ted",
@@ -204,7 +211,8 @@
         "speaker": "Chad Orzel",
         "episode_number": null,
         "length": "00:04:44",
-        "date": "2015-09-06 19:30:36",
+        "date_created": null,
+        "date_posted": "2015-09-06 19:30:36",
         "link": "https://www.youtube.com/watch?v=TQKELOE9eY4",
         "tags": [
             "heisenberg",
@@ -232,7 +240,8 @@
         "speaker": "Joshua Foer",
         "episode_number": null,
         "length": "00:20:28",
-        "date": "2015-09-14 21:34:48",
+        "date_created": null,
+        "date_posted": "2015-09-14 21:34:48",
         "link": "https://www.youtube.com/watch?v=U6PoUg7jXsA",
         "tags": [
             "memory",
@@ -259,7 +268,8 @@
         "speaker": "Kathryn Schulz",
         "episode_number": null,
         "length": "00:17:51",
-        "date": "2015-09-22 00:35:11",
+        "date_created": null,
+        "date_posted": "2015-09-22 00:35:11",
         "link": "https://www.youtube.com/watch?v=QleRgTBMX88",
         "tags": [
             "ted",
@@ -286,7 +296,8 @@
         "speaker": null,
         "episode_number": 142,
         "length": "00:10:32",
-        "date": "2015-10-02 20:06:23",
+        "date_created": null,
+        "date_posted": "2015-10-02 20:06:23",
         "link": "https://www.youtube.com/watch?v=_FlV6pgwlrk",
         "tags": [
             "belief",
@@ -312,7 +323,8 @@
         "speaker": "Alex Gendler",
         "episode_number": null,
         "length": "00:04:34",
-        "date": "2015-10-10 02:00:03",
+        "date_created": null,
+        "date_posted": "2015-10-10 02:00:03",
         "link": "https://www.youtube.com/watch?v=N5vJSNXPEwA",
         "tags": [
             "strategy",
@@ -339,7 +351,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2015-10-15 20:04:56",
+        "date_created": null,
+        "date_posted": "2015-10-15 20:04:56",
         "link": "https://medium.com/cuepoint/the-devaluation-of-music-it-s-worse-than-you-think-f4cf5f26a888",
         "tags": [
             "music",
@@ -367,7 +380,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:10:25",
-        "date": "2015-10-29 17:57:11",
+        "date_created": null,
+        "date_posted": "2015-10-29 17:57:11",
         "link": "https://www.youtube.com/watch?v=Lihh_lMmcDw",
         "tags": [
             "skewes",
@@ -397,7 +411,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:02:25",
-        "date": "2015-11-11 00:05:08",
+        "date_created": null,
+        "date_posted": "2015-11-11 00:05:08",
         "link": "https://www.youtube.com/watch?v=LNVFPkmZTQ4",
         "tags": [
             "collegehumor",
@@ -423,7 +438,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:05:58",
-        "date": "2015-11-26 03:26:43",
+        "date_created": null,
+        "date_posted": "2015-11-26 03:26:43",
         "link": "https://www.youtube.com/watch?v=bHvf7Tagt18",
         "tags": [
             "machine",
@@ -449,7 +465,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:04:19",
-        "date": "2015-12-29 17:56:17",
+        "date_created": null,
+        "date_posted": "2015-12-29 17:56:17",
         "link": "https://www.youtube.com/watch?v=1TKSfAkWWN0",
         "tags": [
             "special",
@@ -476,7 +493,8 @@
         "speaker": "Peter Hankins",
         "episode_number": null,
         "length": null,
-        "date": "2015-12-31 03:04:27",
+        "date_created": null,
+        "date_posted": "2015-12-31 03:04:27",
         "link": "https://aeon.co/opinions/why-trying-to-simulate-the-human-brain-is-a-waste-of-energy",
         "tags": [
             "brain",
@@ -502,7 +520,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2016-01-05 04:10:31",
+        "date_created": null,
+        "date_posted": "2016-01-05 04:10:31",
         "link": "http://creativity-online.com/work/noe-ong-koko-the-gorilla-is-the-voice-of-nature-at-cop21/44566",
         "tags": [
             "koko",
@@ -526,7 +545,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2016-01-28 05:24:47",
+        "date_created": null,
+        "date_posted": "2016-01-28 05:24:47",
         "link": "https://www.technologyreview.com/2016/01/27/109178/googles-ai-masters-the-game-of-go-a-decade-earlier-than-expected/",
         "tags": [
             "google",
@@ -553,7 +573,8 @@
         "speaker": "Steven Strogatz",
         "episode_number": null,
         "length": "00:21:40",
-        "date": "2016-02-10 03:51:46",
+        "date_created": null,
+        "date_posted": "2016-02-10 03:51:46",
         "link": "https://www.ted.com/talks/steven_strogatz_on_sync",
         "tags": [
             "sync",
@@ -581,7 +602,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:03:02",
-        "date": "2016-02-11 05:21:49",
+        "date_created": null,
+        "date_posted": "2016-02-11 05:21:49",
         "link": "https://www.youtube.com/watch?v=qwIjKuitlu8",
         "tags": [
             "race",
@@ -606,7 +628,8 @@
         "speaker": "Jeremy Howard",
         "episode_number": null,
         "length": "00:19:37",
-        "date": "2016-02-18 03:14:41",
+        "date_created": null,
+        "date_posted": "2016-02-18 03:14:41",
         "link": "https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn",
         "tags": [
             "jeremy",
@@ -634,7 +657,8 @@
         "speaker": "Michael Levin",
         "episode_number": null,
         "length": "00:53:14",
-        "date": "2016-02-21 21:32:02",
+        "date_created": null,
+        "date_posted": "2016-02-21 21:32:02",
         "link": "https://www.youtube.com/watch?v=YVY1kNAAqsE",
         "tags": [
             "tufts",
@@ -642,8 +666,7 @@
             "bioelectric",
             "potential",
             "regeneration",
-            "michael",
-            "levin",
+            "michael levin",
             "developmental",
             "complex",
             "systems",
@@ -667,7 +690,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2016-02-28 22:13:04",
+        "date_created": null,
+        "date_posted": "2016-02-28 22:13:04",
         "link": "http://www.vox.com/2015/10/3/9444417/gun-violence-united-states-america",
         "tags": [
             "gun",
@@ -694,7 +718,8 @@
         "speaker": "Celeste Headlee",
         "episode_number": null,
         "length": "00:11:36",
-        "date": "2016-03-28 22:12:17",
+        "date_created": null,
+        "date_posted": "2016-03-28 22:12:17",
         "link": "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation",
         "tags": [
             "conversation",
@@ -721,7 +746,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2016-03-30 06:18:30",
+        "date_created": null,
+        "date_posted": "2016-03-30 06:18:30",
         "link": "http://www.r2d3.us/visual-intro-to-machine-learning-part-1/",
         "tags": [
             "machine",
@@ -749,7 +775,8 @@
         "speaker": "Daniel Dennett",
         "episode_number": null,
         "length": "00:06:33",
-        "date": "2016-04-14 23:10:16",
+        "date_created": null,
+        "date_posted": "2016-04-14 23:10:16",
         "link": "https://www.youtube.com/watch?v=R-Nj_rEqkyQ",
         "tags": [
             "consciousness",
@@ -776,7 +803,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2016-06-12 22:08:48",
+        "date_created": null,
+        "date_posted": "2016-06-12 22:08:48",
         "link": "https://www.buzzfeednews.com/article/katiejmbaker/heres-the-powerful-letter-the-stanford-victim-read-to-her-ra",
         "tags": [
             "stanford",
@@ -801,7 +829,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:12:22",
-        "date": "2016-09-25 23:40:11",
+        "date_created": null,
+        "date_posted": "2016-09-25 23:40:11",
         "link": "https://www.youtube.com/watch?v=42QuXLucH3Q",
         "tags": [
             "derek",
@@ -828,7 +857,8 @@
         "speaker": "Jeff Hawkins",
         "episode_number": null,
         "length": "00:20:00",
-        "date": "2016-09-25 23:42:35",
+        "date_created": null,
+        "date_posted": "2016-09-25 23:42:35",
         "link": "http://www.ted.com/talks/jeff_hawkins_on_how_brain_science_will_change_computing",
         "tags": [
             "jeff",
@@ -851,7 +881,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:14:54",
-        "date": "2016-10-06 15:21:29",
+        "date_created": null,
+        "date_posted": "2016-10-06 15:21:29",
         "link": "https://www.youtube.com/watch?v=3yBGE80covk",
         "tags": [
             "donald",
@@ -878,7 +909,8 @@
         "speaker": "Sam Harris",
         "episode_number": null,
         "length": "00:14:28",
-        "date": "2016-10-24 03:00:42",
+        "date_created": null,
+        "date_posted": "2016-10-24 03:00:42",
         "link": "https://www.youtube.com/watch?v=8nt3edWLgIg",
         "tags": [
             "ted",
@@ -904,7 +936,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:03:28",
-        "date": "2016-10-24 03:09:21",
+        "date_created": null,
+        "date_posted": "2016-10-24 03:09:21",
         "link": "https://www.youtube.com/watch?v=3AMCcYnAsdQ",
         "tags": [
             "minute",
@@ -930,7 +963,8 @@
         "speaker": "Paul Bloom",
         "episode_number": 56,
         "length": "02:19:32",
-        "date": "2016-12-17 20:34:54",
+        "date_created": null,
+        "date_posted": "2016-12-17 20:34:54",
         "link": "https://samharris.org/subscriber-extras/abusing-dolores/",
         "tags": [
             "sam",
@@ -956,7 +990,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:07:34",
-        "date": "2017-01-05 21:01:21",
+        "date_created": null,
+        "date_posted": "2017-01-05 21:01:21",
         "link": "https://www.youtube.com/watch?v=2uWps9LczH8",
         "tags": [
             "bronze",
@@ -982,7 +1017,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:04:30",
-        "date": "2017-01-23 04:46:54",
+        "date_created": null,
+        "date_posted": "2017-01-23 04:46:54",
         "link": "https://www.youtube.com/watch?v=iHzzSao6ypE",
         "tags": [
             "cars",
@@ -1006,7 +1042,8 @@
         "speaker": "Yaron Brook",
         "episode_number": null,
         "length": "01:22:05",
-        "date": "2017-02-14 06:49:36",
+        "date_created": null,
+        "date_posted": "2017-02-14 06:49:36",
         "link": "https://www.youtube.com/watch?v=HtJwAYJ9B08",
         "tags": [
             "yaron",
@@ -1034,7 +1071,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:14:16",
-        "date": "2017-02-15 18:48:35",
+        "date_created": null,
+        "date_posted": "2017-02-15 18:48:35",
         "link": "https://www.youtube.com/watch?v=JXfQsHT5c30",
         "tags": [
             "music",
@@ -1057,7 +1095,8 @@
         "speaker": "Kate Darling",
         "episode_number": 66,
         "length": "01:04:18",
-        "date": "2017-03-29 03:55:28",
+        "date_created": null,
+        "date_posted": "2017-03-29 03:55:28",
         "link": "https://samharris.org/subscriber-extras/living-with-robots/",
         "tags": [
             "making sense",
@@ -1085,7 +1124,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:09:13",
-        "date": "2017-03-31 06:33:58",
+        "date_created": null,
+        "date_posted": "2017-03-31 06:33:58",
         "link": "https://www.youtube.com/watch?v=XXjlR2OK1kM",
         "tags": [
             "benfords",
@@ -1111,7 +1151,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:01:36",
-        "date": "2017-03-31 06:40:56",
+        "date_created": null,
+        "date_posted": "2017-03-31 06:40:56",
         "link": "https://www.youtube.com/watch?v=eivGlBKlK6M",
         "tags": [
             "math",
@@ -1138,18 +1179,15 @@
         "speaker": "Tristan Harris",
         "episode_number": 71,
         "length": "01:45:46",
-        "date": "2017-04-26 00:22:12",
+        "date_created": null,
+        "date_posted": "2017-04-26 00:22:12",
         "link": "https://samharris.org/subscriber-extras/71-technology-us/",
         "tags": [
             "social",
             "media",
             "technology",
-            "sam",
-            "harris",
-            "tristan",
-            "time",
-            "well",
-            "spent",
+            "tristan harris",
+            "time well spent",
             "attention",
             "race",
             "facebook",
@@ -1168,7 +1206,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2017-05-15 20:47:40",
+        "date_created": null,
+        "date_posted": "2017-05-15 20:47:40",
         "link": "http://clarionproject.org/factsheets-files/islamic-state-magazine-dabiq-fifteen-breaking-the-cross.pdf",
         "tags": [
             "dabiq",
@@ -1190,7 +1229,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:29:42",
-        "date": "2017-05-21 07:18:40",
+        "date_created": null,
+        "date_posted": "2017-05-21 07:18:40",
         "link": "https://www.youtube.com/watch?v=NaL_Cb42WyY",
         "tags": [
             "pi",
@@ -1215,7 +1255,8 @@
         "speaker": "Timothy Snyder",
         "episode_number": 79,
         "length": "01:15:28",
-        "date": "2017-06-12 06:57:42",
+        "date_created": null,
+        "date_posted": "2017-06-12 06:57:42",
         "link": "https://samharris.org/subscriber-extras/79-road-tyranny/",
         "tags": [
             "tyranny",
@@ -1240,7 +1281,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:04:39",
-        "date": "2017-10-24 18:37:04",
+        "date_created": null,
+        "date_posted": "2017-10-24 18:37:04",
         "link": "https://www.youtube.com/watch?v=ebEkn-BiW5k",
         "tags": [
             "paradox",
@@ -1263,7 +1305,8 @@
         "speaker": "Anil K. Seth",
         "episode_number": 113,
         "length": "03:05:02",
-        "date": "2018-01-30 16:49:01",
+        "date_created": null,
+        "date_posted": "2018-01-30 16:49:01",
         "link": "https://samharris.org/podcasts/113-consciousness-and-the-self/",
         "tags": [
             "consciousness",
@@ -1290,7 +1333,8 @@
         "speaker": "Eliezer Yudkowsky",
         "episode_number": 116,
         "length": "02:07:28",
-        "date": "2018-02-17 23:29:29",
+        "date_created": null,
+        "date_posted": "2018-02-17 23:29:29",
         "link": "https://samharris.org/subscriber-extras/116-ai-racing-toward-brink/",
         "tags": [
             "ai",
@@ -1312,7 +1356,8 @@
         "speaker": "Anil K. Seth",
         "episode_number": null,
         "length": null,
-        "date": "2018-02-22 18:57:16",
+        "date_created": null,
+        "date_posted": "2018-02-22 18:57:16",
         "link": "https://aeon.co/essays/the-hard-problem-of-consciousness-is-a-distraction-from-the-real-one",
         "tags": [
             "anil seth",
@@ -1334,7 +1379,8 @@
         "speaker": null,
         "episode_number": 1,
         "length": "00:14:11",
-        "date": "2018-03-28 05:38:01",
+        "date_created": null,
+        "date_posted": "2018-03-28 05:38:01",
         "link": "https://www.dailymotion.com/video/x6h9pjl",
         "tags": [
             "paradigms",
@@ -1357,7 +1403,8 @@
         "speaker": "Robert Epstein",
         "episode_number": null,
         "length": null,
-        "date": "2018-04-09 02:42:25",
+        "date_created": null,
+        "date_posted": "2018-04-09 02:42:25",
         "link": "https://aeon.co/essays/your-brain-does-not-process-information-and-it-is-not-a-computer",
         "tags": [
             "brain",
@@ -1382,7 +1429,8 @@
         "speaker": null,
         "episode_number": null,
         "length": null,
-        "date": "2018-04-09 03:28:24",
+        "date_created": null,
+        "date_posted": "2018-04-09 03:28:24",
         "link": "https://www.frontiersin.org/articles/10.3389/fnhum.2014.00020/full",
         "tags": [
             "entropic",
@@ -1406,7 +1454,8 @@
         "speaker": "Daniel Dennett",
         "episode_number": null,
         "length": "00:25:33",
-        "date": "2018-04-09 17:47:42",
+        "date_created": null,
+        "date_posted": "2018-04-09 17:47:42",
         "link": "https://www.youtube.com/watch?v=arEvPIhOLyQ",
         "tags": [
             "information",
@@ -1432,7 +1481,8 @@
         "speaker": "Bret Weinstein",
         "episode_number": null,
         "length": "00:16:33",
-        "date": "2018-06-11 03:57:55",
+        "date_created": null,
+        "date_posted": "2018-06-11 03:57:55",
         "link": "https://www.youtube.com/watch?v=SjNRtrZjkfE",
         "tags": [
             "climate",
@@ -1459,7 +1509,8 @@
         "speaker": "Harry Cliff",
         "episode_number": null,
         "length": "00:59:44",
-        "date": "2018-06-26 07:25:32",
+        "date_created": null,
+        "date_posted": "2018-06-26 07:25:32",
         "link": "https://www.youtube.com/watch?v=edvdzh9Pggg",
         "tags": [
             "quantum",
@@ -1484,7 +1535,8 @@
         "speaker": "Tristan Harris",
         "episode_number": null,
         "length": "00:17:00",
-        "date": "2018-07-03 07:10:26",
+        "date_created": null,
+        "date_posted": "2018-07-03 07:10:26",
         "link": "https://www.youtube.com/watch?v=C74amJRp730",
         "tags": [
             "attention",
@@ -1508,7 +1560,8 @@
         "speaker": "Sandra Navidi",
         "episode_number": null,
         "length": "00:15:55",
-        "date": "2018-08-09 07:42:05",
+        "date_created": null,
+        "date_posted": "2018-08-09 07:42:05",
         "link": "https://www.youtube.com/watch?v=HNklBtyUZwo",
         "tags": [
             "networks",
@@ -1532,7 +1585,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:03:14",
-        "date": "2018-10-01 06:55:24",
+        "date_created": null,
+        "date_posted": "2018-10-01 06:55:24",
         "link": "https://www.youtube.com/watch?v=glgblV7Un_g",
         "tags": [
             "gallon",
@@ -1554,7 +1608,8 @@
         "speaker": "Iain McGilchrist and Jordan Peterson",
         "episode_number": null,
         "length": "00:29:51",
-        "date": "2018-11-10 08:56:14",
+        "date_created": null,
+        "date_posted": "2018-11-10 08:56:14",
         "link": "https://www.youtube.com/watch?v=xtf4FDlpPZ8",
         "tags": [
             "brain",
@@ -1579,7 +1634,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:52:37",
-        "date": "2018-12-02 09:37:12",
+        "date_created": null,
+        "date_posted": "2018-12-02 09:37:12",
         "link": "https://www.youtube.com/watch?v=tQGksc1I7rA",
         "tags": [
             "conversation",
@@ -1602,7 +1658,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:44:33",
-        "date": "2018-12-08 07:56:49",
+        "date_created": null,
+        "date_posted": "2018-12-08 07:56:49",
         "link": "https://www.youtube.com/watch?v=64HGcESw5-8",
         "tags": [
             "jordan greenhall",
@@ -1627,7 +1684,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:07:55",
-        "date": "2018-12-11 06:53:50",
+        "date_created": null,
+        "date_posted": "2018-12-11 06:53:50",
         "link": "https://www.youtube.com/watch?v=qQhUxd82Rr0",
         "tags": [
             "brain",
@@ -1651,7 +1709,8 @@
         "speaker": "Rich Hickey",
         "episode_number": null,
         "length": "01:03:28",
-        "date": "2018-12-11 06:55:57",
+        "date_created": null,
+        "date_posted": "2018-12-11 06:55:57",
         "link": "https://www.youtube.com/watch?v=YR5WdGrpoug",
         "tags": [
             "programming",
@@ -1676,7 +1735,8 @@
         "speaker": "Jordan Peterson",
         "episode_number": null,
         "length": "02:42:31",
-        "date": "2018-12-14 09:21:40",
+        "date_created": null,
+        "date_posted": "2018-12-14 09:21:40",
         "link": "https://www.youtube.com/watch?v=AscPHmLWo-M",
         "tags": [
             "jordan peterson",
@@ -1701,7 +1761,8 @@
         "speaker": "Daniel Schmachtenberger",
         "episode_number": 46,
         "length": "01:05:03",
-        "date": "2018-12-24 06:49:45",
+        "date_created": null,
+        "date_posted": "2018-12-24 06:49:45",
         "link": "https://www.youtube.com/watch?v=IfoPitvLY7c",
         "tags": [
             "existential",
@@ -1726,7 +1787,8 @@
         "speaker": "Sir Roger Scruton and Jordan Peterson",
         "episode_number": null,
         "length": "01:32:35",
-        "date": "2018-12-30 05:28:56",
+        "date_created": null,
+        "date_posted": "2018-12-30 05:28:56",
         "link": "https://www.youtube.com/watch?v=XvbtKAYdcZY",
         "tags": [
             "roger scruton",
@@ -1751,7 +1813,8 @@
         "speaker": "Garrett Lisi",
         "episode_number": null,
         "length": "00:12:08",
-        "date": "2019-01-03 08:30:27",
+        "date_created": null,
+        "date_posted": "2019-01-03 08:30:27",
         "link": "https://www.youtube.com/watch?v=wfALJzn1hE8",
         "tags": [
             "physics",
@@ -1774,7 +1837,8 @@
         "speaker": null,
         "episode_number": 211,
         "length": "00:28:11",
-        "date": "2019-03-05 08:14:52",
+        "date_created": null,
+        "date_posted": "2019-03-05 08:14:52",
         "link": "https://www.youtube.com/watch?v=qOTYgcdNrXE",
         "tags": [
             "intelligence",
@@ -1798,7 +1862,8 @@
         "speaker": "Ren\u00e9e DiResta",
         "episode_number": 145,
         "length": "01:10:02",
-        "date": "2019-03-05 08:18:05",
+        "date_created": null,
+        "date_posted": "2019-03-05 08:18:05",
         "link": "https://samharris.org/subscriber-extras/145-information-war/",
         "tags": [
             "internet research agency",
@@ -1822,7 +1887,8 @@
         "speaker": "Carlo Rovelli",
         "episode_number": null,
         "length": "00:54:53",
-        "date": "2019-03-23 05:50:17",
+        "date_created": null,
+        "date_posted": "2019-03-23 05:50:17",
         "link": "https://www.youtube.com/watch?v=-6rWqJhDv7M",
         "tags": [
             "physics",
@@ -1847,7 +1913,8 @@
         "speaker": "Eric Weinstein",
         "episode_number": 16,
         "length": "01:21:55",
-        "date": "2019-03-26 06:39:38",
+        "date_created": null,
+        "date_posted": "2019-03-26 06:39:38",
         "link": "https://www.youtube.com/watch?v=2wq9x2QcZN0",
         "tags": [
             "physics",
@@ -1875,7 +1942,8 @@
         "speaker": null,
         "episode_number": 213,
         "length": "00:20:21",
-        "date": "2019-04-01 08:47:18",
+        "date_created": null,
+        "date_posted": "2019-04-01 08:47:18",
         "link": "https://www.youtube.com/watch?v=1PGm8LslEb4",
         "tags": [
             "manipulating",
@@ -1900,7 +1968,8 @@
         "speaker": "Nicolo Fusi",
         "episode_number": null,
         "length": "00:30:56",
-        "date": "2019-04-01 09:46:21",
+        "date_created": null,
+        "date_posted": "2019-04-01 09:46:21",
         "link": "https://www.microsoft.com/en-us/research/blog/all-about-automated-machine-learning-with-dr-nicolo-fusi",
         "tags": [
             "automated",
@@ -1926,7 +1995,8 @@
         "speaker": "Peter Thiel",
         "episode_number": null,
         "length": "00:50:27",
-        "date": "2019-04-21 02:54:10",
+        "date_created": null,
+        "date_posted": "2019-04-21 02:54:10",
         "link": "https://www.youtube.com/watch?v=3Fx5Q8xGU8k",
         "tags": [
             "peter thiel",
@@ -1952,7 +2022,8 @@
         "speaker": "Ian Goodfellow",
         "episode_number": 19,
         "length": "01:08:36",
-        "date": "2019-04-21 02:57:06",
+        "date_created": null,
+        "date_posted": "2019-04-21 02:57:06",
         "link": "https://www.youtube.com/watch?v=Z6rxFNMGdn0",
         "tags": [
             "ian goodfellow",
@@ -1976,7 +2047,8 @@
         "speaker": "Tristan Harris",
         "episode_number": null,
         "length": "00:44:27",
-        "date": "2019-05-18 08:42:17",
+        "date_created": null,
+        "date_posted": "2019-05-18 08:42:17",
         "link": "https://vimeo.com/332340920",
         "tags": [
             "humane",
@@ -2001,7 +2073,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:23:42",
-        "date": "2019-05-19 23:08:38",
+        "date_created": null,
+        "date_posted": "2019-05-19 23:08:38",
         "link": "https://www.youtube.com/watch?v=fHsa9DqmId8",
         "tags": [
             "click bait",
@@ -2027,7 +2100,8 @@
         "speaker": null,
         "episode_number": 674,
         "length": "01:03:16",
-        "date": "2019-05-25 06:25:59",
+        "date_created": null,
+        "date_posted": "2019-05-25 06:25:59",
         "link": "https://www.thisamericanlife.org/674/get-a-spine",
         "tags": [
             "this american life",
@@ -2052,7 +2126,8 @@
         "speaker": "Eric Weinstein",
         "episode_number": 1320,
         "length": "03:28:11",
-        "date": "2019-07-14 08:32:28",
+        "date_created": null,
+        "date_posted": "2019-07-14 08:32:28",
         "link": "https://www.youtube.com/watch?v=_EWCN3CPhTI",
         "tags": [
             "eric weinstein",
@@ -2075,7 +2150,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:41:16",
-        "date": "2019-07-14 23:27:04",
+        "date_created": null,
+        "date_posted": "2019-07-14 23:27:04",
         "link": "https://www.youtube.com/watch?v=ZJixNvx9BAc",
         "tags": [
             "wired",
@@ -2099,7 +2175,8 @@
         "speaker": "Eric Weinstein",
         "episode_number": null,
         "length": "00:18:03",
-        "date": "2019-12-02 05:48:43",
+        "date_created": null,
+        "date_posted": "2019-12-02 05:48:43",
         "link": "https://www.youtube.com/watch?v=SYsy6qbKp3Y",
         "tags": [
             "technology",
@@ -2123,7 +2200,8 @@
         "speaker": "Yann LeCun",
         "episode_number": null,
         "length": "01:10:10",
-        "date": "2019-12-02 06:11:50",
+        "date_created": null,
+        "date_posted": "2019-12-02 06:11:50",
         "link": "https://www.youtube.com/watch?v=UGPT64wo7lU",
         "tags": [
             "graph",
@@ -2147,7 +2225,8 @@
         "speaker": "Vitalik Buterin",
         "episode_number": 12,
         "length": "01:29:19",
-        "date": "2019-12-13 04:08:23",
+        "date_created": null,
+        "date_posted": "2019-12-13 04:08:23",
         "link": "https://www.youtube.com/watch?v=8TwNNgiNZ7Y",
         "tags": [
             "vitalik buterin",
@@ -2170,7 +2249,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:07:37",
-        "date": "2019-12-26 11:24:39",
+        "date_created": null,
+        "date_posted": "2019-12-26 11:24:39",
         "link": "https://www.youtube.com/watch?v=1tSqSMOyNFE",
         "tags": [
             "veritasium",
@@ -2195,7 +2275,8 @@
         "speaker": "Eric Weinstein",
         "episode_number": null,
         "length": "00:05:30",
-        "date": "2019-12-26 11:47:12",
+        "date_created": null,
+        "date_posted": "2019-12-26 11:47:12",
         "link": "https://www.youtube.com/watch?v=Wu8s0tp9yzY",
         "tags": [
             "eric weinstein",
@@ -2219,7 +2300,8 @@
         "speaker": "David Chalmers",
         "episode_number": null,
         "length": "00:18:37",
-        "date": "2020-01-09 05:17:12",
+        "date_created": null,
+        "date_posted": "2020-01-09 05:17:12",
         "link": "https://www.youtube.com/watch?v=uhRhtFFhNzQ",
         "tags": [
             "david chalmers",
@@ -2244,7 +2326,8 @@
         "speaker": null,
         "episode_number": 1,
         "length": "01:32:29",
-        "date": "2020-01-09 06:21:50",
+        "date_created": null,
+        "date_posted": "2020-01-09 06:21:50",
         "link": "https://www.youtube.com/watch?v=odLukIWWLfQ",
         "tags": [
             "simulation",
@@ -2267,7 +2350,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:12:55",
-        "date": "2020-01-09 06:34:26",
+        "date_created": null,
+        "date_posted": "2020-01-09 06:34:26",
         "link": "https://www.youtube.com/watch?v=CLo3e1Pak-Y",
         "tags": [
             "china",
@@ -2292,7 +2376,8 @@
         "speaker": "Karl Popper",
         "episode_number": null,
         "length": "00:06:13",
-        "date": "2020-01-22 05:50:19",
+        "date_created": null,
+        "date_posted": "2020-01-22 05:50:19",
         "link": "https://www.youtube.com/watch?v=u0LIZV5H8bs",
         "tags": [
             "karl popper",
@@ -2316,7 +2401,8 @@
         "speaker": "00:18:39",
         "episode_number": null,
         "length": null,
-        "date": "2020-01-30 04:22:53",
+        "date_created": null,
+        "date_posted": "2020-01-30 04:22:53",
         "link": "https://www.youtube.com/watch?v=ovJcsL7vyrk",
         "tags": [
             "chaos",
@@ -2344,7 +2430,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:10:32",
-        "date": "2020-02-14 09:22:15",
+        "date_created": null,
+        "date_posted": "2020-02-14 09:22:15",
         "link": "https://www.youtube.com/watch?v=sfXn_ecH5Rw",
         "tags": [
             "music",
@@ -2368,7 +2455,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:23:12",
-        "date": "2020-03-28 00:19:27",
+        "date_created": null,
+        "date_posted": "2020-03-28 00:19:27",
         "link": "https://www.youtube.com/watch?v=gxAaO2rsdIs",
         "tags": [
             "3blue1brown",
@@ -2390,7 +2478,8 @@
         "speaker": "Bret Weinstein",
         "episode_number": 19,
         "length": "02:13:49",
-        "date": "2020-03-28 01:06:11",
+        "date_created": null,
+        "date_posted": "2020-03-28 01:06:11",
         "link": "https://www.youtube.com/watch?v=JLb5hZLw44s",
         "tags": [
             "the portal",
@@ -2412,7 +2501,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:14:09",
-        "date": "2020-08-03 07:24:17",
+        "date_created": null,
+        "date_posted": "2020-08-03 07:24:17",
         "link": "https://www.youtube.com/watch?v=Kp_kqamkYpw",
         "tags": [
             "veritasium",
@@ -2436,7 +2526,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:12:19",
-        "date": "2020-08-05 06:10:23",
+        "date_created": null,
+        "date_posted": "2020-08-05 06:10:23",
         "link": "https://www.youtube.com/watch?v=x4l0W5RUhMI",
         "tags": [
             "jordan greenhall",
@@ -2461,7 +2552,8 @@
         "speaker": null,
         "episode_number": 207,
         "length": "01:52:59",
-        "date": "2020-08-05 07:10:23",
+        "date_created": null,
+        "date_posted": "2020-08-05 07:10:23",
         "link": "https://www.youtube.com/watch?v=vmgxtcbc4iU",
         "tags": [
             "race",
@@ -2484,7 +2576,8 @@
         "speaker": "Daniel Markovits",
         "episode_number": 205,
         "length": "00:59:03",
-        "date": "2020-08-05 09:10:23",
+        "date_created": null,
+        "date_posted": "2020-08-05 09:10:23",
         "link": "https://www.youtube.com/watch?v=UOuRYsAP5Lo",
         "tags": [
             "policy",
@@ -2510,7 +2603,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:10:41",
-        "date": "2020-08-11 19:28:43",
+        "date_created": null,
+        "date_posted": "2020-08-11 19:28:43",
         "link": "https://www.youtube.com/watch?v=5EuWCFCgy58",
         "tags": [
             "publishing",
@@ -2535,7 +2629,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:16:35",
-        "date": "2020-08-12 8:56:12",
+        "date_created": null,
+        "date_posted": "2020-08-12 8:56:12",
         "link": "https://www.youtube.com/watch?v=Rpjab--XQ0U",
         "tags": [
             "discrete",
@@ -2562,7 +2657,8 @@
         "speaker": "Grant Sanderson",
         "episode_number": null,
         "length": "00:19:01",
-        "date": "2020-08-19 4:04:12",
+        "date_created": null,
+        "date_posted": "2020-08-19 4:04:12",
         "link": "https://www.youtube.com/watch?v=s_L-fp8gDzY",
         "tags": [
             "math",
@@ -2587,7 +2683,8 @@
         "speaker": "Daniel Dennett",
         "episode_number": null,
         "length": "01:01:45",
-        "date": "2020-08-19 4:07:12",
+        "date_created": null,
+        "date_posted": "2020-08-19 4:07:12",
         "link": "https://www.youtube.com/watch?v=AZX6awZq5Z0",
         "tags": [
             "intelligence",
@@ -2614,7 +2711,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:21:57",
-        "date": "2020-08-19 4:10:35",
+        "date_created": null,
+        "date_posted": "2020-08-19 4:10:35",
         "link": "https://www.youtube.com/watch?v=mH0oCDa74tE",
         "tags": [
             "group theory",
@@ -2639,7 +2737,8 @@
         "speaker": "Daniel Dennett",
         "episode_number": null,
         "length": "01:16:22",
-        "date": "2020-08-22 15:06:02",
+        "date_created": null,
+        "date_posted": "2020-08-22 15:06:02",
         "link": "https://www.youtube.com/watch?v=TTFoJQSd48c",
         "tags": [
             "philosophy",
@@ -2666,7 +2765,8 @@
         "speaker": null,
         "episode_number": 39,
         "length": "01:43:11",
-        "date": "2020-08-26 16:16:52",
+        "date_created": null,
+        "date_posted": "2020-08-26 16:16:52",
         "link": "https://samharris.org/subscriber-extras/free-will-revisited/",
         "tags": [
             "philosophy",
@@ -2695,7 +2795,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:12:04",
-        "date": "2020-08-31 14:56:11",
+        "date_created": null,
+        "date_posted": "2020-08-31 14:56:11",
         "link": "https://www.youtube.com/watch?v=3LopI4YeC4I",
         "tags": [
             "philosophy",
@@ -2721,7 +2822,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:23:49",
-        "date": "2020-08-31 15:01:25",
+        "date_created": null,
+        "date_posted": "2020-08-31 15:01:25",
         "link": "https://www.youtube.com/watch?v=0X9DYRLmTNY",
         "tags": [
             "ordinals",
@@ -2750,7 +2852,8 @@
         "speaker": "Steven Levy",
         "episode_number": null,
         "length": null,
-        "date": "2020-08-31 15:09:35",
+        "date_created": null,
+        "date_posted": "2020-08-31 15:09:35",
         "link": "https://www.wired.com/story/facebook-mark-zuckerberg-lost-notebook/",
         "tags": [
             "facebook",
@@ -2775,7 +2878,8 @@
         "speaker": null,
         "episode_number": null,
         "length": "00:17:45",
-        "date": "2020-09-12 10:37:10",
+        "date_created": null,
+        "date_posted": "2020-09-12 10:37:10",
         "link": "https://www.youtube.com/watch?v=Z40SZ77CHK0",
         "tags": [
             "jazz",
@@ -2787,5 +2891,35 @@
         ],
         "summary": "When Fred Rogers was starting his show the music budget was very small. He hired Johnny Costa for just $5000. Costa needed the money for his daughter's college education, but he considered himself a serious jazz musician and did not intend to change his style for kids. Mister Rogers' Neighborhood didn't try to dumb down music for kids. Even during the middle of episodes, the show used complex jazz music to express emotional moments. Rogers and Costa believed that even if kids might not like every bit of what they hear, at least they will be exposed to real music.",
         "deleted": false
+    },
+    {
+        "post_id": "abae0d0d-6898-4e6e-9476-6586b1977787",
+        "title": "A Better Description of Entropy",
+        "content_type": "video",
+        "source": "YouTube",
+        "areas": [
+            "physics"
+        ],
+        "series": "Steve Mould",
+        "speaker": null,
+        "episode_number": null,
+        "length": "00:11:42",
+        "date_created": "2016-10-13",
+        "date_posted": "2020-09-13 22:29:51",
+        "link": "https://www.youtube.com/watch?v=w2iTCm0xpDc",
+        "tags": [
+            "stirling engine",
+            "entropy",
+            "disorder",
+            "time",
+            "heat",
+            "change",
+            "molecules",
+            "complexity"
+        ],
+        "summary": "The common definition of entropy is disorder, but another way to think about it is a difference in how clumped together energy is. In a closed system energy will always spread out. This is also a statistical phenomenon. There are many fewer ways to arrange a set of red and blue balls so that all of the red are on one side and blue on the other. It's possible that randomly all of the balls would sort themselves, but it's so unlikely that we never see it. Time can be considered an emergent property of this statistical fact. Time could go in reverse, but it's statistically so unlikely that it never does in practice.",
+        "deleted": false
     }
+    
+    
 ]

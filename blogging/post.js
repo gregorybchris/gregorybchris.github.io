@@ -43,7 +43,7 @@ Vue.component('post', {
             return false
         },
         formattedDate: function() {
-            const date = new Date(this.postContent.date)
+            const date = new Date(this.postContent.date_posted)
             const yearNumber = date.getFullYear()
             const monthNumber = date.getMonth() + 1
             const dayNumber = date.getDate()

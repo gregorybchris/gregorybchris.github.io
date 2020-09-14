@@ -6,11 +6,15 @@ from post import Post
 from post_properties import PostProperties
 
 
-POSTS_FILEPATH = '../posts.json'
+DEFAULT_POSTS_FILEPATH = '../posts.json'
 
-MIN_POST_TAGS = 5
-MIN_SUMMARY_LENGTH = 100
-MAX_SUMMARY_LENGTH = 1200
+class FieldConstraints:
+    MIN_POST_TAGS = 5
+    MAX_POST_TAGS = 11
+    MIN_TAG_LENGTH = 2
+    MAX_TAG_LENGTH = 25
+    MIN_SUMMARY_LENGTH = 100
+    MAX_SUMMARY_LENGTH = 1200
 
 
 class ValidationResults:
@@ -31,7 +35,8 @@ class ValidationResults:
         n_errors = len(self._errors)
         if n_errors == 0:
             print(f"Successfully validated {self._n_posts} posts:")
-            for field, count in self._completed.items():
+            for field in sorted(self._completed.keys()):
+                count = self._completed[field]
                 print(f"- Completed {field}: {count}")
         else:
             print(f"Found {n_errors} errors while validating:")
@@ -50,40 +55,44 @@ def validate(posts):
     results = ValidationResults(n_posts)
 
     seen_areas = set()
-    seen_content_types = set()
-    seen_links = set()
+    seen_content_type = set()
+    seen_link = set()
     seen_series = set()
-    seen_sources = set()
-    seen_titles = set()
+    seen_source = set()
+    seen_title = set()
+
     for post in posts:
         if not re.fullmatch(r'[a-z0-9-]{36}', post.post_id):
             results.add(f"Invalid post_id format \"{post.post_id}\"")
 
-        if post.title in seen_titles:
+        if post.title in seen_title:
             results.add(f"Duplicate title \"{post.title}\"")
-        seen_titles.add(post.title)
+        seen_title.add(post.title)
 
-        if post.link in seen_links:
+        if post.link in seen_link:
             results.add(f"Duplicate link \"{post.link}\"")
-        seen_links.add(post.link)
+        seen_link.add(post.link)
 
         if len(post.areas) > 0:
             for area in post.areas:
                 if area not in PostProperties.AREAS:
                     results.add(f"Unknown area \"{area}\" for \"{post.title}\"")
                 seen_areas.add(area)
-            results.add_completed('areas')
+            results.add_completed('area')
 
         if post.content_type is not None:
             if post.content_type not in PostProperties.CONTENT_TYPES:
                 results.add(f"Unknown content type \"{post.content_type}\" for \"{post.title}\"")
-            seen_content_types.add(post.content_type)
+            seen_content_type.add(post.content_type)
 
-        if post.date is None:
-            results.add(f"Post \"{post.title}\" is missing the required 'date' field")
+        if post.date_created is not None:
+            results.add_completed('date_created')
+
+        if post.date_posted is None:
+            results.add(f"Post \"{post.title}\" is missing the required 'date_posted' field")
 
         if post.length is not None:
-            results.add_completed('lengths')
+            results.add_completed('length')
 
         for field in PostProperties.FIELDS:
             if not hasattr(post, field):
@@ -97,31 +106,44 @@ def validate(posts):
         if post.source is not None:
             if post.source not in PostProperties.SOURCES:
                 results.add(f"Unknown source \"{post.source}\" for \"{post.title}\"")
-            seen_sources.add(post.source)
+            seen_source.add(post.source)
 
         if post.summary is not None:
             summary_length = len(post.summary)
-            if summary_length < MIN_SUMMARY_LENGTH:
+            if summary_length < FieldConstraints.MIN_SUMMARY_LENGTH:
                 results.add(f"Summary length ({summary_length}) for \"{post.title}\" "
-                            f"is less than {MIN_SUMMARY_LENGTH}")
+                            f"is less than {FieldConstraints.MIN_SUMMARY_LENGTH}")
 
-            if summary_length > MAX_SUMMARY_LENGTH:
+            if summary_length > FieldConstraints.MAX_SUMMARY_LENGTH:
                 results.add(f"Summary length ({summary_length}) for \"{post.title}\" "
-                            f"is more than {MAX_SUMMARY_LENGTH}")
+                            f"is more than {FieldConstraints.MAX_SUMMARY_LENGTH}")
 
-            results.add_completed('summaries')
+            results.add_completed('summary')
 
         n_tags = len(post.tags)
-        if n_tags < MIN_POST_TAGS:
-            results.add(f"Number of tags ({n_tags}) for \"{post.title}\" is less than {MIN_POST_TAGS}")
+        if n_tags < FieldConstraints.MIN_POST_TAGS:
+            results.add(f"Number of tags ({n_tags}) for \"{post.title}\" "
+                        f"is less than {FieldConstraints.MIN_POST_TAGS}")
+        if n_tags > FieldConstraints.MAX_POST_TAGS:
+            results.add(f"Number of tags ({n_tags}) for \"{post.title}\" "
+                        f"is more than {FieldConstraints.MAX_POST_TAGS}")
+
+        for tag in post.tags:
+            tag_length = len(tag)
+            if len(tag) < FieldConstraints.MIN_TAG_LENGTH:
+                results.add(f"Length of tag {tag} ({tag_length}) for \"{post.title}\" "
+                            f"is less than {FieldConstraints.MIN_TAG_LENGTH}")
+            if len(tag) > FieldConstraints.MAX_TAG_LENGTH:
+                results.add(f"Length of tag {tag} ({tag_length}) for \"{post.title}\" "
+                            f"is more than {FieldConstraints.MAX_TAG_LENGTH}")
 
     # Validate unused
 
     seen_known_map = [
-        ('area', seen_areas, PostProperties.AREAS),
-        ('content type', seen_content_types, PostProperties.CONTENT_TYPES),
+        ('areas', seen_areas, PostProperties.AREAS),
+        ('content_type', seen_content_type, PostProperties.CONTENT_TYPES),
         ('series', seen_series, PostProperties.SERIES),
-        ('source', seen_sources, PostProperties.SOURCES),
+        ('source', seen_source, PostProperties.SOURCES),
     ]
 
     for field, seen_set, known_set in seen_known_map:
@@ -151,7 +173,7 @@ def get_posts_from_file(filepath):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--filepath', default=POSTS_FILEPATH)
+    parser.add_argument('--filepath', default=DEFAULT_POSTS_FILEPATH)
     args = parser.parse_args()
     return args
 
