@@ -2,6 +2,9 @@ import argparse
 import json
 import re
 
+from sty import fg
+from tabulate import tabulate
+
 from post import Post
 from post_properties import PostProperties
 
@@ -15,6 +18,14 @@ class FieldConstraints:
     MAX_TAG_LENGTH = 25
     MIN_SUMMARY_LENGTH = 100
     MAX_SUMMARY_LENGTH = 1200
+
+
+class Color:
+    GREEN = (110, 220, 100)
+    RED = (200, 80, 90)
+
+def print_rgb(s, *args, rgb=None, **kwargs):
+    print(f"{fg(*rgb)}{s}{fg.rs}", *args, **kwargs)
 
 
 class ValidationResults:
@@ -34,12 +45,15 @@ class ValidationResults:
     def print(self):
         n_errors = len(self._errors)
         if n_errors == 0:
-            print(f"Successfully validated {self._n_posts} posts:")
-            for field in sorted(self._completed.keys()):
-                count = self._completed[field]
-                print(f"- Completed {field}: {count}")
+            print_rgb(f"Successfully validated {self._n_posts} posts", rgb=Color.GREEN)
+            completed_table = {
+                'Field': self._completed.keys(),
+                'Number Completed': self._completed.values(),
+            }
+            print()
+            print(tabulate(completed_table, headers='keys', tablefmt='github'))
         else:
-            print(f"Found {n_errors} errors while validating:")
+            print_rgb(f"Found {n_errors} errors while validating:", rgb=Color.RED)
             for error in self._errors:
                 print(f"- {error}")
 
@@ -62,6 +76,10 @@ def validate(posts):
     seen_title = set()
 
     for post in posts:
+        for field in PostProperties.FIELDS:
+            if not hasattr(post, field):
+                results.add(f"Post \"{post.title}\" is missing field \"{field}\"")
+
         if not re.fullmatch(r'[a-z0-9-]{36}', post.post_id):
             results.add(f"Invalid post_id format \"{post.post_id}\"")
 
@@ -93,10 +111,6 @@ def validate(posts):
 
         if post.length is not None:
             results.add_completed('length')
-
-        for field in PostProperties.FIELDS:
-            if not hasattr(post, field):
-                results.add(f"Post \"{post.title}\" is missing field \"{field}\"")
 
         if post.series is not None:
             if post.series not in PostProperties.SERIES:

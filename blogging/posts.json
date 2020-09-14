@@ -25,6 +25,7 @@
             "internet"
         ],
         "summary": "Aviation innovation of the mid 1900s brought about large and incredibly fast passenger planes. However, with speed came an increased cost of fuel and externalities like environmental impact. Airlines began to focus on cost, accessibility, and customer experience. Diminishing engineering returns and \"good enough\" travel times led to a shift in the industry. The same will happen - and is happening - for the technological boom of the present moment, the internet. The internet of 2060 will not look radically different from the internet of today.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -50,6 +51,7 @@
             "harris"
         ],
         "summary": "Poem about the racism experienced by a young black man when he meets the father of his white girlfriend.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -80,6 +82,7 @@
             "life"
         ],
         "summary": "We are deluded in thinking we will live forever. We evolved with an inability to imagine a world without ourselves in it. And so we put off doing the things we know we should. It may seem nihilistic to live a life that just ends but we can find meaning in each moment.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -111,6 +114,7 @@
             "neuroscience"
         ],
         "summary": "Searle argues that because mental objects arise from physical phenomena they are under the purview of science. This article argues that while the physical correlates of subjective phenomena are understandable through the scientific method, the subjective phenomena themselves are not.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -139,6 +143,7 @@
             "epictetus"
         ],
         "summary": "We have full control of how we feel. The best way to live life is to take control of your outlook. Do not fear death because it is not under human control. When death comes you will not even be there for it to affect you.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -167,6 +172,7 @@
             "barabasi"
         ],
         "summary": "Real-world networks are shown to be \"small-world\" networks, meaning it takes very few steps to get between any two people. On the other hand, we also see that there's a high degree of clustering. These seemingly contradictory properties can be reconciled by a relatively small number of random connections that link disparate groups of people.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -196,6 +202,7 @@
             "inspirational"
         ],
         "summary": "Active bionics - as opposed to passive bionics - allow people to move more fluidly. Designing prosthetics that faithfully replicate natural human motion has a huge impact on quality of life.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -225,6 +232,7 @@
             "knowledge"
         ],
         "summary": "The Heisenberg Uncertainty Prinicple exists because we are trading off treating matter as a wave and a particle. It's not about how well we measure things, but about the type of measurement we decide is important and implicitly whether we want to treat the matter as a wave or a particle.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -253,6 +261,7 @@
             "attention"
         ],
         "summary": "All memory techniques come down to \"elaborative encoding\". The Baker/baker paradox is where people will remember the profession baker far more easily than the name Baker because the name Baker doesn't really mean anything. The \"method of loci\" also known as the memory palace was popularized by the story of the ancient Greek poet Simonides remembering the guests in a collapsed banquet hall. Great memories are not innate gifts. We are the sum of our memories and to live the life worth living you have to be the kind of person who remembers to remember.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -281,6 +290,7 @@
             "growth"
         ],
         "summary": "What do we do when we misunderstand the signs around us? What do we do when we're wrong? We live in the present moment and in the present moment we're never wrong. It doesn't feel bad to be wrong. It feels bad to realize you're wrong. Being wrong feels like being right - \"error blindness\". School teaches us that the way to be successful is to never make any mistakes, instilling perfectionism. Trusting too much that we're on the right side of anything can be dangerous. The miracle of the human mind is not that we can see the world as it is, but as it isn't. And if we want to rediscover wonder we need to look out at the vastly complex universe and say \"I don't know\" ",
+        "paid": false,
         "deleted": false
     },
     {
@@ -309,6 +319,7 @@
             "lights"
         ],
         "summary": "Persistence of vision - the eye averages what it sees over short periods of time. If you have a flashing light that's slower than 25 flashes per second, you can perceieve the flashes. Otherwise, the neural activation activation associated with one flash will not fully die down before the onset of the next flash.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -337,6 +348,7 @@
             "logic"
         ],
         "summary": "Ten people in a line, all facing forward, wearing black and white hats have to try to guess the color of their hats. They succeed if at least nine of them guess correctly. They are allowed to stratgize before beginning. The solution is that the person in the back of the line guesses black or white depending on the parity of the number of black and white hats in front. This gives enough information for the rest of the nine people to guess correctly",
+        "paid": false,
         "deleted": false
     },
     {
@@ -366,6 +378,7 @@
             "composition"
         ],
         "summary": "The devaluation of music over time has come from more than just streaming services and piracy. Arguably musical culture has become shallower in many dimensions. The streaming-induced shift from physical albums to individual digital tracks has removed the context and history people once consumed from album covers. News has focused on musical celebrity rather than music itself. Radio culture has replaced musical diversity and discovery with common-denominator industrial scale hits. Dwindling music education has left Americans without an appreciation for the depth of composing and playing music.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -396,6 +409,7 @@
             "expectation"
         ],
         "summary": "The Dirichlet method gives an estimate of the number of primes below a certain number. The method appears to be an upper bound with the estimate always overshooting the actual number of primes. However, Stanley Skewes showed that at some point the signed difference between actual and estimated number of primes flips and that number is greater than 10^10^10^34 - Skewes' number. The moral of the story is that just because some rule holds for a long time doesn't mean it will be true forever.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -424,6 +438,7 @@
             "rape"
         ],
         "summary": "One in five women will be sexually assaulted by the time they finish college. Satire about the frequency of sexual assault and they ways in which sexual assault is rationalized.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -451,6 +466,7 @@
             "google"
         ],
         "summary": "Visual recognition that is so intuitive for humans is pretty hard for computers. Even with many examples it can take computers a long time to learn concepts that are simple to humans. Deep neural networks are composed of artificial neurons that are roughly based on human brain biology.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -481,6 +497,7 @@
             "science"
         ],
         "summary": "Special relativity asserts that time passes slower for observers moving relatively faster - time dilation. On the other side of the coin, objects are contracted in their direction of motion - length contraction. The effects of special relativiy show up when a positively charged ion is repelled from a wire with flowing current. Your frame of reference determines whether you interpret a field as electric or magnetic. If the cation moves along with the electrons flowing in the wire length contraction will have the wire's electrons spread out and protons bunch together. To the cation this is electric repulsion. To the observer stationary relative to the wire this is interpreted as the magnetic force.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -508,6 +525,7 @@
             "blue"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -533,7 +551,8 @@
             "preservation"
         ],
         "summary": null,
-        "deleted": true
+        "paid": true,
+        "deleted": false
     },
     {
         "post_id": "d178c0f6-2b1a-4be1-aaff-0d10606c15c4",
@@ -561,6 +580,7 @@
             "intelligence"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -590,6 +610,7 @@
             "strogatz"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -616,6 +637,7 @@
             "blacklivesmatter"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -645,6 +667,7 @@
             "machine"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -674,6 +697,7 @@
             "research"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -706,6 +730,7 @@
             "shootings"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -734,6 +759,7 @@
             "social"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -763,6 +789,7 @@
             "statistics"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -791,6 +818,7 @@
             "intelligence"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -817,6 +845,7 @@
             "alcohol"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -845,6 +874,7 @@
             "bias"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -869,6 +899,7 @@
             "neuro"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -897,6 +928,7 @@
             "policy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -924,6 +956,7 @@
             "robots"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -951,6 +984,7 @@
             "prediction"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -978,6 +1012,7 @@
             "ethics"
         ],
         "summary": null,
+        "paid": true,
         "deleted": false
     },
     {
@@ -1005,6 +1040,7 @@
             "science"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1030,6 +1066,7 @@
             "emergence"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1057,6 +1094,7 @@
             "liberalism"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1083,6 +1121,7 @@
             "adam neely"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1112,6 +1151,7 @@
             "valley"
         ],
         "summary": null,
+        "paid": true,
         "deleted": false
     },
     {
@@ -1139,6 +1179,7 @@
             "distributions"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1167,6 +1208,7 @@
             "value"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1194,6 +1236,7 @@
             "youtube"
         ],
         "summary": null,
+        "paid": true,
         "deleted": false
     },
     {
@@ -1217,6 +1260,7 @@
             "isis"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1243,6 +1287,7 @@
             "3blue1brown"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1269,6 +1314,7 @@
             "making sense"
         ],
         "summary": null,
+        "paid": true,
         "deleted": false
     },
     {
@@ -1293,6 +1339,7 @@
             "simpson's"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1321,6 +1368,7 @@
             "perception"
         ],
         "summary": null,
+        "paid": true,
         "deleted": false
     },
     {
@@ -1344,6 +1392,7 @@
             "eliezer yudkowsky"
         ],
         "summary": null,
+        "paid": true,
         "deleted": false
     },
     {
@@ -1367,6 +1416,7 @@
             "prediction"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1391,6 +1441,7 @@
             "philosophy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1417,6 +1468,7 @@
             "philosophy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1442,6 +1494,7 @@
             "entropy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1469,6 +1522,7 @@
             "machine learning"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1497,6 +1551,7 @@
             "markers"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1523,6 +1578,7 @@
             "universality"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1548,6 +1604,7 @@
             "design"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1573,6 +1630,7 @@
             "elite"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1596,6 +1654,7 @@
             "milk"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1622,6 +1681,7 @@
             "philosophy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1646,6 +1706,7 @@
             "jordan greenhall"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1672,6 +1733,7 @@
             "deep code"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1697,6 +1759,7 @@
             "blood brain barrier"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1723,6 +1786,7 @@
             "optional"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1749,6 +1813,7 @@
             "politics"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1775,6 +1840,7 @@
             "love"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1801,6 +1867,7 @@
             "religion"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1825,6 +1892,7 @@
             "geometry"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1850,6 +1918,7 @@
             "division"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1875,6 +1944,7 @@
             "division"
         ],
         "summary": null,
+        "paid": true,
         "deleted": false
     },
     {
@@ -1901,6 +1971,7 @@
             "science"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1930,6 +2001,7 @@
             "evolution"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1956,6 +2028,7 @@
             "social media"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -1983,6 +2056,7 @@
             "artificial intelligence"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2010,6 +2084,7 @@
             "tech"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2035,6 +2110,7 @@
             "artificial intelligence"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2061,6 +2137,7 @@
             "attention economy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2088,6 +2165,7 @@
             "content"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2114,6 +2192,7 @@
             "vertebrates"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2138,6 +2217,7 @@
             "intelligence"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2163,6 +2243,7 @@
             "medicine"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2188,6 +2269,7 @@
             "eric weinstein"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2213,6 +2295,7 @@
             "yann lecun"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2237,6 +2320,7 @@
             "technology"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2263,6 +2347,7 @@
             "gamblers fallacy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2288,6 +2373,7 @@
             "evolution"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2314,6 +2400,7 @@
             "ted"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2338,6 +2425,7 @@
             "future"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2364,6 +2452,7 @@
             "law"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2389,6 +2478,7 @@
             "epistemology"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2415,6 +2505,7 @@
             "mandelbrot"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2443,6 +2534,7 @@
             "legal"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2466,6 +2558,7 @@
             "sir model"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2489,6 +2582,7 @@
             "bret weinstein"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2514,6 +2608,7 @@
             "stars"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2540,6 +2635,7 @@
             "capitalism"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2564,6 +2660,7 @@
             "cops"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2588,6 +2685,7 @@
             "meritocracy"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2615,6 +2713,7 @@
             "productivity"
         ],
         "summary": "Publishing is a style of working and an attitude. Working to public forces you to work on the stuff that matters and squashes the obsessive desires to stick on the little things. Working to publish is the opposite of working for pleasure. Working for pleasure is self-indulgent and a luxury that is inwardly focused rather than giving to others. The world is made of funnels. Every step of every multistep business process there is lots of drop off, reasonably high percentage of failure. Working to publish gives you a huge top layer of the funnel. You can't choose what you're famous for, it's a funnel, a numbers game.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2643,6 +2742,7 @@
             "math"
         ],
         "summary": "A square tiling is a tiling of the plane only using different sized squared. You can represent a square tiling (with no information lost) using a graph where horizontal lines become vertices, vertical lines become faces of the graph, and squares of the square tiling become edges in the graph. The value at one graph vertex is the average of the neighbors. By turning the square tiling by 90 degrees and performing the same operation we get the dual graph of the original graph (vertices and faces are swapped). The harmonic function applied to the graph shows that the square edge heights in the tiling can be averaged to get other edge heights. This function can be applied to a graph, giving a discrete function, but as the number of graph vertices grows to infinity, as the tiling covers the whole plane, the harmonic function becomes continuous. A lot of physics is about taking things that are discrete at the micro level and discovering properties of the continuous function at macro levels.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2671,6 +2771,7 @@
             "education"
         ],
         "summary": "Grant Sanderson of 3Blue1Brown explains what can make math more engaging. The Fourier transform (video #4) formula requires calculus with complex numbers. Starting with an intuitive explanation can help the math come across more easily when you dive into the complex, intimidating formalisms. The same goes for neural nets (video #2) Relevance - whether people believe math is useful - can definitely make people engage with math, but it's not the full picture. Colliding blocks counting out pi and whether a random tetrahedron inside a sphere contains the center of that sphere (videos #3 and #1) seem completely useless. Math made useful is like going to the gym, it's not fun but you know what you're getting for it. You don't ask when Harry Potter spells will be useful. Fiction isn't useful, but it's still compelling. G.H. Hardy - trivial mathematics is much more useful than complex math. The most popular math communicators leverage the power of story. Imagining you could solve the hardest problem on the hardest test puts you in the shoes of a math protagonist. Compelling math comes from intertwining usefulness and good storytelling.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2697,6 +2798,7 @@
             "evolution"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2725,6 +2827,7 @@
             "monster"
         ],
         "summary": "Group theory is inextricably linked to symmetry and in turn to fundamental physics through universal laws of conservation. It lets us abstract the idea of symmetry actions away from the symmetry of any one object - groups : symmetry actions :: numbers : counts. Two groups can be considered the same if there is an isomorphism between them. Finite groups can be thought of as falling roughly in simple groups and combinations of simple groups. Simple groups have been categorized into 18 infinite group families (16 Lie groups) and 26 sporadic groups. One of these sporadic groups is called the Monster group and it acts on very high dimensional elements. Fundamental objects are not necessarily simple.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2751,6 +2854,7 @@
             "design"
         ],
         "summary": null,
+        "paid": false,
         "deleted": false
     },
     {
@@ -2780,6 +2884,7 @@
             "luck"
         ],
         "summary": "Is there a strong case for compatibilism? Sam Harris confronts Daniel Dennett on his view of free will, accusing him of redefining the term. Dennett responds that he chooses to focus on the part of free will that is scientifically and morally useful rather than the part that people might really care about. The two go back and forth on the case of Tiger Woods, where he is the most responsible person in the world for missing an easy putt (given how much control he has) and yet his missing a putt actually says the least about him. Dennett argues that free will is the extent of an agent's control over its surroundings - degrees of freedom. What does it mean that someone \"could have done otherwise\" and is it a useful or deceptive thinking tool?",
+        "paid": true,
         "deleted": false
     },
     {
@@ -2808,6 +2913,7 @@
             "competition"
         ],
         "summary": "You need both skill and luck to succeed. The importance of luck increases as the number of competing individuals increases. People tend to credit their own success to hard work rather than luck, therefore feeling like they need to give back less. First, in order to succeed, you have to believe you are in control of your destiny. But second, you need to know that luck actually plays a significant role and you should do your best to increase the luck of others.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2837,6 +2943,7 @@
             "proofs"
         ],
         "summary": "The fast growing hierarchy lets us reason about extraordinarily large numbers and functions that grow extremely quickly. By using the tools of recursion and diagonalization we can extend the sequence of binary operations: succession, addition, multiplication, exponentiation, tetration, etc. These are important concepts in computability theory and proof theory.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2864,6 +2971,7 @@
             "business"
         ],
         "summary": "While Mark Zuckerberg has destroyed many of his handwritten plans from Facebook's early days, 17 pages remain intact, pages part of the journal named \"Book of Change\" which detail Mark's plan for the future of his company. Two ideas meticulously documented in these pages were Open Registration and Feed. Mark grappled with whether to allow just anyone on Facebook, destroying it's gated nature and perceived privacy. He debated \"Dark Profiles\" where people could set up placeholder accounts for their friends and family, a feature which would be seriously considered among Facebook employees for a time. Feed was released as \"News Feed\" and users loudly expressed disaproval about the felt decline in privacy, with the most private personal updates hitting others' News Feeds like tabloids. However, usage numbers told a different story with time-on-site skyrocketing - the personalized recommendations would become a core part of the platform. A controversial feature \"Beacon\" tracked - and then broadcast - purchases on the web. Mark today says he believes Facebook continues to help people and is moving in the right direction, though some innevitable mistakes were made along the way.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2890,6 +2998,7 @@
             "culture"
         ],
         "summary": "When Fred Rogers was starting his show the music budget was very small. He hired Johnny Costa for just $5000. Costa needed the money for his daughter's college education, but he considered himself a serious jazz musician and did not intend to change his style for kids. Mister Rogers' Neighborhood didn't try to dumb down music for kids. Even during the middle of episodes, the show used complex jazz music to express emotional moments. Rogers and Costa believed that even if kids might not like every bit of what they hear, at least they will be exposed to real music.",
+        "paid": false,
         "deleted": false
     },
     {
@@ -2917,9 +3026,8 @@
             "molecules",
             "complexity"
         ],
-        "summary": "The common definition of entropy is disorder, but another way to think about it is a difference in how clumped together energy is. In a closed system energy will always spread out. This is also a statistical phenomenon. There are many fewer ways to arrange a set of red and blue balls so that all of the red are on one side and blue on the other. It's possible that randomly all of the balls would sort themselves, but it's so unlikely that we never see it. Time can be considered an emergent property of this statistical fact. Time could go in reverse, but it's statistically so unlikely that it never does in practice.",
+        "summary": "The common definition of entropy is disorder, but another way to think about it is a difference in how clumped together energy is. In a closed system energy will always spread out. This is also a statistical phenomenon. There are very few ways to arrange a set of red and blue balls so that the two colors are separated compared to all other arrangements. It's possible that the balls would sort themselves spontaneously, but it's so unlikely that we never see it. Time can be considered an emergent property of this statistical fact. Time could go in reverse, but it's statistically so unlikely that it never does so in practice.",
+        "paid": false,
         "deleted": false
     }
-    
-    
 ]
