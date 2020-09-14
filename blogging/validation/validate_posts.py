@@ -175,6 +175,15 @@ def validate(posts):
         if not re.fullmatch(r'[a-z]+', content_type):
             results.add(f"Invalid content type format \"{content_type}\"")
 
+    # Validate constants
+
+    for field, _, known_set in seen_known_map:
+        last_value = None
+        for value in known_set:
+            if last_value is not None and value.lower() <= last_value.lower():
+                results.add(f"Unordered constants for {field}: \"{last_value}\" vs \"{value}\"")
+            last_value = value
+
     return results
 
 

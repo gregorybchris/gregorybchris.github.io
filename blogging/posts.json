@@ -50,7 +50,7 @@
             "poetry",
             "harris"
         ],
-        "summary": "Poem about the racism experienced by a young black man when he meets the father of his white girlfriend.",
+        "summary": "Spoken word poetry about the racism experienced by a young black man when he meets the father of his white girlfriend.",
         "paid": false,
         "deleted": false
     },
@@ -505,7 +505,11 @@
         "title": "Simulating the Human Brain is a Waste of Energy",
         "content_type": "article",
         "source": "Aeon",
-        "areas": [],
+        "areas": [
+            "complexity",
+            "computers",
+            "neuroscience"
+        ],
         "series": "Aeon Essays",
         "speaker": "Peter Hankins",
         "episode_number": null,
@@ -524,7 +528,7 @@
             "mind",
             "blue"
         ],
-        "summary": null,
+        "summary": "In creating a computer simulation you are necessarily leaving some details out. If you didn't you'd just have the real thing. So the question is which features of the brain you leave out when trying to simulate it. Searle makes the point that computer simulations about whether tell you information about rain, not water. One worry about brain simulations is whether we need to understand the brain in order to properly simulate it. We know so little about the parts of the brain and how they interact that one could argue the simulation project is doomed. Another concern is whether we even know when we will have succeeded. You can measure certain features of simulated brains that in isolation are impressive but are far from the stated goal of simulating a real brain.",
         "paid": false,
         "deleted": false
     },
@@ -2741,7 +2745,7 @@
             "dual",
             "math"
         ],
-        "summary": "A square tiling is a tiling of the plane only using different sized squared. You can represent a square tiling (with no information lost) using a graph where horizontal lines become vertices, vertical lines become faces of the graph, and squares of the square tiling become edges in the graph. The value at one graph vertex is the average of the neighbors. By turning the square tiling by 90 degrees and performing the same operation we get the dual graph of the original graph (vertices and faces are swapped). The harmonic function applied to the graph shows that the square edge heights in the tiling can be averaged to get other edge heights. This function can be applied to a graph, giving a discrete function, but as the number of graph vertices grows to infinity, as the tiling covers the whole plane, the harmonic function becomes continuous. A lot of physics is about taking things that are discrete at the micro level and discovering properties of the continuous function at macro levels.",
+        "summary": "A square tiling is a tiling of the plane only using different sized squares. You can represent a square tiling (with no information lost) using a graph where horizontal lines become vertices, vertical lines become faces of the graph, and squares of the square tiling become edges in the graph. The value at one graph vertex is the average of the neighbors. By turning the square tiling by 90 degrees and performing the same operation we get the dual graph of the original graph (vertices and faces are swapped). The harmonic function applied to the graph shows that the square edge heights in the tiling can be averaged to get other edge heights. This function can be applied to a graph, giving a discrete function, but as the number of graph vertices grows to infinity, as the tiling covers the whole plane, the harmonic function becomes continuous. A lot of physics is about taking things that are discrete at the micro level and discovering properties of the continuous function at macro levels.",
         "paid": false,
         "deleted": false
     },

@@ -1,7 +1,7 @@
 class PostProperties:
     # Field Names
 
-    FIELDS = {
+    FIELDS = [
         'post_id',
         'title',
         'content_type',
@@ -17,11 +17,11 @@ class PostProperties:
         'tags',
         'summary',
         'deleted',
-    }
+    ]
 
     # Field values
 
-    AREAS = {
+    AREAS = [
         'art',
         'biology',
         'business',
@@ -41,16 +41,16 @@ class PostProperties:
         'politics',
         'psychology',
         'technology',
-    }
+    ]
 
-    CONTENT_TYPES = {
+    CONTENT_TYPES = [
         'article',
         'audio',
         'paper',
         'video',
-    }
+    ]
 
-    SERIES = {
+    SERIES = [
         '3Blue1Brown',
         'Adam Neely',
         'Aeon Essays',
@@ -78,12 +78,12 @@ class PostProperties:
         'The Portal',
         'The Royal Institution',
         'This American Life',
-        'WIRED',
         'Veritasium',
         'VICE',
-    }
+        'WIRED',
+    ]
 
-    SOURCES = {
+    SOURCES = [
         'Aeon',
         'BuzzFeed News',
         'Daily Motion',
@@ -93,8 +93,8 @@ class PostProperties:
         'Technology Review',
         'TED',
         'This American Life',
-        'WIRED',
         'Vimeo',
         'Vox',
+        'WIRED',
         'YouTube',
-    }
+    ]
