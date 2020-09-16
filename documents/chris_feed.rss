@@ -9,7 +9,7 @@
         <itunes:block>yes</itunes:block>
         <atom:link href="https://www.chrisgregory.me/documents/chris_feed.rss" rel="self" type="application/rss+xml"/>
         <title>Chris Gregory - RSS Feed</title>
-        <lastBuildDate>Thu, 15 Sep 2020 22:23:40 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
         <link>http://www.chrisgregory.me</link>
         <language>en</language>
         <copyright>
@@ -46,7 +46,7 @@
         <itunes:type>episodic</itunes:type>
         <item>
             <title>Morning (Francis and the Lights)</title>
-            <pubDate>Thu, 15 Sep 2020 22:21:58 -0400</pubDate>
+            <pubDate>Tue, 15 Sep 2020 05:00:00 -0400</pubDate>
             <guid isPermaLink="false">
                 <![CDATA[ 1571476 ]]>
             </guid>
@@ -61,14 +61,14 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/music/i-wish-knew--nina-simone.m4a"/>
+            <enclosure length="0" type="audio/mp4" url="https://www.chrisgregory.me/music/i-wish-knew--nina-simone.m4a"/>
             <itunes:duration>00:00:22</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
         </item>
         <item>
             <title>I Wish I Knew (Nina Simone)</title>
-            <pubDate>Tue, 14 Sep 2020 01:27:47 -0400</pubDate>
+            <pubDate>Mon, 14 Sep 2020 05:00:00 -0400</pubDate>
             <guid isPermaLink="false">
                 <![CDATA[ 1571389 ]]>
             </guid>
@@ -83,7 +83,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/music/morning--francis-and-the-lights.m4a"/>
+            <enclosure length="0" type="audio/mp4" url="https://www.chrisgregory.me/music/morning--francis-and-the-lights.m4a"/>
             <itunes:duration>00:00:34</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
