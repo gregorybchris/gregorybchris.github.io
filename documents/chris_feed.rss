@@ -18,7 +18,7 @@
         <docs>http://www.chrisgregory.me</docs>
         <managingEditor>christopher.b.gregory@gmail.com (christopher.b.gregory@gmail.com)</managingEditor>
         <itunes:summary>
-            <![CDATA[ Personal webiste of Chris Gregory ]]>
+            <![CDATA[ Personal feed of Chris Gregory ]]>
         </itunes:summary>
         <image>
             <url>https://www.chrisgregory.me/images/icons/cg-block-large.png</url>
@@ -33,12 +33,12 @@
         <itunes:explicit>no</itunes:explicit>
         <itunes:owner>
             <itunes:name>
-                <![CDATA[ Personal webiste of Chris Gregory ]]>
+                <![CDATA[ Personal feed of Chris Gregory ]]>
             </itunes:name>
             <itunes:email>christopher.b.gregory@gmail.com</itunes:email>
         </itunes:owner>
         <description>
-            <![CDATA[ Personal webiste of Chris Gregory ]]>
+            <![CDATA[ Personal feed of Chris Gregory ]]>
         </description>
         <itunes:subtitle>
             <![CDATA[ ]]>
