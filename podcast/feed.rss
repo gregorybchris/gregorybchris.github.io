@@ -7,7 +7,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
     <channel>
         <itunes:block>yes</itunes:block>
-        <atom:link href="https://www.chrisgregory.me/documents/chris_feed.rss" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://www.chrisgregory.me/podcast/feed.rss" rel="self" type="application/rss+xml"/>
         <title>Chris Gregory Podcast</title>
         <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
         <link>http://www.chrisgregory.me</link>
@@ -61,7 +61,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/music/i-wish-knew--nina-simone.mp3"/>
+            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/i-wish-knew--nina-simone.mp3"/>
             <itunes:duration>00:00:22</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
@@ -83,7 +83,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/music/morning--francis-and-the-lights.mp3"/>
+            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/morning--francis-and-the-lights.mp3"/>
             <itunes:duration>00:00:34</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
