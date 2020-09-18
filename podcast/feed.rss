@@ -61,7 +61,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/i-wish-knew--nina-simone.mp3"/>
+            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/morning--francis-and-the-lights.mp3"/>
             <itunes:duration>00:00:22</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
@@ -83,7 +83,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/morning--francis-and-the-lights.mp3"/>
+            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/i-wish-knew--nina-simone.mp3"/>
             <itunes:duration>00:00:34</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
