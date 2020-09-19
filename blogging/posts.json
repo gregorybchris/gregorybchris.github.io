@@ -3035,5 +3035,34 @@
         "summary": "The common definition of entropy is disorder, but another way to think about it is a difference in how clumped together energy is. In a closed system energy will always spread out. This is also a statistical phenomenon. There are very few ways to arrange a set of red and blue balls so that the two colors are separated compared to all other arrangements. It's possible that the balls would sort themselves spontaneously, but it's so unlikely that we never see it. Time can be considered an emergent property of this statistical fact. Time could go in reverse, but it's statistically so unlikely that it never does so in practice.",
         "paid": false,
         "deleted": false
+    },
+    {
+        "post_id": "8fa53e7c-c4c2-4dd8-9bfd-bde64cec9070",
+        "title": "Bayes' Theorem",
+        "content_type": "video",
+        "source": "YouTube",
+        "areas": [
+            "mathematics"
+        ],
+        "series": "3Blue1Brown",
+        "speaker": null,
+        "episode_number": null,
+        "length": "00:15:45",
+        "date_created": "2019-12-22",
+        "date_posted": "2020-09-14",
+        "link": "https://www.youtube.com/watch?v=HZGCoVF3YvM",
+        "tags": [
+            "bayes theorem",
+            "probability",
+            "uncertainty",
+            "proportions",
+            "confidence",
+            "evidence",
+            "hypothesis",
+            "priors"
+        ],
+        "summary": "Evidence doesn't actually determine what we believe, but update our prior beliefs. We are in some ways Bayesian agents, but in many ways we fall short. Keeping in mind the tricks that Bayes taught us can help us make fewer mistakes when decisions under uncertainty are required. We can visualize this as a 4 quadrant square. The left size is when the hypothesis is true, the right side when the hypothesis is false. And each side is split based on the probability of the evidence given either hypothesis true or hypothesis false. The area of these quadrants can help us reason about the probability of uncertain events.",
+        "paid": false,
+        "deleted": false
     }
 ]
