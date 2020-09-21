@@ -3,6 +3,7 @@ import PostRecord from '../models/PostRecord';
 import React from 'react';
 import './Post.css';
 import linkImage from '../images/link.svg';
+import { makeURL } from '../controllers/RequestUtilities'
 
 export interface PostProps {
   post: PostRecord,
@@ -32,10 +33,6 @@ class Post extends React.Component<PostProps, PostState> {
           <img className="Post-thumbnail" src={link} alt=""></img>
         </a>
       )
-  }
-
-  getPostHash = () => {
-    return `#${this.props.post.post_id}`
   }
 
   formatDate = (dateString: string) => {
@@ -100,8 +97,8 @@ class Post extends React.Component<PostProps, PostState> {
           {this.props.post.tags.map(tag => this.createTag(tag))}
         </div>
 
-        <a className="Post-hash-link" href={this.getPostHash()}>
-          <img className="Post-hash-image" src={linkImage} alt=""></img>
+        <a className="Post-page-link" href={makeURL({ "postid": this.props.post.post_id })}>
+          <img className="Post-page-link-image" src={linkImage} alt=""></img>
         </a>
       </div>
     );

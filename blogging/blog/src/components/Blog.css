@@ -12,6 +12,10 @@
   font-weight: bold;
 }
 
+.Blog-title-link {
+  text-decoration: none;
+}
+
 .Blog-search {
   margin-left: 40px;
 }
