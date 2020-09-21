@@ -3,7 +3,7 @@
   background-color: rgb(40, 44, 52);
   font-size: 14px;
   width: 300px;
-  padding: 6px 10px 7px;
+  padding: 7px 10px;
   box-sizing: border-box;
   transition: background-color 0.5s, border-color 0.5s;
   outline: none;
