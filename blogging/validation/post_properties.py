@@ -54,6 +54,7 @@ class PostProperties:
         '3Blue1Brown',
         'Adam Neely',
         'Aeon Essays',
+        'Andrew Huang',
         'Artificial Intelligence Podcast',
         'Big Think',
         'CGP Grey',

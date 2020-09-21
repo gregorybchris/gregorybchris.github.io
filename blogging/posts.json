@@ -3064,5 +3064,34 @@
         "summary": "Evidence doesn't actually determine what we believe, but update our prior beliefs. We are in some ways Bayesian agents, but in many ways we fall short. Keeping in mind the tricks that Bayes taught us can help us make fewer mistakes when decisions under uncertainty are required. We can visualize this as a 4 quadrant square. The left size is when the hypothesis is true, the right side when the hypothesis is false. And each side is split based on the probability of the evidence given either hypothesis true or hypothesis false. The area of these quadrants can help us reason about the probability of uncertain events.",
         "paid": false,
         "deleted": false
+    },
+    {
+        "post_id": "6a55b499-e868-4723-89d4-ed42815c1902",
+        "title": "Why Pop Music is Obsessed With This One Note",
+        "content_type": "video",
+        "source": "YouTube",
+        "areas": [
+            "music"
+        ],
+        "series": "Andrew Huang",
+        "speaker": null,
+        "episode_number": null,
+        "length": "00:08:36",
+        "date_created": "2019-09-17",
+        "date_posted": "2020-09-20",
+        "link": "https://www.youtube.com/watch?v=tR32h5jhPtU",
+        "tags": [
+            "music",
+            "theory",
+            "supertonic",
+            "pop",
+            "diatonic",
+            "chords",
+            "culture",
+            "art"
+        ],
+        "summary": "Pop music has been using one melodic device extensively over the past few years. Sitting on the supertonic is a sound/style that is really easy to work with. The note above the tonic, D in the key of C for example, will be consonant with any diatonic chord. It's also just one note away from two other notes that are very easy to resolve to. Many pop songs will repeat the supertonic and easily resolve at any moment to either the tonic or the mediant. The Weeknd may do this more often than any other popular modern artist, but recent music by Post Malone, Katy Perry, Haim, Rhihanna, Justin Timberlake, Zedd, Daft Punk, Taylor Swift, DNCE, The 1975, Glass Animals, Dua Lipa, and Jacob Collier also use the same technique.",
+        "paid": false,
+        "deleted": false
     }
 ]
