@@ -1,18 +1,18 @@
-import Post from './Post';
-import PostRecord from '../models/PostRecord';
-import React from 'react';
-import SearchBar from './SearchBar';
-import './Blog.css';
-import { getSearchParams } from '../controllers/RequestUtilities'
+import Post from "./Post";
+import PostRecord from "../models/PostRecord";
+import React from "react";
+import SearchBar from "./SearchBar";
+import "./Blog.css";
+import { getSearchParams } from "../controllers/RequestUtilities";
 
-import posts from '../data/posts.json';
+import posts from "../data/posts.json";
 
-export interface BlogProps { }
+export interface BlogProps {}
 
 export interface BlogState {
-  posts: PostRecord[],
-  searchText: string,
-  currentPostId: string | null
+  posts: PostRecord[];
+  searchText: string;
+  currentPostId: string | null;
 }
 
 class Blog extends React.Component<BlogProps, BlogState> {
@@ -20,64 +20,60 @@ class Blog extends React.Component<BlogProps, BlogState> {
     posts: posts,
     searchText: "",
     currentPostId: null,
-  }
+  };
 
   onClearSearch = () => {
-    this.setState({ searchText: "" })
-  }
+    this.setState({ searchText: "" });
+  };
 
   componentDidMount() {
     const params = getSearchParams();
-    const queryPostId = params.get('postid');
-    if (queryPostId)
-      this.setState({ currentPostId: queryPostId })
+    const queryPostId = params.get("postid");
+    if (queryPostId) this.setState({ currentPostId: queryPostId });
   }
 
   onUpdateSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.setState({ searchText: event.target.value });
-  }
+  };
 
   onClickTag = (tag: string) => {
-    this.setState({ searchText: `#${tag}` })
-  }
+    this.setState({ searchText: `#${tag}` });
+  };
 
   isPostEnabled = (post: PostRecord) => {
-    const searchText = this.state.searchText
+    const searchText = this.state.searchText;
 
-    if (post.deleted)
-      return false;
+    if (post.deleted) return false;
 
     if (this.state.currentPostId)
       return post.post_id == this.state.currentPostId;
 
-    if (searchText.length === 0)
-      return true;
+    if (searchText.length === 0) return true;
 
     if (post.title.toLowerCase().includes(searchText.toLowerCase()))
       return true;
 
-    if (post.series && post.series.toLowerCase().includes(searchText.toLowerCase()))
+    if (
+      post.series &&
+      post.series.toLowerCase().includes(searchText.toLowerCase())
+    )
       return true;
 
     for (const tag of post.tags) {
-      if (searchText.startsWith('#') && searchText.substring(1) === tag)
+      if (searchText.startsWith("#") && searchText.substring(1) === tag)
         return true;
 
-      if (tag.includes(searchText))
-        return true;
+      if (tag.includes(searchText)) return true;
     }
     return false;
-  }
+  };
 
   createPost = (post: PostRecord) => {
     if (this.isPostEnabled(post))
       return (
-        <Post key={post.post_id}
-          post={post}
-          onClickTag={this.onClickTag}
-        />
+        <Post key={post.post_id} post={post} onClickTag={this.onClickTag} />
       );
-  }
+  };
 
   render() {
     return (
@@ -88,13 +84,14 @@ class Blog extends React.Component<BlogProps, BlogState> {
           </a>
         </div>
         <div className="Blog-search">
-          <SearchBar onClearSearch={this.onClearSearch}
+          <SearchBar
+            onClearSearch={this.onClearSearch}
             onUpdateSearch={this.onUpdateSearch}
             searchText={this.state.searchText}
           />
         </div>
         <div className="Blog-posts">
-          {this.state.posts.reverse().map(post => this.createPost(post))}
+          {this.state.posts.reverse().map((post) => this.createPost(post))}
         </div>
       </div>
     );

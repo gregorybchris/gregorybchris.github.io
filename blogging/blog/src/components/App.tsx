@@ -1,6 +1,6 @@
-import Blog from './Blog';
-import React from 'react';
-import './App.css';
+import Blog from "./Blog";
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
