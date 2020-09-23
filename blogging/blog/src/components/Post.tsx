@@ -50,14 +50,12 @@ class Post extends React.Component<PostProps, PostState> {
           href={this.props.post.link}
           title={this.getSummary()}
         >
-          <div className="Post-thumbnail-wrap">
-            <img
-              className="Post-thumbnail"
-              src={this.state.thumbnailUrl}
-              alt="Post thumbnail"
-              onLoad={this.onThumbnailLoad}
-            ></img>
-          </div>
+          <img
+            className="Post-thumbnail"
+            src={this.state.thumbnailUrl}
+            alt="Post thumbnail"
+            onLoad={this.onThumbnailLoad}
+          ></img>
         </a>
       );
   }
