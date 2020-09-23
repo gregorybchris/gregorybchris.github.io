@@ -46,7 +46,7 @@ class Blog extends React.Component<BlogProps, BlogState> {
     if (post.deleted) return false;
 
     if (this.state.currentPostId)
-      return post.post_id == this.state.currentPostId;
+      return post.post_id === this.state.currentPostId;
 
     if (searchText.length === 0) return true;
 

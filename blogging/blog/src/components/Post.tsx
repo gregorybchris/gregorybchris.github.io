@@ -3,6 +3,7 @@ import PostRecord from "../models/PostRecord";
 import React from "react";
 import "./Post.css";
 import linkImage from "../images/link.svg";
+import { formatDate } from "../controllers/DateTimeUtilities";
 import { makeURL } from "../controllers/RequestUtilities";
 
 export interface PostProps {
@@ -10,57 +11,56 @@ export interface PostProps {
   onClickTag: (tag: string) => void;
 }
 
-export interface PostState {}
+export interface PostState {
+  thumbnailUrl: string;
+}
 
 class Post extends React.Component<PostProps, PostState> {
-  getThumbnailLink = () => {
-    const link = this.props.post.link;
-    const youtubePrefix = "https://www.youtube.com/watch";
-    if (link.includes(youtubePrefix)) {
-      const query = link.replace(youtubePrefix, "");
-      const urlParams = new URLSearchParams(query);
-      const idParam = urlParams.get("v");
-      return `https://img.youtube.com/vi/${idParam}/0.jpg`;
-    }
-    return undefined;
+  state = {
+    thumbnailUrl: "",
   };
 
-  getThumbnailElement = () => {
-    const link = this.getThumbnailLink();
-    if (link)
+  componentDidMount() {
+    if (!this.state.thumbnailUrl) {
+      const link = this.props.post.link;
+      if (this.props.post.source === "YouTube") {
+        const query = link.replace("https://www.youtube.com/watch", "");
+        const urlParams = new URLSearchParams(query);
+        const idParam = urlParams.get("v");
+        this.setState({
+          thumbnailUrl: `https://img.youtube.com/vi/${idParam}/maxresdefault.jpg`,
+        });
+      }
+    }
+  }
+
+  onThumbnailLoad = (event: any) => {
+    const img = event.target;
+    if (img.naturalHeight < 100) {
+      const newSrc = img.src.replace("maxresdefault", "0");
+      this.setState({ thumbnailUrl: newSrc });
+    }
+  };
+
+  getThumbnailElement() {
+    if (this.state.thumbnailUrl)
       return (
         <a
           className="Post-thumbnail-link"
           href={this.props.post.link}
           title={this.getSummary()}
         >
-          <img className="Post-thumbnail" src={link} alt=""></img>
+          <div className="Post-thumbnail-wrap">
+            <img
+              className="Post-thumbnail"
+              src={this.state.thumbnailUrl}
+              alt="Post thumbnail"
+              onLoad={this.onThumbnailLoad}
+            ></img>
+          </div>
         </a>
       );
-  };
-
-  formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    const yearNumber = date.getFullYear();
-    const monthNumber = date.getMonth() + 1;
-    const dayNumber = date.getDate();
-    const monthNames = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ];
-    const monthName = monthNames[monthNumber - 1];
-    return `${monthName}. ${dayNumber}, ${yearNumber}`;
-  };
+  }
 
   createTag = (tag: string) => {
     return <Tag key={tag} text={tag} onClickTag={this.props.onClickTag} />;
@@ -118,7 +118,7 @@ class Post extends React.Component<PostProps, PostState> {
           </a>
           {this.getSeriesInfo()}
           <div className="Post-date">
-            {this.formatDate(this.props.post.date_posted)}
+            {formatDate(this.props.post.date_posted)}
           </div>
         </div>
         {this.getThumbnailElement()}
