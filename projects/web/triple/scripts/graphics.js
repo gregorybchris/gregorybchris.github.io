@@ -31,7 +31,7 @@ const initializeTileGradients = (canvas) => {
       .attr("stop-opacity", 1)
 
     const colorB = shadeColor(entity.color, 0)
-      gradient.append("stop")
+    gradient.append("stop")
       .attr('class', 'end')
       .attr("offset", "100%")
       .attr("stop-color", colorB)
@@ -58,7 +58,7 @@ const initializeGraphics = (grid, onTileClick) => {
     .attr("height", CELL_HEIGHT)
     .attr("stroke-width", 2.3)
     .attr("stroke", "rgb(40, 40, 40)")
-    .attr("fill", (tile) => `url(#gradient_${tile.entity.name})`)
+    .attr("fill", (tile) => tile.entity.color)
     .attr("id", (tile) => `tile_marker_${tile.id}`)
     .on("click", (mouseEvent, tile) => onTileClick(tile))
   tileMarkers.append("title").text((tile) => getTileTooltipText(tile))
@@ -83,7 +83,7 @@ const rerenderGraphics = (game) => {
   game.grid.tiles.forEach((row) => {
     row.forEach((tile) => {
       // Update tile marker colors
-      d3.select(`#tile_marker_${tile.id}`).attr("fill", `url(#gradient_${tile.entity.name})`)
+      d3.select(`#tile_marker_${tile.id}`).attr("fill", tile.entity.color)
       d3.select(`#tile_marker_${tile.id} > title`).text(getTileTooltipText(tile))
 
       // Update bonus indicators
@@ -94,6 +94,7 @@ const rerenderGraphics = (game) => {
   // Update page text
   d3.select("#score").text(`Score: ${game.score}`)
   d3.select("#active").text(`Placing: ${game.activeEntity.name}`)
+  d3.select("#turns").text(`Turns: ${game.turns}`)
 }
 
 export { initializeGraphics, rerenderGraphics }
