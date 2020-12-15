@@ -1,3 +1,6 @@
 [submodule "sub/force-graph"]
 	path = sub/force-graph
 	url = https://github.com/gregorybchris/force-graph.git
+[submodule "sub/triple-town"]
+	path = sub/triple-town
+	url = https://github.com/gregorybchris/triple-town.git
