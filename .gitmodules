@@ -1,0 +1,3 @@
+[submodule "sub/force-graph"]
+	path = sub/force-graph
+	url = git@github.com:gregorybchris/force-graph.git
