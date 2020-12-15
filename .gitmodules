@@ -10,3 +10,9 @@
 [submodule "sub/half-plane"]
 	path = sub/half-plane
 	url = https://github.com/gregorybchris/half-plane.git
+[submodule "sub/tsa"]
+	path = sub/tsa
+	url = https://github.com/gregorybchris/tsa.git
+[submodule "sub/combust"]
+	path = sub/combust
+	url = https://github.com/gregorybchris/combust.git
