@@ -16,3 +16,6 @@
 [submodule "sub/combust"]
 	path = sub/combust
 	url = https://github.com/gregorybchris/combust.git
+[submodule "sub/tutf-trends"]
+	path = sub/tutf-trends
+	url = https://github.com/gregorybchris/tutf-trends.git
