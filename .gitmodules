@@ -4,3 +4,9 @@
 [submodule "sub/triple-town"]
 	path = sub/triple-town
 	url = https://github.com/gregorybchris/triple-town.git
+[submodule "sub/chans"]
+	path = sub/chans
+	url = https://github.com/gregorybchris/chans.git
+[submodule "sub/half-plane"]
+	path = sub/half-plane
+	url = https://github.com/gregorybchris/half-plane.git
