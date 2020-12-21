@@ -1,21 +1,28 @@
-[submodule "sub/force-graph"]
-	path = sub/force-graph
-	url = https://github.com/gregorybchris/force-graph.git
-[submodule "sub/triple-town"]
-	path = sub/triple-town
-	url = https://github.com/gregorybchris/triple-town.git
 [submodule "sub/chans"]
 	path = sub/chans
 	url = https://github.com/gregorybchris/chans.git
-[submodule "sub/half-plane"]
-	path = sub/half-plane
-	url = https://github.com/gregorybchris/half-plane.git
-[submodule "sub/tsa"]
-	path = sub/tsa
-	url = https://github.com/gregorybchris/tsa.git
+	branch = master
 [submodule "sub/combust"]
 	path = sub/combust
 	url = https://github.com/gregorybchris/combust.git
+	branch = main
+[submodule "sub/force-graph"]
+	path = sub/force-graph
+	url = https://github.com/gregorybchris/force-graph.git
+	branch = main
+[submodule "sub/half-plane"]
+	path = sub/half-plane
+	url = https://github.com/gregorybchris/half-plane.git
+	branch = master
+[submodule "sub/triple-town"]
+	path = sub/triple-town
+	url = https://github.com/gregorybchris/triple-town.git
+	branch = master
+[submodule "sub/tsa"]
+	path = sub/tsa
+	url = https://github.com/gregorybchris/tsa.git
+	branch = master
 [submodule "sub/tutf-trends"]
 	path = sub/tutf-trends
 	url = https://github.com/gregorybchris/tutf-trends.git
+	branch = master
