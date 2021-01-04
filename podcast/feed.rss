@@ -45,6 +45,28 @@
         </itunes:subtitle>
         <itunes:type>episodic</itunes:type>
         <item>
+            <title>Love Like This (Ben Rector)</title>
+            <pubDate>Mon, 4 Jan 2021 05:00:00 -0400</pubDate>
+            <guid isPermaLink="false">
+                <![CDATA[ 1 ]]>
+            </guid>
+            <link>https://www.chrisgregory.me/podcast/feed.rss</link>
+            <itunes:subtitle>
+                <![CDATA[ I Wish I Knew (Nina Simone) ]]>
+            </itunes:subtitle>
+            <description>
+                <![CDATA[ Personal recording ]]>
+            </description>
+            <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
+            <content:encoded>
+                <![CDATA[ Personal recording ]]>
+            </content:encoded>
+            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/love-like-this--ben-rector.mp3"/>
+            <itunes:duration>00:00:34</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:episodeType>full</itunes:episodeType>
+        </item>
+        <item>
             <title>Morning (Francis and the Lights)</title>
             <pubDate>Tue, 15 Sep 2020 05:00:00 -0400</pubDate>
             <guid isPermaLink="false">
