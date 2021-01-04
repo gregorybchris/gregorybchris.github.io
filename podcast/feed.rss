@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
+    <channel>
+        <itunes:block>yes</itunes:block>
+        <atom:link href="https://www.chrisgregory.me/podcast/feed.rss" rel="self" type="application/rss+xml"/>
+        <title>Chris Gregory Podcast</title>
+        <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
+        <link>http://www.chrisgregory.me</link>
+        <language>en</language>
+        <copyright>
+            <![CDATA[ All rights reserved ]]>
+        </copyright>
+        <docs>http://www.chrisgregory.me</docs>
+        <managingEditor>christopher.b.gregory@gmail.com (christopher.b.gregory@gmail.com)</managingEditor>
+        <itunes:summary>
+            <![CDATA[ Personal feed of Chris Gregory ]]>
+        </itunes:summary>
+        <image>
+            <url>https://www.chrisgregory.me/images/icons/cg-block-large.png</url>
+            <title>Chris Gregory Podcast</title>
+            <link>
+                <![CDATA[ http://www.chrisgregory.me ]]>
+            </link>
+        </image>
+        <itunes:author>Chris Gregory</itunes:author>
+        <itunes:keywords>computers,programming,software,philosophy,neuroscience,running,music</itunes:keywords>
+        <itunes:image href="https://www.chrisgregory.me/images/icons/cg-block-large.png"/>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:owner>
+            <itunes:name>
+                <![CDATA[ Personal feed of Chris Gregory ]]>
+            </itunes:name>
+            <itunes:email>christopher.b.gregory@gmail.com</itunes:email>
+        </itunes:owner>
+        <description>
+            <![CDATA[ Personal feed of Chris Gregory ]]>
+        </description>
+        <itunes:subtitle>
+            <![CDATA[ ]]>
+        </itunes:subtitle>
+        <itunes:type>episodic</itunes:type>
+        <item>
+            <title>Morning (Francis and the Lights)</title>
+            <pubDate>Tue, 15 Sep 2020 05:00:00 -0400</pubDate>
+            <guid isPermaLink="false">
+                <![CDATA[ 2 ]]>
+            </guid>
+            <link>https://www.chrisgregory.me/podcast/feed.rss</link>
+            <itunes:subtitle>
+                <![CDATA[ Morning (Francis and the Lights) ]]>
+            </itunes:subtitle>
+            <description>
+                <![CDATA[ Personal recording ]]>
+            </description>
+            <itunes:image href="https://www.chrisgregory.me/images/icons/cg-block-large.png"/>
+            <content:encoded>
+                <![CDATA[ Personal recording ]]>
+            </content:encoded>
+            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/morning--francis-and-the-lights.mp3"/>
+            <itunes:duration>00:00:22</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:episodeType>full</itunes:episodeType>
+        </item>
+        <item>
+            <title>I Wish I Knew (Nina Simone)</title>
+            <pubDate>Mon, 14 Sep 2020 05:00:00 -0400</pubDate>
+            <guid isPermaLink="false">
+                <![CDATA[ 1 ]]>
+            </guid>
+            <link>https://www.chrisgregory.me/podcast/feed.rss</link>
+            <itunes:subtitle>
+                <![CDATA[ I Wish I Knew (Nina Simone) ]]>
+            </itunes:subtitle>
+            <description>
+                <![CDATA[ Personal recording ]]>
+            </description>
+            <itunes:image href="https://www.chrisgregory.me/images/icons/cg-block-large.png"/>
+            <content:encoded>
+                <![CDATA[ Personal recording ]]>
+            </content:encoded>
+            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/i-wish-knew--nina-simone.mp3"/>
+            <itunes:duration>00:00:34</itunes:duration>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:episodeType>full</itunes:episodeType>
+        </item>
+    </channel>
+</rss>
