@@ -7,7 +7,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
     <channel>
         <itunes:block>yes</itunes:block>
-        <atom:link href="https://www.chrisgregory.me/podcast/feed.rss" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://static.chrisgregory.me/podcast/feed.rss" rel="self" type="application/rss+xml"/>
         <title>Chris Gregory Podcast</title>
         <lastBuildDate>Tue, 15 Sep 2020 00:00:00 +0000</lastBuildDate>
         <link>http://www.chrisgregory.me</link>
@@ -50,7 +50,7 @@
             <guid isPermaLink="false">
                 <![CDATA[ 1 ]]>
             </guid>
-            <link>https://www.chrisgregory.me/podcast/feed.rss</link>
+            <link>https://static.chrisgregory.me/podcast/feed.rss</link>
             <itunes:subtitle>
                 <![CDATA[ Love Like This (Ben Rector) ]]>
             </itunes:subtitle>
@@ -61,7 +61,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/love-like-this--ben-rector.mp3"/>
+            <enclosure length="0" type="audio/mpeg" url="https://chrisgregory.blob.core.windows.net/podcast/music/love-like-this--ben-rector.mp3"/>
             <itunes:duration>00:00:34</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
@@ -72,7 +72,7 @@
             <guid isPermaLink="false">
                 <![CDATA[ 2 ]]>
             </guid>
-            <link>https://www.chrisgregory.me/podcast/feed.rss</link>
+            <link>https://static.chrisgregory.me/podcast/feed.rss</link>
             <itunes:subtitle>
                 <![CDATA[ Morning (Francis and the Lights) ]]>
             </itunes:subtitle>
@@ -83,7 +83,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/morning--francis-and-the-lights.mp3"/>
+            <enclosure length="0" type="audio/mpeg" url="https://chrisgregory.blob.core.windows.net/podcast/music/morning--francis-and-the-lights.mp3"/>
             <itunes:duration>00:00:22</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
@@ -94,7 +94,7 @@
             <guid isPermaLink="false">
                 <![CDATA[ 1 ]]>
             </guid>
-            <link>https://www.chrisgregory.me/podcast/feed.rss</link>
+            <link>https://static.chrisgregory.me/podcast/feed.rss</link>
             <itunes:subtitle>
                 <![CDATA[ I Wish I Knew (Nina Simone) ]]>
             </itunes:subtitle>
@@ -105,7 +105,7 @@
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://www.chrisgregory.me/podcast/music/i-wish-knew--nina-simone.mp3"/>
+            <enclosure length="0" type="audio/mpeg" url="https://chrisgregory.blob.core.windows.net/podcast/music/i-wish-knew--nina-simone.mp3"/>
             <itunes:duration>00:00:34</itunes:duration>
             <itunes:explicit>no</itunes:explicit>
             <itunes:episodeType>full</itunes:episodeType>
