@@ -21,7 +21,7 @@
             <![CDATA[ Personal feed of Chris Gregory ]]>
         </itunes:summary>
         <image>
-            <url>https://www.chrisgregory.me/images/icons/cg-block-large.png</url>
+            <url>https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg</url>
             <title>Chris Gregory Podcast</title>
             <link>
                 <![CDATA[ http://www.chrisgregory.me ]]>
@@ -29,7 +29,7 @@
         </image>
         <itunes:author>Chris Gregory</itunes:author>
         <itunes:keywords>computers,programming,software,philosophy,neuroscience,running,music</itunes:keywords>
-        <itunes:image href="https://www.chrisgregory.me/images/icons/cg-block-large.png"/>
+        <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
         <itunes:explicit>no</itunes:explicit>
         <itunes:owner>
             <itunes:name>
@@ -57,7 +57,7 @@
             <description>
                 <![CDATA[ Personal recording ]]>
             </description>
-            <itunes:image href="https://www.chrisgregory.me/images/icons/cg-block-large.png"/>
+            <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
@@ -79,7 +79,7 @@
             <description>
                 <![CDATA[ Personal recording ]]>
             </description>
-            <itunes:image href="https://www.chrisgregory.me/images/icons/cg-block-large.png"/>
+            <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
             <content:encoded>
                 <![CDATA[ Personal recording ]]>
             </content:encoded>
