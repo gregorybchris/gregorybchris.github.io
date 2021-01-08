@@ -26,3 +26,9 @@
 	path = sub/tutf-trends
 	url = https://github.com/gregorybchris/tutf-trends.git
 	branch = master
+[submodule "sub/base"]
+	path = sub/base
+	url = https://github.com/gregorybchris/base.git
+[submodule "sub/jumbo-meal"]
+	path = sub/jumbo-meal
+	url = https://github.com/gregorybchris/jumbo-meal.git
