@@ -1,0 +1,13 @@
+* {
+  font-family: "Source Serif Pro";
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
