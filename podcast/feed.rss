@@ -6,7 +6,7 @@
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
     <channel>
-        <itunes:block>yes</itunes:block>
+        <itunes:block>no</itunes:block>
         <atom:link href="https://static.chrisgregory.me/podcast/feed.rss" rel="self" type="application/rss+xml"/>
         <title>Chris Gregory Podcast</title>
         <lastBuildDate>Mon, 5 Jan 2021 00:00:00 +0000</lastBuildDate>
