@@ -32,3 +32,6 @@
 [submodule "sub/jumbo-meal"]
 	path = sub/jumbo-meal
 	url = https://github.com/gregorybchris/jumbo-meal.git
+[submodule "sub/big-life"]
+	path = sub/big-life
+	url = git@github.com:gregorybchris/big-life.git
