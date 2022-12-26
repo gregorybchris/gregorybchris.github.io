@@ -35,10 +35,6 @@
 [submodule "sub/big-life"]
 	path = sub/big-life
 	url = https://github.com/gregorybchris/big-life.git
-[submodule "sub/ants"]
-	path = sub/ants
-	url = https://github.com/gregorybchris/ants.git
-	branch = gh-pages
 [submodule "sub/orbit"]
 	path = sub/orbit
 	url = https://github.com/gregorybchris/orbit.git
