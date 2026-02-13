@@ -1,137 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom"
-    xmlns:cc="http://web.resource.org/cc/"
-    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-    xmlns:media="http://search.yahoo.com/mrss/"
-    xmlns:content="http://purl.org/rss/1.0/modules/content/"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
-    <channel>
-        <itunes:block>no</itunes:block>
-        <atom:link href="https://static.chrisgregory.me/podcast/feed.rss" rel="self" type="application/rss+xml"/>
-        <title>Chris Gregory Podcast</title>
-        <lastBuildDate>Mon, 5 Jan 2021 00:00:00 +0000</lastBuildDate>
-        <link>http://www.chrisgregory.me</link>
-        <language>en</language>
-        <copyright>
-            <![CDATA[ All rights reserved ]]>
-        </copyright>
-        <docs>http://www.chrisgregory.me</docs>
-        <managingEditor>christopher.b.gregory@gmail.com (christopher.b.gregory@gmail.com)</managingEditor>
-        <itunes:summary>
-            <![CDATA[ Personal feed of Chris Gregory ]]>
-        </itunes:summary>
-        <image>
-            <url>https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg</url>
-            <title>Chris Gregory Podcast</title>
-            <link>
-                <![CDATA[ http://www.chrisgregory.me ]]>
-            </link>
-        </image>
-        <itunes:author>Chris Gregory</itunes:author>
-        <itunes:keywords>computers,programming,software,philosophy,neuroscience,running,music</itunes:keywords>
-        <itunes:category text="Music"/>
-        <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
-        <itunes:explicit>no</itunes:explicit>
-        <itunes:owner>
-            <itunes:name>
-                <![CDATA[ Personal feed of Chris Gregory ]]>
-            </itunes:name>
-            <itunes:email>christopher.b.gregory@gmail.com</itunes:email>
-        </itunes:owner>
-        <description>
-            <![CDATA[ Personal feed of Chris Gregory ]]>
-        </description>
-        <itunes:subtitle>
-            <![CDATA[ ]]>
-        </itunes:subtitle>
-        <itunes:type>episodic</itunes:type>
-        <item>
-            <title>Pirate Ship - Overcooked</title>
-            <pubDate>Mon, 5 Jan 2021 05:00:00 -0400</pubDate>
-            <guid isPermaLink="false">
-                <![CDATA[ 1 ]]>
-            </guid>
-            <link>https://static.chrisgregory.me/podcast/feed.rss</link>
-            <itunes:subtitle>
-                <![CDATA[ Pirate Ship - Overcooked ]]>
-            </itunes:subtitle>
-            <description>
-                <![CDATA[ Personal recording ]]>
-            </description>
-            <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
-            <content:encoded>
-                <![CDATA[ Personal recording ]]>
-            </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://chrisgregory.blob.core.windows.net/podcast/music/pirate-ship--overcooked.mp3"/>
-            <itunes:duration>00:00:34</itunes:duration>
-            <itunes:explicit>no</itunes:explicit>
-            <itunes:episodeType>full</itunes:episodeType>
-        </item>
-        <item>
-            <title>Love Like This - Ben Rector</title>
-            <pubDate>Mon, 4 Jan 2021 05:00:00 -0400</pubDate>
-            <guid isPermaLink="false">
-                <![CDATA[ 1 ]]>
-            </guid>
-            <link>https://static.chrisgregory.me/podcast/feed.rss</link>
-            <itunes:subtitle>
-                <![CDATA[ Love Like This - Ben Rector ]]>
-            </itunes:subtitle>
-            <description>
-                <![CDATA[ Personal recording ]]>
-            </description>
-            <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
-            <content:encoded>
-                <![CDATA[ Personal recording ]]>
-            </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://chrisgregory.blob.core.windows.net/podcast/music/love-like-this--ben-rector.mp3"/>
-            <itunes:duration>00:00:34</itunes:duration>
-            <itunes:explicit>no</itunes:explicit>
-            <itunes:episodeType>full</itunes:episodeType>
-        </item>
-        <item>
-            <title>Morning - Francis and the Lights</title>
-            <pubDate>Tue, 15 Sep 2020 05:00:00 -0400</pubDate>
-            <guid isPermaLink="false">
-                <![CDATA[ 2 ]]>
-            </guid>
-            <link>https://static.chrisgregory.me/podcast/feed.rss</link>
-            <itunes:subtitle>
-                <![CDATA[ Morning - Francis and the Lights ]]>
-            </itunes:subtitle>
-            <description>
-                <![CDATA[ Personal recording ]]>
-            </description>
-            <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
-            <content:encoded>
-                <![CDATA[ Personal recording ]]>
-            </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://chrisgregory.blob.core.windows.net/podcast/music/morning--francis-and-the-lights.mp3"/>
-            <itunes:duration>00:00:22</itunes:duration>
-            <itunes:explicit>no</itunes:explicit>
-            <itunes:episodeType>full</itunes:episodeType>
-        </item>
-        <item>
-            <title>I Wish I Knew - Nina Simone</title>
-            <pubDate>Mon, 14 Sep 2020 05:00:00 -0400</pubDate>
-            <guid isPermaLink="false">
-                <![CDATA[ 1 ]]>
-            </guid>
-            <link>https://static.chrisgregory.me/podcast/feed.rss</link>
-            <itunes:subtitle>
-                <![CDATA[ I Wish I Knew - Nina Simone ]]>
-            </itunes:subtitle>
-            <description>
-                <![CDATA[ Personal recording ]]>
-            </description>
-            <itunes:image href="https://chrisgregory.blob.core.windows.net/icons/logo/cg-block-large.jpg"/>
-            <content:encoded>
-                <![CDATA[ Personal recording ]]>
-            </content:encoded>
-            <enclosure length="0" type="audio/mpeg" url="https://chrisgregory.blob.core.windows.net/podcast/music/i-wish-knew--nina-simone.mp3"/>
-            <itunes:duration>00:00:34</itunes:duration>
-            <itunes:explicit>no</itunes:explicit>
-            <itunes:episodeType>full</itunes:episodeType>
-        </item>
-    </channel>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+  <channel>
+    <title>Chris Gregory Podcast</title>
+    <link>https://chrisgregory.me</link>
+    <description>Personal feed of Chris Gregory</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 5 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <copyright>All rights reserved</copyright>
+
+    <atom:link href="https://chrisgregory.me/podcast/feed.rss"
+               rel="self"
+               type="application/rss+xml"/>
+
+    <itunes:author>Chris Gregory</itunes:author>
+    <itunes:summary>Personal feed of Chris Gregory</itunes:summary>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <itunes:category text="Music"/>
+
+    <itunes:image href="https://storage.googleapis.com/cgme/icons/logo/cg-block-large.jpg"/>
+    <image>
+      <url>https://storage.googleapis.com/cgme/icons/logo/cg-block-large.jpg</url>
+      <title>Chris Gregory Podcast</title>
+      <link>https://chrisgregory.me</link>
+    </image>
+
+    <itunes:owner>
+      <itunes:name>Chris Gregory</itunes:name>
+      <itunes:email>christopher.b.gregory@gmail.com</itunes:email>
+    </itunes:owner>
+
+    <item>
+      <title>Pirate Ship - Overcooked</title>
+      <pubDate>Mon, 5 Jan 2021 05:00:00 -0400</pubDate>
+      <guid isPermaLink="false">pirate-ship-overcooked-2021</guid>
+      <description>Personal recording</description>
+      <enclosure
+        url="https://storage.googleapis.com/cgme/podcast/music/pirate-ship--overcooked.mp3"
+        type="audio/mpeg"
+        length="0"/>
+      <itunes:duration>00:00:19</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+
+    <item>
+      <title>Love Like This - Ben Rector</title>
+      <pubDate>Mon, 4 Jan 2021 05:00:00 -0400</pubDate>
+      <guid isPermaLink="false">love-like-this-ben-rector-2021</guid>
+      <description>Personal recording</description>
+      <enclosure
+        url="https://storage.googleapis.com/cgme/podcast/music/love-like-this--ben-rector.mp3"
+        type="audio/mpeg"
+        length="0"/>
+      <itunes:duration>00:00:15</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+
+    <item>
+      <title>Morning - Francis and the Lights</title>
+      <pubDate>Tue, 15 Sep 2020 05:00:00 -0400</pubDate>
+      <guid isPermaLink="false">morning-francis-and-the-lights-2020</guid>
+      <description>Personal recording</description>
+      <enclosure
+        url="https://storage.googleapis.com/cgme/podcast/music/morning--francis-and-the-lights.mp3"
+        type="audio/mpeg"
+        length="0"/>
+      <itunes:duration>00:00:21</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+
+    <item>
+      <title>I Wish I Knew - Nina Simone</title>
+      <pubDate>Mon, 14 Sep 2020 05:00:00 -0400</pubDate>
+      <guid isPermaLink="false">i-wish-i-knew-nina-simone-2020</guid>
+      <description>Personal recording</description>
+      <enclosure
+        url="https://storage.googleapis.com/cgme/podcast/music/i-wish-knew--nina-simone.mp3"
+        type="audio/mpeg"
+        length="0"/>
+      <itunes:duration>00:00:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+
+  </channel>
 </rss>
